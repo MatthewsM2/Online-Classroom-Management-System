@@ -1,0 +1,186 @@
+body {
+  background-color: #00b4d8;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Open Sans", sans-serif;
+}
+/* div one */
+.whiteBox {
+  background-color: white;
+  width: 33%;
+  height: 457px;
+  border: 5px solid;
+  border-color: white;
+  border-radius: 17px;
+  margin-left: 57%;
+  margin-top: 97px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.WBox1 {
+  display: block;
+}
+.loginTxt {
+  margin: 0px;
+  margin-top: 7px;
+  margin-left: 27px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.loginSubTxt {
+  margin-top: 1px;
+  margin-left: 27px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.logTxtBoxUsrName,
+.logTxtBoxPassword {
+  height: 37px;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  display: block;
+  margin-left: 27px;
+  padding-right: 197px;
+}
+
+.logTxtBoxPassword {
+  margin-top: 37px;
+}
+
+.ConTlogSumbit {
+  margin-top: 47px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.logSumbit {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-color: black;
+  padding: 5px 57px;
+}
+
+.logSumbit:hover {
+  color: #00b4d8;
+  border-color: #00b4d8;
+}
+
+.txtNewuser {
+  margin-left: 27px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.txtCreateAcc {
+  font-family: "Open Sans", sans-serif;
+  color: #07aecf;
+  font-style: italic;
+}
+.txtCreateAcc:hover {
+  color: #048da8;
+  cursor: pointer;
+}
+
+/* div two */
+.WBox2 {
+  height: 228.5px;
+  display: none;
+}
+
+#iamA {
+  color: #00b4d8;
+}
+
+#BtnTrAndSt {
+  margin-top: 57px;
+  margin-bottom: 17px;
+  gap: 37px;
+}
+
+.BtnGradent {
+  text-transform: uppercase;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 7px;
+  font-size: 100%;
+  padding: 7px 54px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: #00b4d8;
+}
+
+/* div three */
+.WBox3 {
+  display: none;
+}
+
+.GreyTxtBoxContainer {
+  margin-left: 7%;
+  width: 62%;
+  height: 377px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.GreyTxtBox {
+  display: block;
+  outline: none;
+  background-color: #eee;
+  border-color: #eee;
+  border-radius: 7px;
+  padding: 7px 12px;
+  padding-right: 77px;
+}
+
+.GTB2 {
+  margin-top: 14px;
+}
+
+.GTB3,
+.GTBCreateAccBtn {
+  margin-top: 57px;
+}
+
+.GTBCreateAccBtn {
+  text-transform: none;
+}
+
+.GTB4,
+.GTB5 {
+  margin-top: 14px;
+}
+.GTBTxtAccAl {
+  margin-left: 37%;
+}
+.BtnTr:hover,
+.BtnSt:hover,
+.GTBCreateAccBtn:hover {
+  background-color: #04a9ca;
+  cursor: pointer;
+}
+.AvAndGTBContainer {
+  display: flex;
+  margin-top: 47px;
+}
+.avatarContainer {
+  height: 117px;
+  width: 117px;
+  background-color: #ffffff;
+  margin-left: 3%;
+}
+.avatar {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #cce5eb;
+}
