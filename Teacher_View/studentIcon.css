@@ -1,0 +1,25 @@
+#StudentTable{
+    border-collapse: collapse;
+    width: 97%;
+    margin: auto;
+    margin-top: 27px;
+}
+#StudentTable td,#StudentTable th{
+    border: 1px solid grey;
+    padding: 7px;
+}
+#StudentTable tr:nth-child(even){
+    background-color: #eee;
+}
+#StudentTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00a0c0 ;
+    color: white;
+  
+}
+.MainDiv2{
+overflow-y:scroll ;
+display: none;
+}

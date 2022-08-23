@@ -1,0 +1,142 @@
+/* colours used
+blue:#00b4d8
+red:#f7444eff
+green:#2ff793ff */
+html,
+body {
+  max-height: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+  margin: 0;
+  background-color: #00b4d8;
+  font-family: "Open Sans", "sans-serif";
+}
+.DivContainers {
+  background-color: #00b4d8;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.subDiv {
+  margin-top: 1%;
+  width: 5%;
+  background-color: #00b4d8;
+  text-align: center;
+}
+.MainDiv {
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1.2%;
+  display: block;
+  width: 93%;
+  height: 607px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+}
+.MainDiv::-webkit-scrollbar {
+  width: 5px;
+}
+.MainDiv::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 7px;
+  height: 240px;
+}
+.MainDiv::-webkit-scrollbar-thumb {
+  background: #02d5ff;
+  border-radius: 7px;
+}
+.MainDiv::-webkit-scrollbar-thumb:hover {
+  background: #00a0c0;
+}
+.MainDiv::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+.MainDiv::-webkit-scrollbar-track-piece:start {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+}
+.icons1 {
+  margin-top: 77px;
+}
+.icons {
+  margin-top: 20px;
+}
+.icons1,
+.icons {
+  display: block;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.icons1:hover,
+.icons:hover {
+  color: gray;
+}
+.icons:active {
+  color: black;
+  background-color: white;
+}
+
+.icons1 {
+  background-color: white;
+  color: black;
+}
+
+.titleContainer{
+  margin-left: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.titleContainer h3{
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+.outerContainer{
+  margin-left: 20px;
+background-color: rgba(0, 255, 255, 0);
+align-items: center;
+}
+.outerContainer h4{
+  margin: 0px;
+}
+.subContainer{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 99, 71, 0);
+  display: flex;
+  gap: 20px;
+  width: auto;
+  overflow: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom:40px;
+  }
+.subContainer div{
+  flex: 0 0 180px;
+  width: 180px;
+  height: 270px;
+  background-color: yellowgreen;
+  overflow: hidden;
+  transition: 1.7s;
+  }
+.subContainer div:hover{
+  transform: scale(1.05, 1.05);
+  transition: 1.7s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.subContainer img{
+  width: 180px;
+  height: 270px;
+  
+}
+.subContainer::-webkit-scrollbar {
+  display: none;
+}
+.MainDiv1{
+  display: none;
+}
