@@ -23,3 +23,43 @@
 overflow-y:scroll ;
 display: none;
 }
+
+/* Add Files & Module Page Css */
+
+.addFiles{
+    background-color: aquamarine;
+    margin: auto;
+    width: 50%;
+    height: 250px;
+}
+.container-Selector-ModuleTextbox{
+    display: flex;
+    gap: 177px;
+    justify-content: center;
+
+}
+.moduleTextbox{
+    display: flex;
+    justify-content: center;
+    width:203px;
+    height: 36px;
+    /* border:1px solid black; */
+    background-color: dodgerblue;
+    color: white;
+}
+#inside-moduleTextbox{
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    width: 163px;
+    padding-left: 10px;
+}
+#inside-moduleTextbox::placeholder{
+    color: black;
+    opacity:0.70;
+}
+.moduleTextbox-addIcon{
+    margin: auto;
+    cursor: pointer;
+}
