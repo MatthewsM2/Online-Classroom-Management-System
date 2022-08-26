@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="studentIcon.css">
     <link rel="stylesheet" href="selectboxCss.css">
-    
+
 </head>
 
 <body>
@@ -189,29 +189,49 @@
                 </tr>
             </table>
         </div>
-        <div class="MainDiv">
+        <div class="MainDiv MainDiv3">
             <h3>BCA-III</h3>
             <div class="addFiles">
                 <h4>Add Files</h4>
                 <div class="container-Selector-ModuleTextbox">
-                <div class="custom-select" style="width:200px;">
-                    <select>
-                        <option value=""disabled selected hidden>Select Module</option>
-                      <option value="0">Module-1</option>
-                    </select>
-                  </div>
-                <div class="moduleTextbox">
-                    <input type="text" id="inside-moduleTextbox" placeholder="eg: Module-1">
-                    <span class="material-symbols-outlined moduleTextbox-addIcon">
-                        add_circle
-                    </span>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                            <option value="" disabled selected hidden>Select Module</option>
+                            <option value="0">Module-1</option>
+                        </select>
+                    </div>
+                    <div class="moduleTextbox">
+                        <input type="text" id="inside-moduleTextbox" placeholder="eg: Module-1">
+                        <span class="material-symbols-outlined moduleTextbox-addIcon">
+                            add_circle
+                        </span>
+                    </div>
                 </div>
-            </div>
-                <div class="uploadDiv">
+                <div class="uploadDiv-Container">
 
+                    <div class="Master-Container">
+                        <div class="uploadDiv-OuterDiv">
+                            <label for="Input-Type-File">
+                                <div class="uploadDiv">
+                                    <span class="material-symbols-outlined uploadDiv-Icon">
+                                        image
+                                    </span>
+                                </div>
+                            </label>
+                            <input type="file" id="Input-Type-File">
+                        </div>
+
+
+                        <div class="docUpload-Container">
+                            <input type="file" id="selectFile">
+                            <input type="text" placeholder="Enter Title" class="txtbox-title">
+                            <label id="Title-box">Title</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit">
                 </div>
-                <input type="file">
-                <input type="submit">
             </div>
         </div>
     </div>
@@ -219,4 +239,5 @@
 </body>
 <script src="/MiniProject/script.js"></script>
 <script src="selectbox.js"></script>
+
 </html>

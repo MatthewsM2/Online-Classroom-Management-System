@@ -2,7 +2,6 @@
 /*the container must be positioned relative:*/
 .custom-select {
     position: relative;
-    font-family: Arial;
   }
   
   .custom-select select {

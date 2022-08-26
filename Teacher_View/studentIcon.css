@@ -1,65 +1,130 @@
-#StudentTable{
-    border-collapse: collapse;
-    width: 97%;
-    margin: auto;
-    margin-top: 27px;
+#StudentTable {
+  border-collapse: collapse;
+  width: 97%;
+  margin: auto;
+  margin-top: 27px;
 }
-#StudentTable td,#StudentTable th{
-    border: 1px solid grey;
-    padding: 7px;
+#StudentTable td,
+#StudentTable th {
+  border: 1px solid grey;
+  padding: 7px;
 }
-#StudentTable tr:nth-child(even){
-    background-color: #eee;
+#StudentTable tr:nth-child(even) {
+  background-color: #eee;
 }
-#StudentTable th{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #00a0c0 ;
-    color: white;
-  
+#StudentTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00a0c0;
+  color: white;
 }
-.MainDiv2{
-overflow-y:scroll ;
-display: none;
+.MainDiv2 {
+  overflow-y: scroll;
+  display: none;
 }
 
+.MainDiv3 {
+  display: block;
+}
 /* Add Files & Module Page Css */
 
-.addFiles{
-    background-color: aquamarine;
-    margin: auto;
-    width: 50%;
-    height: 250px;
+.addFiles {
+  background-color: aquamarine;
+  margin: auto;
+  width: 50%;
+  height: 250px;
 }
-.container-Selector-ModuleTextbox{
-    display: flex;
-    gap: 177px;
-    justify-content: center;
-
+.container-Selector-ModuleTextbox {
+  display: flex;
+  gap: 47px;
+  margin-left: 37px;
+  /* justify-content: center; */
 }
-.moduleTextbox{
-    display: flex;
-    justify-content: center;
-    width:203px;
-    height: 36px;
-    /* border:1px solid black; */
-    background-color: dodgerblue;
-    color: white;
+.moduleTextbox {
+  display: flex;
+  justify-content: space-between;
+  width: 353px;
+  height: 40px;
+  background-color: rgb(30, 255, 98);
+  color: white;
 }
-#inside-moduleTextbox{
-    outline: none;
-    background-color: dodgerblue;
-    color: white;
-    border: none;
-    width: 163px;
-    padding-left: 10px;
+#inside-moduleTextbox {
+  outline: none;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  width: 200px;
+  padding-left: 10px;
 }
-#inside-moduleTextbox::placeholder{
-    color: black;
-    opacity:0.70;
+#inside-moduleTextbox::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
 }
-.moduleTextbox-addIcon{
-    margin: auto;
-    cursor: pointer;
+.moduleTextbox-addIcon {
+  margin: auto;
+  cursor: pointer;
+}
+.uploadDiv {
+  margin: auto;
+  width: 180px;
+  height: 270px;
+  border-radius: 7px;
+  background-color: #00a0c0;
+}
+.uploadDiv-Icon {
+  margin-top: 27px;
+  margin-left: 24px;
+  color: white;
+  font-size: 27px;
+}
+.uploadDiv-Container {
+  background-color: blue;
+}
+#Input-Type-File {
+  /* display: none; */
+  visibility: hidden;
+}
+.uploadDiv-OuterDiv {
+  background-color: #eee;
+  margin-left: 37px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.docUpload-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(252, 252, 252);
+  width: 353px;
+}
+.Master-Container {
+  display: flex;
+  gap: 47px;
+}
+#selectFile {
+  border: 1px solid rgb(0, 0, 0);
+  height: 40px;
+  display: flex;
+}
+#selectFile::-webkit-file-upload-button {
+  height: 40px;
+  width: 147px;
+  /* margin-left: 208px; */
+  outline: none;
+  border: none;
+  
+}
+.txtbox-title{
+  height: 40px;
+}
+#Title-box{
+  position: absolute;
+  top: 210px;
+  right: 319px;
+  background-color: aquamarine;
+  padding: 11px 56px 11px 56px;
 }
