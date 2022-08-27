@@ -28,68 +28,45 @@
   display: block;
 }
 /* Add Files & Module Page Css */
-
-.addFiles {
-  background-color: aquamarine;
-  margin: auto;
-  width: 50%;
-  height: 250px;
-}
-.container-Selector-ModuleTextbox {
+.uploadDiv-Container {
   display: flex;
-  gap: 47px;
-  margin-left: 37px;
-  /* justify-content: center; */
+  gap: 25px;
+  flex-direction: column;
+  background-color: white;
+  width: 800px;
+  margin: auto;
 }
+
 .moduleTextbox {
   display: flex;
-  justify-content: space-between;
-  width: 353px;
-  height: 40px;
-  background-color: rgb(30, 255, 98);
-  color: white;
 }
-#inside-moduleTextbox {
-  outline: none;
-  background-color: dodgerblue;
-  color: white;
-  font-size: 17px;
-  font-weight: 500;
-  border: none;
-  width: 200px;
-  padding-left: 10px;
-}
-#inside-moduleTextbox::placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.5;
-}
-.moduleTextbox-addIcon {
-  margin: auto;
-  cursor: pointer;
-}
+
+
+
+
 .uploadDiv {
   margin: auto;
+  display: flex;
   width: 180px;
   height: 270px;
   border-radius: 7px;
   background-color: #00a0c0;
-}
+  }
 .uploadDiv-Icon {
-  margin-top: 27px;
-  margin-left: 24px;
-  color: white;
-  font-size: 27px;
+  margin: auto;
+  font-size: 57px;
 }
-.uploadDiv-Container {
-  background-color: blue;
+.title-icon{
+  margin: auto;
 }
 #Input-Type-File {
   /* display: none; */
   visibility: hidden;
 }
 .uploadDiv-OuterDiv {
-  background-color: #eee;
-  margin-left: 37px;
+  background-color: white;
+  border: solid black;
+  border-top: none;
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -98,33 +75,92 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(252, 252, 252);
-  width: 353px;
+  align-items: center;
+  background-color:#89CFF0;
+  
+  width: 297px;
 }
+
 .Master-Container {
+  align-self: center;
   display: flex;
   gap: 47px;
+  border-radius: 7px;
+  width: 700px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  background-color:#89CFF0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.sub-Master-Container{
+  display: flex;
+  flex-direction: column;
+}
+.custom-select{
+  width: 200px;
+  border: solid black;
+}
+
 #selectFile {
-  border: 1px solid rgb(0, 0, 0);
-  height: 40px;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.SF-container {
   display: flex;
 }
-#selectFile::-webkit-file-upload-button {
+#choose-file-click{
+  cursor: pointer;
+  caret-color: transparent;
+}
+.txtbox-title {
   height: 40px;
-  width: 147px;
-  /* margin-left: 208px; */
+}
+.input-upload-class{
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
   outline: none;
+  padding: 0%;
+  margin: 0%;
   border: none;
-  
-}
-.txtbox-title{
+  padding-left: 3px;
+  width: 207px;
   height: 40px;
+  background-color: #00b4d8;
+  border: solid black ;
 }
-#Title-box{
-  position: absolute;
-  top: 210px;
-  right: 319px;
-  background-color: aquamarine;
-  padding: 11px 56px 11px 56px;
+.input-upload-class::placeholder{
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+.inp-upl-cls-Des{
+width:283px;
+height: 170px;
+}
+.span-icon-container{
+  display: flex;
+  width: 70px;
+  height: 40px;
+  background-color: #2ff793ff;
+  border: solid black;
+}
+
+.upload-icon{
+  margin: auto;
+  cursor: pointer;
+}
+.saveBtn{
+  align-self: center;
+  width: 700px;
+  height: 40px;
+  border: solid black;
+  background-color: #2ff793ff;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: 700;
 }
