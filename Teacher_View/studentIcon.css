@@ -56,6 +56,15 @@
   margin: auto;
   font-size: 57px;
 }
+#thumb{
+  align-self: center;
+  width: 180px;
+  height: 270px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+}
 .title-icon{
   margin: auto;
 }
