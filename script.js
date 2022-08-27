@@ -16,7 +16,6 @@ function teacher() {
   document.getElementsByClassName("WBox2")[0].style.display = "none";
 }
 
-
 function student() {
   document.getElementsByClassName("WBox3")[0].style.display = "block";
   document.getElementsByClassName("WBox1")[0].style.display = "none";
@@ -32,12 +31,12 @@ function PopUpAddClassCloseBtn() {
 }
 
 function scrollArrowLeft() {
-  const left=document.querySelector(".DivClassContainer");
-  left.scrollBy(-350,0)
+  const left = document.querySelector(".DivClassContainer");
+  left.scrollBy(-350, 0);
 }
 function scrollArrowRight() {
-  const right=document.querySelector(".DivClassContainer");
-  right.scrollBy(350,0)
+  const right = document.querySelector(".DivClassContainer");
+  right.scrollBy(350, 0);
 }
 function homeClick() {
   document.getElementsByClassName("MainDiv2")[0].style.display = "none";

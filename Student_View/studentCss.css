@@ -74,7 +74,7 @@ body {
 }
 .icons1:hover,
 .icons:hover {
-  color:gray;
+  color: gray;
 }
 .icons:active {
   color: black;
@@ -268,26 +268,26 @@ body {
 .LeftNextIcon:hover {
   color: black;
 }
-.icons1{
+.icons1 {
   background-color: white;
   color: black;
 }
 
 /* Main Div Second */
-.MainDiv2{
- display: none;
+.MainDiv2 {
+  display: none;
 }
-.centerBoxWhite{
+.centerBoxWhite {
   background-color: white;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
-  .htxt{
-    margin-top: 67px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    }
+}
+.htxt {
+  margin-top: 67px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

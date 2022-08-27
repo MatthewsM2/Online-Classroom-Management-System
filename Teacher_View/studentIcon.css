@@ -25,9 +25,12 @@
 }
 
 .MainDiv3 {
-  display: block;
+  display: none;
 }
 /* Add Files & Module Page Css */
+#class-title{
+  margin-left: 17px;
+}
 .uploadDiv-Container {
   display: flex;
   gap: 25px;
@@ -41,9 +44,6 @@
   display: flex;
 }
 
-
-
-
 .uploadDiv {
   margin: auto;
   display: flex;
@@ -51,12 +51,12 @@
   height: 270px;
   border-radius: 7px;
   background-color: #00a0c0;
-  }
+}
 .uploadDiv-Icon {
   margin: auto;
   font-size: 57px;
 }
-#thumb{
+#thumb {
   align-self: center;
   width: 180px;
   height: 270px;
@@ -65,7 +65,7 @@
   margin: 0px;
   display: none;
 }
-.title-icon{
+.title-icon {
   margin: auto;
 }
 #Input-Type-File {
@@ -85,8 +85,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color:#89CFF0;
-  
+  background-color: #89cff0;
+
   width: 297px;
 }
 
@@ -99,14 +99,14 @@
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: center;
-  background-color:#89CFF0;
+  background-color: #89cff0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.sub-Master-Container{
+.sub-Master-Container {
   display: flex;
   flex-direction: column;
 }
-.custom-select{
+.custom-select {
   width: 200px;
   border: solid black;
 }
@@ -122,14 +122,14 @@
 .SF-container {
   display: flex;
 }
-#choose-file-click{
+#choose-file-click {
   cursor: pointer;
   caret-color: transparent;
 }
 .txtbox-title {
   height: 40px;
 }
-.input-upload-class{
+.input-upload-class {
   font-size: 15px;
   color: white;
   font-weight: 700;
@@ -141,17 +141,17 @@
   width: 207px;
   height: 40px;
   background-color: #00b4d8;
-  border: solid black ;
+  border: solid black;
 }
-.input-upload-class::placeholder{
+.input-upload-class::placeholder {
   color: rgb(0, 0, 0);
   opacity: 0.5;
 }
-.inp-upl-cls-Des{
-width:283px;
-height: 170px;
+.inp-upl-cls-Des {
+  width: 283px;
+  height: 170px;
 }
-.span-icon-container{
+.span-icon-container {
   display: flex;
   width: 70px;
   height: 40px;
@@ -159,11 +159,11 @@ height: 170px;
   border: solid black;
 }
 
-.upload-icon{
+.upload-icon {
   margin: auto;
   cursor: pointer;
 }
-.saveBtn{
+.saveBtn {
   align-self: center;
   width: 700px;
   height: 40px;
