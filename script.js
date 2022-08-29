@@ -50,3 +50,9 @@ function AccClick() {
   document.getElementById("account").style.backgroundColor = "white";
   document.getElementById("home").style.backgroundColor = "#00b4d8";
 }
+function disAttandDetails() {
+  document.getElementsByClassName("detailBox")[0].style.display="block";
+}
+function disAttandOkey(){
+  document.getElementsByClassName("detailBox")[0].style.display="none";
+}
