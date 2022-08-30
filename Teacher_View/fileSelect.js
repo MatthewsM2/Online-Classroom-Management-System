@@ -28,7 +28,7 @@ const oriInputBtn=document.getElementById("assignment-input-document-ori");
 const labelInputBtn=document.getElementById("assignment-file-label");
 oriInputBtn.addEventListener("change",function(){
   if(oriInputBtn.value){
-    labelInputBtn.innerHTML = hideFilebtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/);
+    labelInputBtn.innerHTML = oriInputBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
   }
   else{
     labelInputBtn.innerHTML ="Upload Document"; 

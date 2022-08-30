@@ -1,0 +1,8 @@
+.check-assignment-btns-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    width:74%;
+    align-self: center;
+    justify-content: end;
+}

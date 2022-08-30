@@ -1,3 +1,6 @@
+.MainDiv5{
+    display: none;
+}
 .assignment-container{
     display: flex;
     flex-direction: column;
