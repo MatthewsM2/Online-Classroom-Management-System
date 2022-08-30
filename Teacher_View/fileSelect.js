@@ -22,3 +22,15 @@ thumbnailInput.addEventListener("change", function () {
     document.getElementById("thumb").style.display = "block";
   }
 });
+
+// here starts the upload btn in assignment div section upload document
+const oriInputBtn=document.getElementById("assignment-input-document-ori");
+const labelInputBtn=document.getElementById("assignment-file-label");
+oriInputBtn.addEventListener("change",function(){
+  if(oriInputBtn.value){
+    labelInputBtn.innerHTML = hideFilebtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/);
+  }
+  else{
+    labelInputBtn.innerHTML ="Upload Document"; 
+  }
+});
