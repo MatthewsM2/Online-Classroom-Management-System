@@ -6,3 +6,35 @@
     align-self: center;
     justify-content: end;
 }
+.check-assignment-mark{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: none;
+    color: white;
+    background-color:#00b4d8;
+}
+
+.Reject-btn-checkAssignment,.Accept-btn-checkAssignment{
+background-color: gray;
+color: white;
+border:1px solid black;
+padding: 3px;
+padding-top: 0px;
+padding-bottom: 0px;
+width: 70px;
+cursor: pointer;
+}
+#Accept-input-checkAssignment,#Reject-input-checkAssignment{
+    opacity: 0;
+}
+#Accept-input-checkAssignment:checked + .Accept-btn-checkAssignment{
+    background-color: #2ff793ff;
+    color: black;
+}
+#Reject-input-checkAssignment:checked + .Reject-btn-checkAssignment{
+    background-color: #f7444eff;
+    color: black;
+}
