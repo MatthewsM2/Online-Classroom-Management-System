@@ -25,13 +25,13 @@
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
             </span>
-            <span class="material-symbols-outlined icons" title="Students">
+            <span class="material-symbols-outlined icons" title="Students" onclick="studentsClick()">
                 groups
             </span>
-            <span class="material-symbols-outlined icons" title="Create Module">
+            <span class="material-symbols-outlined icons" title="Create Module" onclick="createModule()">
                 post_add
             </span>
-            <span class="material-symbols-outlined icons" title="Attaendance">
+            <span class="material-symbols-outlined icons" title="Attaendance" onclick="Attaendance()">
                 new_releases
             </span>
             <span class="material-symbols-outlined icons" title="Assignment">
@@ -194,9 +194,6 @@
         </div>
         <div class="MainDiv MainDiv3">
             <h3 id="class-title">BCA-III</h3>
-
-
-
             <div class="uploadDiv-Container">
                 <div class="Master-Container">
                     <div class="sub-Master-Container">
@@ -375,7 +372,8 @@
                     <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
                     <p class="detail-txt det-txt-2">Present:5</p>
                     <p class="detail-txt det-txt-3">Absent:3</p>
-                    <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after saving</span> </p>
+                    <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
+                            saving</span> </p>
                     <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
                 </div>
             </div>
@@ -383,84 +381,93 @@
         <div class="MainDiv MainDiv5">
             <h3 id="class-title">BCA III</h3>
             <div class="assignment-container">
-            <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>  
-            <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label" class="assignment-file-upload">Upload Document</label><input type="file" name="" id="assignment-input-document-ori"></div>
-                
+                <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
+                <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label"
+                        class="assignment-file-upload">Upload Document</label><input type="file" name=""
+                        id="assignment-input-document-ori"></div>
 
-            <div class="assignment-inputs">
-                <select class="assignment-module-select" title="Select Module">
-                    <option value="" disabled selected hidden>Select Module</option>
-                    <option value="0">Module-1</option>
-                </select>
-                <input type="text"class="assignment-inp assignment-heading" placeholder="Enter Heading" title="Heading">
-                <input type="date"class="assignment-inp" title="Before Date">
-                <input type="time"class="assignment-inp" title="Before Time">
-            </div>
-            <div class="assignment-bts-container">
-                <input type="button" class="assignment-bts" value="View Assignment">
-                <input type="button" class="assignment-bts" value="Save">
-            </div>
+
+                <div class="assignment-inputs">
+                    <select class="assignment-module-select" title="Select Module">
+                        <option value="" disabled selected hidden>Select Module</option>
+                        <option value="0">Module-1</option>
+                    </select>
+                    <input type="text" class="assignment-inp assignment-heading" placeholder="Enter Heading"
+                        title="Heading">
+                    <input type="date" class="assignment-inp" title="Before Date">
+                    <input type="time" class="assignment-inp" title="Before Time">
+                </div>
+                <div class="assignment-bts-container">
+                    <input type="button" class="assignment-bts" value="View Assignment">
+                    <input type="button" class="assignment-bts" value="Save">
+                </div>
             </div>
         </div>
         <div class="MainDiv check-assignment">
             <h3 id="class-title">BCA III</h3>
             <div class="assignment-container">
-            <textarea name="" id="text-area-assignment-question" class="text-area-assignment-question" placeholder="Question .............."></textarea>  
-            <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label" class="assignment-file-upload">Upload Document</label><input type="file" name="" id="assignment-input-document-ori"></div> 
-            <div class="check-assignment-btns-container">
-            <input type="button" class="assignment-bts" value="Details">
-            <input type="button" class="assignment-bts" value="Save">
-            </div>
-            <table id="StudentTable">
-                <tr>
-                    <th>Roll No</th>
-                    <th>Name</th>
-                    <th>File</th>
-                    <th>Time</th>
-                    <th>Marks</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>Jilson</td>
-                    <td><label>document.pdf</label></td>
-                    <td><label> Late</label></td>
-                    <td>
-                        <input type="number" class="check-assignment-mark">
-                    </td>
-                    <td>
-                        <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment">
-                        <label for="Accept-input-checkAssignment" class="Accept-btn-checkAssignment">Accept</label>
-                        <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment">
-                        <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment">Reject</label>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>Jilson</td>
-                    <td><label>document.pdf</label></td>
-                    <td><label> Late</label></td>
-                    <td>
-                        <input type="number" class="check-assignment-mark">
-                    </td>
-                    <td>
-                        <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment">
-                        <label for="Accept-input-checkAssignment" class="Accept-btn-checkAssignment">Accept</label>
-                        <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment">
-                        <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment">Reject</label>
-                        
-                    </td>
-                </tr>
-
-                
-
-                
-            </table>
-
-        
-        </div>
+                <textarea name="" id="text-area-assignment-question" class="text-area-assignment-question"
+                    placeholder="Question .............."></textarea>
+                <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label"
+                        class="assignment-file-upload">Upload Document</label><input type="file" name=""
+                        id="assignment-input-document-ori"></div>
+                <div class="check-assignment-btns-container">
+                    <input type="button" class="assignment-bts" value="Details" onclick="disAttandDetails()">
+                    <input type="button" class="assignment-bts" value="Save">
+                </div>
+                <table id="StudentTable">
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>File</th>
+                        <th>Time</th>
+                        <th>Marks</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Jilson</td>
+                        <td><label>document.pdf</label></td>
+                        <td><label> Late</label></td>
+                        <td>
+                            <input type="number" class="check-assignment-mark">
+                        </td>
+                        <td>
+                            <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment" class="radio-checkAssignment">
+                            <label for="Accept-input-checkAssignment" class="Accept-btn-checkAssignment">Accept</label>
+                            <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment" class="radio-checkAssignment">
+                            <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment" >Reject</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Manu</td>
+                        <td><label>document.pdf</label></td>
+                        <td><label>Ontime</label></td>
+                        <td>
+                            <input type="number" class="check-assignment-mark">
+                        </td>
+                        <td>
+                            <input type="radio" name="radio-input-checkAssignment-01" id="Accept-input-checkAssignment-01" class="radio-checkAssignment">
+                            <label for="Accept-input-checkAssignment-01" class="Accept-btn-checkAssignment">Accept</label>
+                            <input type="radio" name="radio-input-checkAssignment-01" id="Reject-input-checkAssignment-01" class="radio-checkAssignment">
+                            <label for="Reject-input-checkAssignment-01" class="Reject-btn-checkAssignment">Reject</label>
+                        </td>
+                    </tr>
+</table>
+<div class="detailBox">
+    <div>
+        <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
+        <p class="detail-txt det-txt-2">Present:5</p>
+        <p class="detail-txt det-txt-3">Absent:3</p>
+        <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
+                saving</span> </p>
+        <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
     </div>
+</div>
+
+            </div>
+        </div>
     </div>
 </body>
 <script src="/MiniProject/script.js"></script>

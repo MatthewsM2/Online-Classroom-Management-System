@@ -1,3 +1,6 @@
+.check-assignment{
+    display: none;
+}
 .check-assignment-btns-container{
     margin-top: 10px;
     display: flex;
@@ -27,7 +30,7 @@ padding-bottom: 0px;
 width: 70px;
 cursor: pointer;
 }
-#Accept-input-checkAssignment,#Reject-input-checkAssignment{
+.radio-checkAssignment{
     opacity: 0;
 }
 #Accept-input-checkAssignment:checked + .Accept-btn-checkAssignment{
@@ -35,6 +38,14 @@ cursor: pointer;
     color: black;
 }
 #Reject-input-checkAssignment:checked + .Reject-btn-checkAssignment{
+    background-color: #f7444eff;
+    color: black;
+}
+#Accept-input-checkAssignment-01:checked + .Accept-btn-checkAssignment{
+    background-color: #2ff793ff;
+    color: black;
+}
+#Reject-input-checkAssignment-01:checked + .Reject-btn-checkAssignment{
     background-color: #f7444eff;
     color: black;
 }

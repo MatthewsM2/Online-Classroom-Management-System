@@ -38,12 +38,6 @@ function scrollArrowRight() {
   const right = document.querySelector(".DivClassContainer");
   right.scrollBy(350, 0);
 }
-function homeClick() {
-  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
-  document.getElementsByClassName("MainDiv")[0].style.display = "block";
-  document.getElementById("home").style.backgroundColor = "white";
-  document.getElementById("account").style.backgroundColor = "#00b4d8";
-}
 function AccClick() {
   document.getElementsByClassName("MainDiv")[0].style.display = "none";
   document.getElementsByClassName("MainDiv2")[0].style.display = "block";
@@ -51,8 +45,50 @@ function AccClick() {
   document.getElementById("home").style.backgroundColor = "#00b4d8";
 }
 function disAttandDetails() {
-  document.getElementsByClassName("detailBox")[0].style.display="block";
+  document.getElementsByClassName("detailBox")[0].style.display = "block";
 }
-function disAttandOkey(){
-  document.getElementsByClassName("detailBox")[0].style.display="none";
+function disAttandOkey() {
+  document.getElementsByClassName("detailBox")[0].style.display = "none";
+}
+
+// implementing Switch Functions
+function homeClick() {
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv")[0].style.display = "block";
+  document.getElementById("home").style.backgroundColor = "white";
+  document.getElementById("account").style.backgroundColor = "#00b4d8";
+}
+function studentsClick() {
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "block";
+  document.getElementsByClassName("MainDiv")[0].style.display = "none";
+  document.getElementById("home").style.backgroundColor = "white";
+  document.getElementById("account").style.backgroundColor = "#00b4d8";
+}
+function createModule(){
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "block";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv")[0].style.display = "none";
+  document.getElementById("home").style.backgroundColor = "white";
+  document.getElementById("account").style.backgroundColor = "#00b4d8";
+}
+function Attaendance(){
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "block";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv")[0].style.display = "none";
+  document.getElementById("home").style.backgroundColor = "white";
+  document.getElementById("account").style.backgroundColor = "#00b4d8";
 }
