@@ -60,7 +60,10 @@ function homeClick() {
   document.getElementsByClassName("MainDiv2")[0].style.display = "none";
   document.getElementsByClassName("MainDiv")[0].style.display = "block";
   document.getElementById("home").style.backgroundColor = "white";
-  document.getElementById("account").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
 }
 function studentsClick() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
@@ -69,8 +72,11 @@ function studentsClick() {
   document.getElementsByClassName("MainDiv3")[0].style.display = "none";
   document.getElementsByClassName("MainDiv2")[0].style.display = "block";
   document.getElementsByClassName("MainDiv")[0].style.display = "none";
-  document.getElementById("home").style.backgroundColor = "white";
-  document.getElementById("account").style.backgroundColor = "#00b4d8";
+  document.getElementById("home").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "white";
+  document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
 }
 function createModule(){
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
@@ -79,8 +85,11 @@ function createModule(){
   document.getElementsByClassName("MainDiv3")[0].style.display = "block";
   document.getElementsByClassName("MainDiv2")[0].style.display = "none";
   document.getElementsByClassName("MainDiv")[0].style.display = "none";
-  document.getElementById("home").style.backgroundColor = "white";
-  document.getElementById("account").style.backgroundColor = "#00b4d8";
+  document.getElementById("home").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv3").style.backgroundColor = "white";
+  document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
 }
 function Attaendance(){
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
@@ -89,6 +98,24 @@ function Attaendance(){
   document.getElementsByClassName("MainDiv3")[0].style.display = "none";
   document.getElementsByClassName("MainDiv2")[0].style.display = "none";
   document.getElementsByClassName("MainDiv")[0].style.display = "none";
-  document.getElementById("home").style.backgroundColor = "white";
-  document.getElementById("account").style.backgroundColor = "#00b4d8";
+  document.getElementById("home").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv4").style.backgroundColor = "white";
+  document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
+  
+}
+function Assignment(){
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "block";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv")[0].style.display = "none";
+  document.getElementById("home").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv5").style.backgroundColor = "white";
+  
 }

@@ -25,17 +25,20 @@
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
             </span>
-            <span class="material-symbols-outlined icons" title="Students" onclick="studentsClick()">
+            <span class="material-symbols-outlined icons" id="Maindiv2" title="Students" onclick="studentsClick()">
                 groups
             </span>
-            <span class="material-symbols-outlined icons" title="Create Module" onclick="createModule()">
+            <span class="material-symbols-outlined icons" id="Maindiv3" title="Create Module" onclick="createModule()">
                 post_add
             </span>
-            <span class="material-symbols-outlined icons" title="Attaendance" onclick="Attaendance()">
+            <span class="material-symbols-outlined icons" id="Maindiv4" title="Attaendance" onclick="Attaendance()">
                 new_releases
             </span>
-            <span class="material-symbols-outlined icons" title="Assignment">
+            <span class="material-symbols-outlined icons" id="Maindiv5" title="Assignment" onclick="Assignment()">
                 assignment
+            </span>
+            <span class="material-symbols-outlined icons" id="check-assignment" title="Check Assignment">
+                inventory
             </span>
             <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
                 logout
@@ -433,10 +436,12 @@
                             <input type="number" class="check-assignment-mark">
                         </td>
                         <td>
-                            <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment" class="radio-checkAssignment">
+                            <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment"
+                                class="radio-checkAssignment">
                             <label for="Accept-input-checkAssignment" class="Accept-btn-checkAssignment">Accept</label>
-                            <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment" class="radio-checkAssignment">
-                            <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment" >Reject</label>
+                            <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment"
+                                class="radio-checkAssignment">
+                            <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment">Reject</label>
                         </td>
                     </tr>
                     <tr>
@@ -448,23 +453,27 @@
                             <input type="number" class="check-assignment-mark">
                         </td>
                         <td>
-                            <input type="radio" name="radio-input-checkAssignment-01" id="Accept-input-checkAssignment-01" class="radio-checkAssignment">
-                            <label for="Accept-input-checkAssignment-01" class="Accept-btn-checkAssignment">Accept</label>
-                            <input type="radio" name="radio-input-checkAssignment-01" id="Reject-input-checkAssignment-01" class="radio-checkAssignment">
-                            <label for="Reject-input-checkAssignment-01" class="Reject-btn-checkAssignment">Reject</label>
+                            <input type="radio" name="radio-input-checkAssignment-01"
+                                id="Accept-input-checkAssignment-01" class="radio-checkAssignment">
+                            <label for="Accept-input-checkAssignment-01"
+                                class="Accept-btn-checkAssignment">Accept</label>
+                            <input type="radio" name="radio-input-checkAssignment-01"
+                                id="Reject-input-checkAssignment-01" class="radio-checkAssignment">
+                            <label for="Reject-input-checkAssignment-01"
+                                class="Reject-btn-checkAssignment">Reject</label>
                         </td>
                     </tr>
-</table>
-<div class="detailBox">
-    <div>
-        <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
-        <p class="detail-txt det-txt-2">Present:5</p>
-        <p class="detail-txt det-txt-3">Absent:3</p>
-        <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
-                saving</span> </p>
-        <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
-    </div>
-</div>
+                </table>
+                <div class="detailBox">
+                    <div>
+                        <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
+                        <p class="detail-txt det-txt-2">Present:5</p>
+                        <p class="detail-txt det-txt-3">Absent:3</p>
+                        <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
+                                saving</span> </p>
+                        <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
+                    </div>
+                </div>
 
             </div>
         </div>
