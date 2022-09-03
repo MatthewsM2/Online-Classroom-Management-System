@@ -49,6 +49,28 @@ cursor: pointer;
     background-color: #f7444eff;
     color: black;
 }
-#check-assignment{
+.detailBox-checkAssignment{
     display: none;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    background-color: gray;
+    width: 600px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+.detailBox-checkAssignment div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 550px;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 7px;
+    text-align: center;
 }

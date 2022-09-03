@@ -50,6 +50,12 @@ function disAttandDetails() {
 function disAttandOkey() {
   document.getElementsByClassName("detailBox")[0].style.display = "none";
 }
+function disDetailsAssign(){
+  document.getElementsByClassName("detailBox-checkAssignment")[0].style.display="block";
+}
+function disDetailsAssignOkey(){
+  document.getElementsByClassName("detailBox-checkAssignment")[0].style.display="none";
+}
 
 // implementing Switch Functions
 function homeClick() {
@@ -64,6 +70,7 @@ function homeClick() {
   document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
+  hideCheckAssignment();
 }
 function studentsClick() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
@@ -77,8 +84,9 @@ function studentsClick() {
   document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
+  hideCheckAssignment();
 }
-function createModule(){
+function createModule() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
   document.getElementsByClassName("MainDiv5")[0].style.display = "none";
   document.getElementsByClassName("MainDiv4")[0].style.display = "none";
@@ -90,8 +98,9 @@ function createModule(){
   document.getElementById("Maindiv3").style.backgroundColor = "white";
   document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
+  hideCheckAssignment();
 }
-function Attaendance(){
+function Attaendance() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
   document.getElementsByClassName("MainDiv5")[0].style.display = "none";
   document.getElementsByClassName("MainDiv4")[0].style.display = "block";
@@ -103,9 +112,9 @@ function Attaendance(){
   document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv4").style.backgroundColor = "white";
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
-  
+  hideCheckAssignment();
 }
-function Assignment(){
+function Assignment() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
   document.getElementsByClassName("MainDiv5")[0].style.display = "block";
   document.getElementsByClassName("MainDiv4")[0].style.display = "none";
@@ -117,5 +126,24 @@ function Assignment(){
   document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv5").style.backgroundColor = "white";
-  
+  hideCheckAssignment();
+}
+function CheckAssignment() {
+  document.getElementById("check-assignment").style.display="block";
+  document.getElementsByClassName("check-assignment")[0].style.display = "block";
+  document.getElementsByClassName("MainDiv5")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv4")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv3")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv2")[0].style.display = "none";
+  document.getElementsByClassName("MainDiv")[0].style.display = "none";
+  document.getElementById("home").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv2").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv3").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
+  document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
+  document.getElementById("check-assignment").style.backgroundColor = "white";
+}
+function hideCheckAssignment(){
+  document.getElementsByClassName("check-assignment")[0].style.display = "none";
+  document.getElementById("check-assignment").style.display="none";
 }

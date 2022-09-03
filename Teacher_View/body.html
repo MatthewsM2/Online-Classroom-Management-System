@@ -37,7 +37,8 @@
             <span class="material-symbols-outlined icons" id="Maindiv5" title="Assignment" onclick="Assignment()">
                 assignment
             </span>
-            <span class="material-symbols-outlined icons" id="check-assignment" title="Check Assignment">
+            <span class="material-symbols-outlined icons" id="check-assignment" title="Check Assignment"
+                onclick="CheckAssignment()">
                 inventory
             </span>
             <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
@@ -59,8 +60,11 @@
                     <div>
                         <img src="https://images-na.ssl-images-amazon.com/images/I/718KGMSXCAL.jpg" alt="">
                     </div>
-                    <div>
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71GrLKDeGRL.jpg" alt="">
+                    <div onclick="CheckAssignment()">
+                        <span class="assignment-div">
+                            <p class="assignment-heading">Assignment 01 about computer science</p>
+                        </span>
+
                     </div>
                     <div>
                         <img src="https://images-na.ssl-images-amazon.com/images/I/718KGMSXCAL.jpg" alt="">
@@ -401,7 +405,7 @@
                     <input type="time" class="assignment-inp" title="Before Time">
                 </div>
                 <div class="assignment-bts-container">
-                    <input type="button" class="assignment-bts" value="View Assignment">
+                    <input type="button" class="assignment-bts" value="View Assignment" onclick="homeClick()">
                     <input type="button" class="assignment-bts" value="Save">
                 </div>
             </div>
@@ -411,11 +415,13 @@
             <div class="assignment-container">
                 <textarea name="" id="text-area-assignment-question" class="text-area-assignment-question"
                     placeholder="Question .............."></textarea>
-                <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label"
-                        class="assignment-file-upload">Upload Document</label><input type="file" name=""
-                        id="assignment-input-document-ori"></div>
+
+                <div class="assignment-arrage-div"><label  id="assignment-file-label"
+                        class="assignment-file-upload"><a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Assignment.pdf</a></label>
+
                 <div class="check-assignment-btns-container">
-                    <input type="button" class="assignment-bts" value="Details" onclick="disAttandDetails()">
+                    <input type="button" class="assignment-bts" value="Details" onclick="disDetailsAssign()">
+
                     <input type="button" class="assignment-bts" value="Save">
                 </div>
                 <table id="StudentTable">
@@ -464,14 +470,14 @@
                         </td>
                     </tr>
                 </table>
-                <div class="detailBox">
+                <div class="detailBox-checkAssignment">
                     <div>
                         <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
-                        <p class="detail-txt det-txt-2">Present:5</p>
-                        <p class="detail-txt det-txt-3">Absent:3</p>
+                        <p class="detail-txt det-txt-2">Accepted:5</p>
+                        <p class="detail-txt det-txt-3">Rejected:3</p>
                         <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
                                 saving</span> </p>
-                        <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
+                        <input id="detail-btn-ok" type="button" value="Okey" onclick="disDetailsAssignOkey()">
                     </div>
                 </div>
 
