@@ -22,14 +22,6 @@ function student() {
   document.getElementsByClassName("WBox2")[0].style.display = "none";
 }
 
-function PopUpAddClass() {
-  document.getElementsByClassName("addClassPopup")[0].style.display = "flex";
-}
-
-function PopUpAddClassCloseBtn() {
-  document.getElementsByClassName("addClassPopup")[0].style.display = "none";
-}
-
 function scrollArrowLeft() {
   const left = document.querySelector(".DivClassContainer");
   left.scrollBy(-350, 0);
@@ -50,11 +42,15 @@ function disAttandDetails() {
 function disAttandOkey() {
   document.getElementsByClassName("detailBox")[0].style.display = "none";
 }
-function disDetailsAssign(){
-  document.getElementsByClassName("detailBox-checkAssignment")[0].style.display="block";
+function disDetailsAssign() {
+  document.getElementsByClassName(
+    "detailBox-checkAssignment"
+  )[0].style.display = "block";
 }
-function disDetailsAssignOkey(){
-  document.getElementsByClassName("detailBox-checkAssignment")[0].style.display="none";
+function disDetailsAssignOkey() {
+  document.getElementsByClassName(
+    "detailBox-checkAssignment"
+  )[0].style.display = "none";
 }
 
 // implementing Switch Functions
@@ -129,8 +125,9 @@ function Assignment() {
   hideCheckAssignment();
 }
 function CheckAssignment() {
-  document.getElementById("check-assignment").style.display="block";
-  document.getElementsByClassName("check-assignment")[0].style.display = "block";
+  document.getElementById("check-assignment").style.display = "block";
+  document.getElementsByClassName("check-assignment")[0].style.display =
+    "block";
   document.getElementsByClassName("MainDiv5")[0].style.display = "none";
   document.getElementsByClassName("MainDiv4")[0].style.display = "none";
   document.getElementsByClassName("MainDiv3")[0].style.display = "none";
@@ -143,7 +140,7 @@ function CheckAssignment() {
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
   document.getElementById("check-assignment").style.backgroundColor = "white";
 }
-function hideCheckAssignment(){
+function hideCheckAssignment() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
-  document.getElementById("check-assignment").style.display="none";
+  document.getElementById("check-assignment").style.display = "none";
 }
