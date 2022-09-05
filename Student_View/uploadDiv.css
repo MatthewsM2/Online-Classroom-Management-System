@@ -1,0 +1,66 @@
+.uploadDiv {
+  display: block;
+}
+#text-area-assignment-question {
+  align-self: center;
+  width: 70%;
+  height: 77px;
+  padding: 2%;
+  resize: none;
+}
+.upload-items-container {
+  margin-top: 77px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.view-document-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74%;
+  height: 40px;
+  cursor: pointer;
+  background-color: gray;
+}
+.view-document-container:hover {
+  background-color: rgb(150, 150, 150);
+}
+.upload-document-assignment::-webkit-file-upload-button {
+  background: #eee;
+  color: #00b4d8;
+  padding-top: 10px;
+  border: none;
+  padding-bottom: 10px;
+}
+.upload-document-assignment {
+    margin-top: 40px;
+    width: 74%;
+    cursor: pointer;
+    outline: 2px solid #00b4d8;
+}
+.upload-student-doc-btns-container {
+    width: 74%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    outline: none;
+}
+.assignment-status,.assign-student-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background-color: #eee;
+    border: none;
+    height: 37px;
+    border: #00b4d8 solid 2px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.assignment-status:hover,.assign-student-btn:hover{
+    background-color: rgb(248, 248, 248);
+}

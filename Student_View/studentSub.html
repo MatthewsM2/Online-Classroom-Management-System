@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="progressbar.css">
     <link rel="stylesheet" href="MainDiv2.css">
+    <link rel="stylesheet" href="uploadDiv.css">
 
 </head>
 
@@ -24,6 +25,9 @@
             </span>
             <span class="material-symbols-outlined icons">
                 person
+            </span>
+            <span class="material-symbols-outlined icons">
+                upload_file
             </span>
             <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
                 logout
@@ -105,46 +109,63 @@
             <div class="titleContainer">
                 <h3>C Program</h3>
             </div>
+            <div class="attaend-assign-profile-container">
+                <div class="Attendance-Section">
+                    <p class="attendance-title">Attendance</p>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask half">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="mask full">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle"> 100% </div>
 
-            <div class="Attendance-Section">
-                <p class="attendance-title">Attendance</p>
-                <div class="circle-wrap">
-                    <div class="circle">
-                        <div class="mask half">
-                            <div class="fill"></div>
                         </div>
-                        <div class="mask full">
-                            <div class="fill"></div>
-                        </div>
-                        <div class="inside-circle"> 35% </div>
-
                     </div>
                 </div>
-            </div>
 
-            <div class="Assignment-Section">
-                <p class="assignment-tilte">Assignment</p>
-                <p class="assignment-values">5/8</p>
-            </div>
 
-            <div class="Student-Details">
-                <div>
-                    <span class="material-symbols-outlined">
-                        account_circle
-                    </span>
+                <div class="Assignment-Section">
+                    <p class="assignment-tilte">Assignment</p>
+                    <div class="assign-circle-wrap">
+                        <p>
+                        <p class="num assignment-values" data-val="5">0</p>
+                        <p class="assignment-values">/8</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Adam John</p>
+
+                <div class="Student-Details">
+                    <div>
+                        <span class="material-symbols-outlined details-account-logo">
+                            account_circle
+                        </span>
+                    </div>
+                    <div>
+                        <p class="details-name-student">Adam John</p>
+                    </div>
                 </div>
             </div>
 
 
 
         </div>
-        <div class="MainDiv MainDiv3"></div>
+        <div class="MainDiv uploadDiv">
+            <div class="upload-items-container">
+            <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
+            <div class="view-document-container">
+                <a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">document.pdf</a>
+            </div>
+            <input type="file" class="upload-document-assignment">
+            <div class="upload-student-doc-btns-container">
+                <input class="assignment-status" type="button" value="Status: Waiting">
+                <input class="assign-student-btn" type="button" value="Save">
+            </div>
+        </div>
 </body>
-<script src="/MiniProject/script.js"></script>
-<script src="selectbox.js"></script>
-<script src="fileSelect.js"></script>
+<script src="counter.js"></script>
+
+
 
 </html>

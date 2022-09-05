@@ -1,3 +1,50 @@
 .MainDiv2{
     display: none;
 }
+.attaend-assign-profile-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 7%;
+}
+.Attendance-Section,.Assignment-Section,.Student-Details{
+    display: flex;
+    flex-direction: column;
+    background-color:#d2eaf1;
+    width: 270px;
+    height: 300px;
+    justify-content:center;
+    align-items: center;
+    border-radius: 7px;
+}
+.assignment-values{
+    font-weight: 700;
+    color: #00b4d8;
+    font-size: 3em;
+    margin: 0px;
+}
+.details-account-logo{
+    color: black;
+    font-size: 5em;
+}
+.details-name-student{
+    font-weight: 700;
+    color: #00b4d8;
+    font-size: 2em;
+}
+.attendance-title,.assignment-tilte{
+
+    font-size: 2em;
+}
+.assign-circle-wrap{
+    /* margin-top: 47px; */
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

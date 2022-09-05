@@ -2,7 +2,7 @@
     
     width: 150px;
     height: 150px;
-    background-color: aqua;
+    background-color: white;
     border-radius: 50%;
     border: 1px solid #cdcbd0;
   }
@@ -16,7 +16,7 @@
 
 .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #227ded;
+  background-color: #00b4d8;
 }
 .circle-wrap .circle .mask {
     clip: rect(0px, 150px, 150px, 75px);
@@ -45,7 +45,7 @@
     text-align: center;
     margin-top: 14px;
     margin-left: 14px;
-    color: #1e51dc;
+    color: #00b4d8;
     position: absolute;
     z-index: 100;
     font-weight: 700;
