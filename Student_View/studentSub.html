@@ -20,13 +20,13 @@
 <body>
     <div class="DivContainers">
         <div class="subDiv">
-            <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
+            <span class="material-symbols-outlined icons1" id="home" onclick="homeCall()" title="Home">
                 home_app_logo
             </span>
-            <span class="material-symbols-outlined icons">
+            <span class="material-symbols-outlined icons" id="person-icon" onclick="personCall()">
                 person
             </span>
-            <span class="material-symbols-outlined icons">
+            <span class="material-symbols-outlined icons" id="upload_file-icon">
                 upload_file
             </span>
             <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
@@ -48,7 +48,7 @@
                     <div>
                         <img src="https://images-na.ssl-images-amazon.com/images/I/718KGMSXCAL.jpg" alt="">
                     </div>
-                    <div onclick="">
+                    <div onclick="showUploadDiv()">
                         <span class="assignment-div">
                             <p class="assignment-heading">Assignment 01 about computer science</p>
                         </span>
@@ -165,7 +165,7 @@
         </div>
 </body>
 <script src="counter.js"></script>
-
+<script src="StudentJs.js"></script>
 
 
 </html>
