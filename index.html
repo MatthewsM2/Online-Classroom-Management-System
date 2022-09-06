@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -42,18 +41,23 @@
             <div class="avatarContainer">
                 <div class="avatar"></div>
             </div>
-            <div class="GreyTxtBoxContainer">
-                <input type="text" class="GreyTxtBox GTB1" placeholder="First Name">
-                <input type="text" class="GreyTxtBox GTB2" placeholder="Last Name">
-                <input type="text" class="GreyTxtBox GTB3" placeholder="User Name">
-                <input type="password" class="GreyTxtBox GTB4" placeholder="Password">
-                <input type="password" class="GreyTxtBox GTB5" placeholder="Re-Password">
-                <input type="button" value="Create Account" class="BtnGradent GTBCreateAccBtn">
-            </div>
+            <form onsubmit="checkValidation()" action="createAcc.php" method="post">
+                <div class="GreyTxtBoxContainer">
+                    <input type="hidden" id="Account-Status" name="AccountStatus">
+                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
+                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
+                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" placeholder="User Name" required>
+                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
+                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
+                    <input type="submit" value="Create Account" class="BtnGradent GTBCreateAccBtn" >
+                </div>
+            </form>
         </div>
         <label for="loginExistUsr" class="txtNewuser GTBTxtAccAl">Hava an Account Already?</label>
         <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
     </div>
 </body>
-
+<script src="customAlert.js"></script>
+<script src="script.js"></script>
+<script src="validationpass.js"></script>
 </html>
