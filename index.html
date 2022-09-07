@@ -17,11 +17,14 @@
     <div class="whiteBox WBox1">
         <h1 class="loginTxt">Login</h1>
         <h5 class="loginSubTxt">Login if you have an account in here</h5>
-        <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name">
-        <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password">
-        <div class="ConTlogSumbit">
-            <input type="submit" class="logSumbit" value="Login">
-        </div>
+        <form action="Login.php">
+            <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name" required>
+            <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password"
+                required>
+            <div class="ConTlogSumbit">
+                <input type="submit" class="logSumbit" value="Login">
+            </div>
+        </form>
         <label for="newUser" class="txtNewuser">New User?</label>
         <label for="createAccount" class="txtCreateAcc" onclick="CreateAccount()">Create Account</label>
     </div>
@@ -44,13 +47,17 @@
             <form onsubmit="checkValidation()" action="createAcc.php" method="post">
                 <div class="GreyTxtBoxContainer">
                     <input type="hidden" id="Account-Status" name="AccountStatus">
-                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name"  required>
-                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name" >
-                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" placeholder="User Name" autocomplete="off" required>
-                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
-                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()"required>
-                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn" onclick="AlertBoxCheck()">
-                    <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn" >
+                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
+                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
+                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" id="userNameId" placeholder="User Name"
+                        oninput="checkUsername()" onblur="userinRed()" autocomplete="off" required>
+                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password"
+                        required>
+                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass"
+                        placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
+                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn"
+                        onclick="AlertBoxCheck()">
+                    <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn">
                 </div>
             </form>
         </div>
@@ -61,4 +68,7 @@
 <script src="customAlert.js"></script>
 <script src="script.js"></script>
 <script src="validationpass.js"></script>
+<script src="jquery.js"></script>
+<script src="checkUsrName.js"></script>
+
 </html>

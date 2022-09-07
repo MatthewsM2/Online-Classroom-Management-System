@@ -21,3 +21,13 @@ else{
 function AlertBoxCheck(){
     swal("The password confirmation does not match!");
 };
+
+function userinRed(){
+    var red="red";
+    var redCol=document.getElementById("userNameId").style.borderColor;
+    if (redCol == red){
+        swal("User Name Already taken");
+        document.getElementById("userNameId").focus();
+    }
+    
+};
