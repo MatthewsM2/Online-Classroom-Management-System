@@ -6,7 +6,11 @@ $Username=$_POST["AccUsrname"];
 $pass=$_POST["AccPass"];
 $rePass=$_POST["AccRepass"];
 $con = new mysqli("localhost","root","","smart_project") or die("Connection Failed");
-$con->query("INSERT INTO `Account` (`Account`, `First_Name`, `Last_Name`, `Usr_Name`, `Pasword`) VALUES ('$Account', '$Firstname', '$Lastname', '$Username', '$pass')");
-header("Location: http://localhost/MiniProject/");
-exit;
-?>
+if($pass == $rePass){
+    $con->query("INSERT INTO `Account` (`Account`, `First_Name`, `Last_Name`, `Usr_Name`, `Pasword`) VALUES ('$Account', '$Firstname', '$Lastname', '$Username', '$pass')");
+    header("Location: http://localhost/MiniProject/");
+    exit;
+}
+else{
+echo "check your password";
+}?>

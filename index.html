@@ -44,12 +44,13 @@
             <form onsubmit="checkValidation()" action="createAcc.php" method="post">
                 <div class="GreyTxtBoxContainer">
                     <input type="hidden" id="Account-Status" name="AccountStatus">
-                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
-                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
-                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" placeholder="User Name" required>
+                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name"  required>
+                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name" >
+                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" placeholder="User Name" autocomplete="off" required>
                     <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
-                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
-                    <input type="submit" value="Create Account" class="BtnGradent GTBCreateAccBtn" >
+                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()"required>
+                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn" onclick="AlertBoxCheck()">
+                    <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn" >
                 </div>
             </form>
         </div>

@@ -184,3 +184,12 @@ body {
   width: 100%;
   background-color: #cce5eb;
 }
+#GTBCACCBtn{
+  display: none;
+}
+.GTB1,.GTB2{
+  text-transform: capitalize;
+}
+.GTB3{
+  text-transform: lowercase;
+}
