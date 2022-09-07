@@ -51,6 +51,10 @@ body {
   padding-right: 197px;
 }
 
+.logTxtBoxUsrName{
+  text-transform: lowercase;
+}
+
 .logTxtBoxPassword {
   margin-top: 37px;
 }
