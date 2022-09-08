@@ -1,11 +1,25 @@
 <?php
-$con = new mysqli("localhost","root","","smart_project") or die("Connection Failed");
-$usr=$_POST["loginUsrName"];
-$pass=$_POST["loginPassword"];
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+$usr = $_POST["loginUsrName"];
+$pass = $_POST["loginPassword"];
 echo $usr;
 echo $pass;
-$query = "SELECT `Account` FROM `Account` WHERE Usr_Name = '$usr';";
-var_dump($query);
-$acc=$con->query($query);
-echo $acc;
-?>
+    $query = "SELECT * FROM Account WHERE Usr_Name= '$usr';";
+    $result = mysqli_query($connect, $query);
+    $rows = mysqli_num_rows($result);
+    var_dump($result);
+    if (!empty($rows)) {
+
+        // below codes will run properly without any error verified the system to change the login user and password to be checked and verified is needed
+        $queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr';";
+        $acc = mysqli_query($con, $queryUser);
+        $resultAcc = mysqli_fetch_assoc($acc);
+        if ($resultAcc['Account'] == "teacher") {
+            echo "teacher";
+        } else if ($resultAcc['Account'] == "student") {
+            echo "student";
+        } else {
+            echo "page Not Found";
+        }
+    }
+

@@ -54,6 +54,9 @@ body {
 .logTxtBoxUsrName{
   text-transform: lowercase;
 }
+.logTxtBoxUsrName::placeholder{
+  text-transform: capitalize;
+}
 
 .logTxtBoxPassword {
   margin-top: 37px;
@@ -196,4 +199,7 @@ body {
 }
 .GTB3{
   text-transform: lowercase;
+}
+.GTB3::placeholder{
+  text-transform: capitalize;
 }
