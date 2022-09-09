@@ -88,6 +88,7 @@ body {
 }
 #fnameHi {
   display: inline;
+  text-transform: capitalize;
 }
 #semTitle {
   margin-left: 17px;
@@ -290,4 +291,7 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+.usrName{
+  text-transform: capitalize;
 }
