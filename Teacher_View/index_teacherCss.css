@@ -204,6 +204,13 @@ body {
   height: 27px;
   padding: 0%;
 }
+.addClassPopupForm{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
 .addClassCreateClassBtn {
   border-radius: 7px;
   outline: none;
