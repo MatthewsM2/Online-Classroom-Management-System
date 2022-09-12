@@ -19,9 +19,9 @@ while($SemValtoTrav = mysqli_fetch_assoc($GetUniqueSem))
   $GetUniqueSemClass = mysqli_query($con,$queryUniqueSemClass);
   while($SemClassValtoTrav = mysqli_fetch_assoc($GetUniqueSemClass))
   {
-   echo '<div class="SubjectClass">
+   echo '<div class="SubjectClass" onclick="reDirctoCls(this.children[1])">
                 <label for="SubjectName" class="SubClassTxt">'.$SemClassValtoTrav['Class_Name'].'</label>
-                
+                <input type="hidden" id="cls-code-hide"  value="'.$SemClassValtoTrav['Class_Code'].'">
                 <label for="SubjectName" class="SubName">'.$SemClassValtoTrav['Subject'].'</label>
             </div>';
   }
