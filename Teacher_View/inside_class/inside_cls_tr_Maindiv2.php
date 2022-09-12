@@ -1,6 +1,6 @@
 <div class="MainDiv MainDiv2">
     <div class="titleContainer">
-        <h3>BCA-III</h3>
+        <h3><?php echo $TrClsValues['Class_Name']; ?></h3>
     </div>
     <table id="StudentTable">
         <tr>

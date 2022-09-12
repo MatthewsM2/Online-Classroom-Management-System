@@ -1,6 +1,8 @@
+/* this is not using now  */
 /* Custom Select Box */
 /*the container must be positioned relative:*/
 .custom-select {
+  display: none;
   position: relative;
 }
 
@@ -9,6 +11,7 @@
 }
 
 .select-selected {
+  display: none;
   background-color: DodgerBlue;
 }
 

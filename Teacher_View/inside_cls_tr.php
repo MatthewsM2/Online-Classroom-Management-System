@@ -1,3 +1,12 @@
+<?php
+session_start();
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+$clsCode=$_GET['clcode'];
+$userName = $_SESSION['user'];
+$queryGetTrClsValues = "SELECT * FROM teacher_table WHERE Class_Code = '$clsCode';";
+$GetTrClsValues = mysqli_query($con, $queryGetTrClsValues);
+$TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
+?>
 <!DOCTYPE html>
 <html lang="en">
 

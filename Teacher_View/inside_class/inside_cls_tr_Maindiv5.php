@@ -1,5 +1,5 @@
 <div class="MainDiv MainDiv5">
-    <h3 id="class-title">BCA III</h3>
+    <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
     <div class="assignment-container">
         <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
         <div class="assignment-arrage-div"><label for="assignment-input-document-ori" id="assignment-file-label" class="assignment-file-upload">Upload Document</label><input type="file" name="" id="assignment-input-document-ori"></div>

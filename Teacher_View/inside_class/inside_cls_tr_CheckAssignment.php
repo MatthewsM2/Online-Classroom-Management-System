@@ -1,5 +1,5 @@
 <div class="MainDiv check-assignment">
-    <h3 id="class-title">BCA III</h3>
+    <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
     <div class="assignment-container">
         <textarea name="" id="text-area-assignment-question" class="text-area-assignment-question" placeholder="Question .............."></textarea>
 

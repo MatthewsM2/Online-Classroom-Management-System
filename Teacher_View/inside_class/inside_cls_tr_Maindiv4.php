@@ -1,5 +1,5 @@
 <div class="MainDiv MainDiv4">
-    <h3 id="class-title">BCA III</h3>
+    <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
     <div class="attandDiv-btn-container">
         <input class="attand-btns" type="date">
         <input class="attand-btns" type="time">

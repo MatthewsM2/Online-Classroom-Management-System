@@ -1,7 +1,7 @@
 <div class="MainDiv MainDiv1">
     <div class="titleContainer">
-        <h3>BCA-III</h3>
-        <h3>Class Code:6889hy4</h3>
+        <h3><?php echo $TrClsValues['Class_Name']; ?></h3>
+        <h3>Class Code:<?php echo $TrClsValues['Class_Code']; ?></h3>
     </div>
     <div class="outerContainer">
         <h4>Module-1</h4>
