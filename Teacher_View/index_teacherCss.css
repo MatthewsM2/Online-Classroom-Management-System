@@ -99,6 +99,7 @@ body {
   position: relative;
   align-items: center;
   background-color: rgb(255, 255, 255);
+  text-transform: capitalize;
   height: 170px;
   width: auto;
   overflow: auto;
