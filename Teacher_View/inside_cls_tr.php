@@ -1,7 +1,13 @@
 <?php
 session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-$clsCode=$_GET['clcode'];
+if($_GET['clcode'] == NULL){
+    $clsCode = $_SESSION['clsCode'];   
+}
+else{
+    $clsCode=$_GET['clcode'];
+}
+$_SESSION['clsCode'] = $clsCode;
 $userName = $_SESSION['user'];
 $queryGetTrClsValues = "SELECT * FROM teacher_table WHERE Class_Code = '$clsCode';";
 $GetTrClsValues = mysqli_query($con, $queryGetTrClsValues);

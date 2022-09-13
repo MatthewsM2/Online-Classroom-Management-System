@@ -14,7 +14,7 @@
                     </select>
                 </div>
 
-                <form action="inside_class/receive_cls_tr_ModuleSub.php" method="POST">
+                <form action="inside_class/receive_cls_tr_ModuleSub.php" method="POST" enctype="multipart/form-data">
                     <div class="uploadDiv-OuterDiv">
                         <label for="Input-Type-File">
                             <div class="uploadDiv">
@@ -37,11 +37,11 @@
                     </div>
                 </div>
 
-                <input type="file" id="selectFile">
+                <input type="file" id="selectFile" name="documentUpload">
 
                 <label for="selectFile">
                     <div class="SF-container">
-                        <input type="text" class="input-upload-class" id="choose-file-click" name="documentUpload" placeholder="Choose File" required>
+                        <input type="text" class="input-upload-class" id="choose-file-click"  placeholder="Choose File" required>
                         <div class="span-icon-container">
                             <span class="material-symbols-outlined upload-icon">
                                 file_upload
