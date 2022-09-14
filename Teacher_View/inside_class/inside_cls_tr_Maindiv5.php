@@ -1,6 +1,5 @@
 <div class="MainDiv MainDiv5">
     <?php
-    var_dump($clsCode);
     $querySelectModule = "SELECT DISTINCT Module FROM Class_Table WHERE Class_code='$clsCode';";
     $getSelectModule = mysqli_query($con, $querySelectModule);
     ?>

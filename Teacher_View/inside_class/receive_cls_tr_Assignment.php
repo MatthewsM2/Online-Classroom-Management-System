@@ -17,7 +17,7 @@ echo $AssignTime.'<br>';
 $OldAssignDocName=$_FILES['AssignDoc']['name'];
 $AssignDocName='Assign'.time().$OldAssignDocName;
 $AssignDocTempath=$_FILES['AssignDoc']['tmp_name'];
-$AssignDocPerpath=".gitignore/doc/";
+$AssignDocPerpath="gitignore/doc/";
 move_uploaded_file($AssignDocTempath, $AssignDocPerpath.$AssignDocName) or die("Document can't upload");
 $AssignPath = $AssignDocPerpath.$AssignDocName;
 echo $AssignDocPerpath;

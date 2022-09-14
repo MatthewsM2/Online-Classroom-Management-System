@@ -19,7 +19,7 @@ $documentPath=$documentPerPath.$docmentName;
 $oldthumbName=$_FILES['thumbnailPic']['name'];
 $thumbName = time().$oldthumbName;
 $thumbTmpPath=$_FILES['thumbnailPic']['tmp_name'];
-$thumbPerPath=".gitignore/thumb/";
+$thumbPerPath="gitignore/thumb/";
 move_uploaded_file($thumbTmpPath,$thumbPerPath.$thumbName) or die("thumbnail can't uploaded");
 $thumbPath=$thumbPerPath.$thumbName;
 
