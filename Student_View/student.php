@@ -1,3 +1,11 @@
+<?php
+session_start();
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+$usrName = $_SESSION['user'];
+$queryGetAcoountDetails = "SELECT * FROM Account WHERE Usr_Name = '$usrName';";
+$GetAccountDetails = mysqli_query($con, $queryGetAcoountDetails);
+$AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +16,7 @@
     <title>Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="student.css">
 </head>
 
@@ -30,7 +37,7 @@
         </div>
         <div class="MainDiv MainDiv1">
             <h1 id="h1Hi">Hi,</h1>
-            <h2 id="fnameHi">First Name</h2>
+            <h2 id="fnameHi"><?php echo $AccountDetails["First_Name"]; ?></h2>
 
 
 
@@ -39,7 +46,7 @@
                     <!-- Main Div Container -->
                     <div class="DivClassContainer">
                         <!-- Subject Divs -->
-                        <div class="SubjectClass" >
+                        <div class="SubjectClass">
                             <label for="SubjectName" class="SubClassTxt">BC-1</label>
 
                             <label for="SubjectName" class="SubName">Python</label>
@@ -94,28 +101,27 @@
                 </span>
 
             </div>
-
+            
+            <form action="joinClass.php" method="post">
             <div class="addClassPopup">
-
                 <span class="material-symbols-outlined CloseBtnPopup" onclick="PopUpAddClassCloseBtn()">
                     cancel
                 </span>
-
-                <input type="text" name="ClassName" id="" placeholder="Enter User Name" class="addClassTxt">
-
-                <input type="text" name="ClassSem" id="" placeholder="Enter Class Code" class="addClassTxt">
-                <input type="button" value="Join Class" class="addClassCreateClassBtn">
+                <input type="text" name="ClassCode" id="" placeholder="Enter Class Code" class="addClassTxt" required>
+                <input type="text" name="ClassSem" id="" placeholder="Enter Semester" class="addClassTxt">
+                <input type="submit" value="Join Class" class="addClassCreateClassBtn">
             </div>
+            </form>
 
 
         </div>
         <div class="MainDiv MainDiv2">
             <div class="centerBoxWhite">
                 <div class="htxt">
-                    <h1 class="usrName">FirstName</h1>
-                    <h1 class="usrName">SecondName</h1>
+                    <h1 class="usrName"><?php echo $AccountDetails["First_Name"]; ?></h1>
+                    <h1 class="usrName"><?php echo $AccountDetails["Last_Name"]; ?></h1>
                 </div>
-                <h3 class="usrIdName">UserName</h3>
+                <h3 class="usrIdName">@<?php echo $usrName; ?></h3>
             </div>
 
         </div>

@@ -87,6 +87,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 #fnameHi {
+  text-transform: capitalize;
   display: inline;
 }
 #semTitle {
@@ -290,4 +291,7 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+.usrName{
+  text-transform: capitalize;
 }

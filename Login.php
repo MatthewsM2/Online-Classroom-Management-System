@@ -12,7 +12,7 @@ $resultAcc = mysqli_fetch_assoc($acc);
 if ($resultAcc['Account'] == "teacher") {
     header("Location:http://localhost/MiniProject/Teacher_View/index_teacher.php");
 } else if ($resultAcc['Account'] == "student") {
-    header("Location:http://localhost/MiniProject/Student_View/student.html");
+    header("Location:http://localhost/MiniProject/Student_View/student.php");
 } else {
     echo "page Not Found";
 }
