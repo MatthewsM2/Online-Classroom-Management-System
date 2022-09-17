@@ -38,59 +38,52 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
         <div class="MainDiv MainDiv1">
             <h1 id="h1Hi">Hi,</h1>
             <h2 id="fnameHi"><?php echo $AccountDetails["First_Name"]; ?></h2>
-
-
-
-            <div class="section">
-                <h3 id="semTitle">Semester-1</h5>
-                    <!-- Main Div Container -->
+            <?php
+            $querySelectStudentTable = "SELECT DISTINCT Semester FROM `student_table` WHERE St_UsrName = '$usrName';";
+            $getSelectStudentTable = mysqli_query($con, $querySelectStudentTable);
+            if (mysqli_num_rows($getSelectStudentTable) > 0) {
+                while ($StudentTable = mysqli_fetch_assoc($getSelectStudentTable)) {
+                    $sem = $StudentTable['Semester'];
+                    $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName';";
+                    $ExeStudentTableVal=mysqli_query($con, $querySelectStudentTValues);
+                    $StudentTableVal=mysqli_fetch_assoc($ExeStudentTableVal);
+                    $trClassCode = $StudentTableVal['Class_Code'];
+                    echo '<div class="section">
+                    <h3 id="semTitle">Semester-' . $sem . '</h5>
                     <div class="DivClassContainer">
+                    <!-- Subject Divs -->';
+                    $queryTeacherClassDetails = "SELECT * FROM `teacher_table` WHERE Class_Code = '$trClassCode';";
+                    $ExeTeacherClassDetails=mysqli_query($con, $queryTeacherClassDetails);
+                    while($TeacherClass=mysqli_fetch_assoc($ExeTeacherClassDetails)){
+                        echo' <div class="SubjectClass">
+                            <label for="SubjectName" class="SubClassTxt">'.$TeacherClass['Class_Name'].'</label>
+
+                            <label for="SubjectName" class="SubName">'.$TeacherClass['Subject'].'</label>
+                        </div>';
+                    }
+                    echo'</div> </div>';
+                }
+            }
+            ?>
+
+
+            <!-- <div class="section">
+                <h3 id="semTitle">Semester-1</h5> -->
+                    <!-- Main Div Container -->
+                    <!-- <div class="DivClassContainer"> -->
                         <!-- Subject Divs -->
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BC-1</label>
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BCA-1</label>
-
-
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BCA-1</label>
-
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BCA-1</label>
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BCA-1</label>
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">BCA-1</label>
-
-                            <label for="SubjectName" class="SubName">Python</label>
-                        </div>
-                        <div class="ArrowIconContainerLeft" onclick="scrollArrowLeft()">
+                        
+                        <!-- <div class="ArrowIconContainerLeft" onclick="scrollArrowLeft()">
                             <span class="material-symbols-outlined LeftNextIcon">
                                 arrow_forward_ios
                             </span>
-                        </div>
-                        <div class="ArrowIconContainerRight" onclick="scrollArrowRight()">
+                        </div> -->
+                        <!-- <div class="ArrowIconContainerRight" onclick="scrollArrowRight()">
                             <span class="material-symbols-outlined RightNextIcon">
                                 arrow_forward_ios
                             </span>
-                        </div>
-                    </div>
-            </div>
+                        </div> -->
+       
 
 
 
@@ -99,18 +92,17 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                 <span class="material-symbols-outlined addIcon">
                     group_add
                 </span>
+            </div>
 
-            </div>
-            
             <form action="joinClass.php" method="post">
-            <div class="addClassPopup">
-                <span class="material-symbols-outlined CloseBtnPopup" onclick="PopUpAddClassCloseBtn()">
-                    cancel
-                </span>
-                <input type="text" name="ClassCode" id="" placeholder="Enter Class Code" class="addClassTxt" required>
-                <input type="text" name="ClassSem" id="" placeholder="Enter Semester" class="addClassTxt">
-                <input type="submit" value="Join Class" class="addClassCreateClassBtn">
-            </div>
+                <div class="addClassPopup">
+                    <span class="material-symbols-outlined CloseBtnPopup" onclick="PopUpAddClassCloseBtn()">
+                        cancel
+                    </span>
+                    <input type="text" name="ClassCode" id="" placeholder="Enter Class Code" class="addClassTxt" required>
+                    <input type="text" name="ClassSem" id="" placeholder="Enter Semester" class="addClassTxt">
+                    <input type="submit" value="Join Class" class="addClassCreateClassBtn">
+                </div>
             </form>
 
 
