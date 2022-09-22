@@ -44,24 +44,24 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
             if (mysqli_num_rows($getSelectStudentTable) > 0) {
                 while ($StudentTable = mysqli_fetch_assoc($getSelectStudentTable)) {
                     $sem = $StudentTable['Semester'];
-                    $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName';";
-                    $ExeStudentTableVal=mysqli_query($con, $querySelectStudentTValues);
-                    $StudentTableVal=mysqli_fetch_assoc($ExeStudentTableVal);
-                    $trClassCode = $StudentTableVal['Class_Code'];
                     echo '<div class="section">
                     <h3 id="semTitle">Semester-' . $sem . '</h5>
                     <div class="DivClassContainer">
                     <!-- Subject Divs -->';
-                    $queryTeacherClassDetails = "SELECT * FROM `teacher_table` WHERE Class_Code = '$trClassCode';";
-                    $ExeTeacherClassDetails=mysqli_query($con, $queryTeacherClassDetails);
-                    while($TeacherClass=mysqli_fetch_assoc($ExeTeacherClassDetails)){
-                        echo' <div class="SubjectClass">
-                            <label for="SubjectName" class="SubClassTxt">'.$TeacherClass['Class_Name'].'</label>
+                        $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName' and Semester = '$sem';";
+                        $ExeStudentTableVal = mysqli_query($con, $querySelectStudentTValues);
+                        $StudentTableVal = mysqli_fetch_assoc($ExeStudentTableVal);
+                        $trClassCode = $StudentTableVal['Class_Code'];
+                        $queryTeacherClassDetails = "SELECT * FROM `teacher_table` WHERE Class_Code = '$trClassCode';";
+                        $ExeTeacherClassDetails = mysqli_query($con, $queryTeacherClassDetails);
+                    while ($TeacherClass = mysqli_fetch_assoc($ExeTeacherClassDetails)) {
+                            echo ' <div class="SubjectClass">
+                            <label for="SubjectName" class="SubClassTxt">' . $TeacherClass['Class_Name'] . '</label>
 
-                            <label for="SubjectName" class="SubName">'.$TeacherClass['Subject'].'</label>
+                            <label for="SubjectName" class="SubName">' . $TeacherClass['Subject'] . '</label>
                         </div>';
                     }
-                    echo'</div> </div>';
+                    echo '</div> </div>';
                 }
             }
             ?>
@@ -69,21 +69,21 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 
             <!-- <div class="section">
                 <h3 id="semTitle">Semester-1</h5> -->
-                    <!-- Main Div Container -->
-                    <!-- <div class="DivClassContainer"> -->
-                        <!-- Subject Divs -->
-                        
-                        <!-- <div class="ArrowIconContainerLeft" onclick="scrollArrowLeft()">
+            <!-- Main Div Container -->
+            <!-- <div class="DivClassContainer"> -->
+            <!-- Subject Divs -->
+
+            <!-- <div class="ArrowIconContainerLeft" onclick="scrollArrowLeft()">
                             <span class="material-symbols-outlined LeftNextIcon">
                                 arrow_forward_ios
                             </span>
                         </div> -->
-                        <!-- <div class="ArrowIconContainerRight" onclick="scrollArrowRight()">
+            <!-- <div class="ArrowIconContainerRight" onclick="scrollArrowRight()">
                             <span class="material-symbols-outlined RightNextIcon">
                                 arrow_forward_ios
                             </span>
                         </div> -->
-       
+
 
 
 
