@@ -50,17 +50,18 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                     <!-- Subject Divs -->';
                         $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName' and Semester = '$sem';";
                         $ExeStudentTableVal = mysqli_query($con, $querySelectStudentTValues);
-                        $StudentTableVal = mysqli_fetch_assoc($ExeStudentTableVal);
-                        $trClassCode = $StudentTableVal['Class_Code'];
-                        $queryTeacherClassDetails = "SELECT * FROM `teacher_table` WHERE Class_Code = '$trClassCode';";
-                        $ExeTeacherClassDetails = mysqli_query($con, $queryTeacherClassDetails);
-                    while ($TeacherClass = mysqli_fetch_assoc($ExeTeacherClassDetails)) {
-                            echo ' <div class="SubjectClass">
+                        while ($StudentTableVal = mysqli_fetch_assoc($ExeStudentTableVal)) {
+                          $studentTabClsCode=$StudentTableVal['Class_Code'];
+                          $queryTeacherTable = "SELECT * FROM `teacher_table` WHERE Class_Code = '$studentTabClsCode'; ";
+                          $TeacherTableConnect=mysqli_query($con, $queryTeacherTable);
+                            while($TeacherClass=mysqli_fetch_assoc($TeacherTableConnect)){
+                            echo ' <div class="SubjectClass" onclick="reDirctoCls(this.children[1])">
                             <label for="SubjectName" class="SubClassTxt">' . $TeacherClass['Class_Name'] . '</label>
-
+                            <input type="hidden" id="cls-code-hide"  value="'.$TeacherClass['Class_Code'].'">
                             <label for="SubjectName" class="SubName">' . $TeacherClass['Subject'] . '</label>
                         </div>';
                     }
+                }
                     echo '</div> </div>';
                 }
             }

@@ -91,6 +91,7 @@ body {
   justify-content: space-between;
 }
 .titleContainer h3 {
+  text-transform: capitalize;
   margin-top: 2px;
   margin-bottom: 7px;
 }
