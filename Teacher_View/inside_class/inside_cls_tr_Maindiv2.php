@@ -2,7 +2,7 @@
     <div class="titleContainer">
         <h3><?php echo $TrClsValues['Class_Name']; ?></h3>
     </div>
-    <table id="StudentTable">
+    <table id="StudentTable" class="ViewTable">
         <tr>
             <th>Roll No</th>
             <th>Name</th>
@@ -11,67 +11,67 @@
         </tr>
 
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>
         </tr>
         <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>John Mathew Thomas Jacob</td>
             <td>95%</td>
             <td>7/7</td>

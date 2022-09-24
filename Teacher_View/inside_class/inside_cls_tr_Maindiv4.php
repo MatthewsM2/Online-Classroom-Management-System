@@ -6,50 +6,15 @@
         <input class="attand-btns" type="button" value="Details" onclick="disAttandDetails()">
         <input class="attand-btns" type="button" value="Save">
     </div>
-    <table id="StudentTable">
+    <table id="StudentTable" class="AttandMark-table">
         <tr>
             <th>Roll No:</th>
             <th>Name:</th>
             <th>Status</th>
         </tr>
+        
         <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
+            <td><h6></h6></td>
             <td>Jilson</td>
             <td>
                 <div class="container">
@@ -60,44 +25,8 @@
             </td>
         </tr>
         <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
-            <td>Jilson</td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>01</td>
-            <td>Jilson</td>
+            <td><h6></h6></td>
+            <td>Adam John </td>
             <td>
                 <div class="container">
                     <label class="switch"><input type="checkbox">

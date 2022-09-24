@@ -88,3 +88,16 @@
     background-color: #05bfe4;
     cursor: pointer;
 }
+.AttandMark-table{
+    counter-reset: countRollno;
+}
+.AttandMark-table td h6{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+}
+.AttandMark-table td h6::before{
+    counter-increment: countRollno;
+    content: counter(countRollno);
+}
