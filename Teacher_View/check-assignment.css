@@ -1,76 +1,77 @@
-.check-assignment{
-    display: none;
+.check-assignment {
+  display: none;
 }
-.check-assignment-btns-container{
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    width:100%;
-    align-self: center;
-    justify-content: end;
+.check-assignment-btns-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-self: center;
+  justify-content: end;
 }
-.check-assignment-mark{
-    outline: none;
-    border: none;
-    width: 40px;
-    height: 20px;
-    border-radius: 3px;
-    box-shadow: none;
-    color: white;
-    background-color:#00b4d8;
+.check-assignment-mark {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: none;
+  color: white;
+  background-color: #00b4d8;
 }
 
-.Reject-btn-checkAssignment,.Accept-btn-checkAssignment{
-background-color: gray;
-color: white;
-border:1px solid black;
-padding: 3px;
-padding-top: 0px;
-padding-bottom: 0px;
-width: 70px;
-cursor: pointer;
+.Reject-btn-checkAssignment,
+.Accept-btn-checkAssignment {
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+  padding: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 70px;
+  cursor: pointer;
 }
-.radio-checkAssignment{
-    opacity: 0;
+.radio-checkAssignment {
+  opacity: 0;
 }
-#Accept-input-checkAssignment:checked + .Accept-btn-checkAssignment{
-    background-color: #2ff793ff;
-    color: black;
+#Accept-input-checkAssignment:checked + .Accept-btn-checkAssignment {
+  background-color: #2ff793ff;
+  color: black;
 }
-#Reject-input-checkAssignment:checked + .Reject-btn-checkAssignment{
-    background-color: #f7444eff;
-    color: black;
+#Reject-input-checkAssignment:checked + .Reject-btn-checkAssignment {
+  background-color: #f7444eff;
+  color: black;
 }
-#Accept-input-checkAssignment-01:checked + .Accept-btn-checkAssignment{
-    background-color: #2ff793ff;
-    color: black;
+#Accept-input-checkAssignment-01:checked + .Accept-btn-checkAssignment {
+  background-color: #2ff793ff;
+  color: black;
 }
-#Reject-input-checkAssignment-01:checked + .Reject-btn-checkAssignment{
-    background-color: #f7444eff;
-    color: black;
+#Reject-input-checkAssignment-01:checked + .Reject-btn-checkAssignment {
+  background-color: #f7444eff;
+  color: black;
 }
-.detailBox-checkAssignment{
-    display: none;
-    position: absolute;
-    top: 25vh;
-    left: 25vw;
-    background-color: gray;
-    width: 600px;
-    height: 300px;
-    margin: 0px;
-    padding: 0px;
+.detailBox-checkAssignment {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  background-color: gray;
+  width: 600px;
+  height: 300px;
+  margin: 0px;
+  padding: 0px;
 }
-.detailBox-checkAssignment div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    width: 550px;
-    height: 250px;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 25px;
-    margin-left: 25px;
-    border-radius: 7px;
-    text-align: center;
+.detailBox-checkAssignment div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 550px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 7px;
+  text-align: center;
 }

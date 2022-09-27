@@ -1,11 +1,10 @@
 <?php
 session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-if($_GET['clcode'] == NULL){
-    $clsCode = $_SESSION['clsCode'];   
-}
-else{
-    $clsCode=$_GET['clcode'];
+if ($_GET['clcode'] == NULL) {
+    $clsCode = $_SESSION['clsCode'];
+} else {
+    $clsCode = $_GET['clcode'];
 }
 $_SESSION['clsCode'] = $clsCode;
 $userName = $_SESSION['user'];

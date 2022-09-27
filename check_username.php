@@ -6,4 +6,3 @@ if(!empty($_POST["username"])) {
   $result = mysqli_query($connect,$query);
   echo mysqli_num_rows($result);
 }
-?>

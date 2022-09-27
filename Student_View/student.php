@@ -48,20 +48,20 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                     <h3 id="semTitle">Semester-' . $sem . '</h5>
                     <div class="DivClassContainer">
                     <!-- Subject Divs -->';
-                        $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName' and Semester = '$sem';";
-                        $ExeStudentTableVal = mysqli_query($con, $querySelectStudentTValues);
-                        while ($StudentTableVal = mysqli_fetch_assoc($ExeStudentTableVal)) {
-                          $studentTabClsCode=$StudentTableVal['Class_Code'];
-                          $queryTeacherTable = "SELECT * FROM `teacher_table` WHERE Class_Code = '$studentTabClsCode'; ";
-                          $TeacherTableConnect=mysqli_query($con, $queryTeacherTable);
-                            while($TeacherClass=mysqli_fetch_assoc($TeacherTableConnect)){
+                    $querySelectStudentTValues = "SELECT * FROM `student_table` WHERE St_UsrName = '$usrName' and Semester = '$sem';";
+                    $ExeStudentTableVal = mysqli_query($con, $querySelectStudentTValues);
+                    while ($StudentTableVal = mysqli_fetch_assoc($ExeStudentTableVal)) {
+                        $studentTabClsCode = $StudentTableVal['Class_Code'];
+                        $queryTeacherTable = "SELECT * FROM `teacher_table` WHERE Class_Code = '$studentTabClsCode'; ";
+                        $TeacherTableConnect = mysqli_query($con, $queryTeacherTable);
+                        while ($TeacherClass = mysqli_fetch_assoc($TeacherTableConnect)) {
                             echo ' <div class="SubjectClass" onclick="reDirctoCls(this.children[1])">
                             <label for="SubjectName" class="SubClassTxt">' . $TeacherClass['Class_Name'] . '</label>
-                            <input type="hidden" id="cls-code-hide"  value="'.$TeacherClass['Class_Code'].'">
+                            <input type="hidden" id="cls-code-hide"  value="' . $TeacherClass['Class_Code'] . '">
                             <label for="SubjectName" class="SubName">' . $TeacherClass['Subject'] . '</label>
                         </div>';
+                        }
                     }
-                }
                     echo '</div> </div>';
                 }
             }

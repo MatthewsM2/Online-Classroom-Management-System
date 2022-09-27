@@ -3,7 +3,7 @@ session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
 $usr = $_POST["loginUsrName"];
 $pass = $_POST["loginPassword"];
-$_SESSION['user']="$usr";
+$_SESSION['user'] = "$usr";
 var_dump($_SESSION['user']);
 // add some ajax code to check user name and password in live
 $queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";

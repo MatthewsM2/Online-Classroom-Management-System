@@ -18,7 +18,9 @@ function PopUpAddClassCloseBtn() {
   document.getElementsByClassName("addClassPopup")[0].style.display = "none";
 }
 
-function reDirctoCls(ClassCode){
+function reDirctoCls(ClassCode) {
   var clscode = ClassCode.value;
-  window.location.href = "http://localhost/MiniProject/Teacher_View/inside_cls_tr.php?clcode="+clscode;
+  window.location.href =
+    "http://localhost/MiniProject/Teacher_View/inside_cls_tr.php?clcode=" +
+    clscode;
 }

@@ -14,7 +14,7 @@ function teacher() {
   document.getElementsByClassName("WBox3")[0].style.display = "block";
   document.getElementsByClassName("WBox1")[0].style.display = "none";
   document.getElementsByClassName("WBox2")[0].style.display = "none";
-  document.getElementById("Account-Status").value="teacher";
+  document.getElementById("Account-Status").value = "teacher";
   console.log(document.getElementById("Account-Status").value);
 }
 
@@ -22,7 +22,7 @@ function student() {
   document.getElementsByClassName("WBox3")[0].style.display = "block";
   document.getElementsByClassName("WBox1")[0].style.display = "none";
   document.getElementsByClassName("WBox2")[0].style.display = "none";
-  document.getElementById("Account-Status").value="student";
+  document.getElementById("Account-Status").value = "student";
   console.log(document.getElementById("Account-Status").value);
 }
 

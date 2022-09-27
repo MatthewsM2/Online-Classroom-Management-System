@@ -1,87 +1,86 @@
-.MainDiv5{
-    display: none;
+.MainDiv5 {
+  display: none;
 }
-.assignment-container{
-    display: flex;
-    flex-direction: column;
+.assignment-container {
+  display: flex;
+  flex-direction: column;
 }
-#text-area-assignment-question{
-    align-self: center;
-    width: 70%;
-    height: 77px;
-    padding: 2%;
-    resize: none;
+#text-area-assignment-question {
+  align-self: center;
+  width: 70%;
+  height: 77px;
+  padding: 2%;
+  resize: none;
 }
-.assignment-module-select{
-    border: 1px solid black;
-    width: 120px;
-    height: 39px;
-    background-color: #eee;
+.assignment-module-select {
+  border: 1px solid black;
+  width: 120px;
+  height: 39px;
+  background-color: #eee;
 }
-.assignment-arrage-div{
-    margin-top: 4px;
-    width: 74%;
-    height: 40px;
-    align-self: center;
-    background-color: yellowgreen;
+.assignment-arrage-div {
+  margin-top: 4px;
+  width: 74%;
+  height: 40px;
+  align-self: center;
+  background-color: yellowgreen;
 }
-.assignment-file-upload{
-    margin:0px;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 33px;
-    padding: 2px;
-    border: 1px solid black;
-    color: white;
-    background-color: gray;
-    cursor: pointer;
+.assignment-file-upload {
+  margin: 0px;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 33px;
+  padding: 2px;
+  border: 1px solid black;
+  color: white;
+  background-color: gray;
+  cursor: pointer;
 }
-.assignment-file-upload:hover{
-    background-color: rgb(141, 141, 141)
+.assignment-file-upload:hover {
+  background-color: rgb(141, 141, 141);
 }
-#assignment-input-document-ori{
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-
+#assignment-input-document-ori {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
 }
-.assignment-inputs{
-    margin-top: 37px;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    width: 74%;
+.assignment-inputs {
+  margin-top: 37px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
 }
-.assignment-inp{
-    width: 120px;
-    height: 37px;
-    background-color: #eee;
-    border: 1px solid black;
-    cursor:text;
+.assignment-inp {
+  width: 120px;
+  height: 37px;
+  background-color: #eee;
+  border: 1px solid black;
+  cursor: text;
 }
-.assignment-heading{
-    width: 220px;
-    height: 35px;
+.assignment-heading {
+  width: 220px;
+  height: 35px;
 }
-.assignment-bts-container{
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    margin-top: 37px;
-    width: 74%;
+.assignment-bts-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 37px;
+  width: 74%;
 }
-.assignment-bts{
-    width: 120px;
-    height: 37px;
-    border-radius: 7px;
-    cursor: pointer;
-    background-color:#00b4d8;
+.assignment-bts {
+  width: 120px;
+  height: 37px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #00b4d8;
 }
-.assignment-bts:hover{
-    background-color: #00b4d8af;
+.assignment-bts:hover {
+  background-color: #00b4d8af;
 }

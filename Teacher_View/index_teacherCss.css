@@ -205,7 +205,7 @@ body {
   height: 27px;
   padding: 0%;
 }
-.addClassPopupForm{
+.addClassPopupForm {
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -300,6 +300,6 @@ body {
   gap: 20px;
   justify-content: center;
 }
-.usrName{
+.usrName {
   text-transform: capitalize;
 }

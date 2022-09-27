@@ -13,4 +13,4 @@ if($pass == $rePass){
 }
 else{
 echo "check your password";
-}?>
+}

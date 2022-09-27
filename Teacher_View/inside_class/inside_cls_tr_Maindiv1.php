@@ -5,7 +5,7 @@ documents are to be created make to view  -->
 $queryGetClassValues = "SELECT * FROM `Class_Table` WHERE Class_code = '$clsCode';";
 $GetClassValues = mysqli_query($con, $queryGetClassValues);
 $ClassValuesRows = mysqli_num_rows($GetClassValues);
-$PathtoInside="http://localhost/MiniProject/Teacher_View/inside_class/";
+$PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
 ?>
 <div class="MainDiv MainDiv1">
     <div class="titleContainer">
@@ -26,7 +26,7 @@ $PathtoInside="http://localhost/MiniProject/Teacher_View/inside_class/";
             while ($ModuleMaterialValtoTrav = mysqli_fetch_assoc($GetUniqueModuleMaterial)) {
                 if ($ModuleMaterialValtoTrav['Is_Assignment'] == 0) {
                     echo '<div>
-                    <img src="'.$PathtoInside. $ModuleMaterialValtoTrav['thumbnail'] .'" alt="">
+                    <img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
                 </div>';
                 } else if ($ModuleMaterialValtoTrav['Is_Assignment'] == 1) {
                     echo '<div onclick="CheckAssignment()">

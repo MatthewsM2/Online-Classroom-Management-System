@@ -1,103 +1,104 @@
-.MainDiv4{
-    display: none;
+.MainDiv4 {
+  display: none;
 }
-.attandDiv-btn-container{
-    display: flex;
-    width: 97%;
-    margin: auto;
-    justify-content: space-between;
+.attandDiv-btn-container {
+  display: flex;
+  width: 97%;
+  margin: auto;
+  justify-content: space-between;
 }
-.attand-btns{
-    display:block;
-    background-color:#00b4d8;
-    color: rgb(0, 0, 0);
-    width: 137px;
-    height: 37px;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: large;
-    transition: 0.7s;
+.attand-btns {
+  display: block;
+  background-color: #00b4d8;
+  color: rgb(0, 0, 0);
+  width: 137px;
+  height: 37px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: large;
+  transition: 0.7s;
 }
-.attand-btns:hover{
-    transition: 0.7s;
-    background-color:#00b4d8c7;
-    border-radius: 7px;
-
+.attand-btns:hover {
+  transition: 0.7s;
+  background-color: #00b4d8c7;
+  border-radius: 7px;
 }
-.detailBox
-{
-    display: none;
-    position: absolute;
-    top: 25vh;
-    left: 25vw;
-    background-color: gray;
-    width: 600px;
-    height: 300px;
-    margin: 0px;
-    padding: 0px;
+.detailBox {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  background-color: gray;
+  width: 600px;
+  height: 300px;
+  margin: 0px;
+  padding: 0px;
 }
-.detailBox div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    width: 550px;
-    height: 250px;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 25px;
-    margin-left: 25px;
-    border-radius: 7px;
-    text-align: center;
+.detailBox div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 550px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 7px;
+  text-align: center;
 }
-.det-txt-1{
-    margin-top: 7px!important;
-    color: #00b4d8;
+.det-txt-1 {
+  margin-top: 7px !important;
+  color: #00b4d8;
 }
-.det-txt-2{
-    color: rgb(1, 179, 90);
+.det-txt-2 {
+  color: rgb(1, 179, 90);
 }
-.det-txt-3{
-    color:red ;
+.det-txt-3 {
+  color: red;
 }
-.detail-NB{
-    align-self: start;
-    color: red;
+.detail-NB {
+  align-self: start;
+  color: red;
 }
-.detail-NB-italic{
-    font-style: italic;
+.detail-NB-italic {
+  font-style: italic;
 }
-.detail-txt,.detail-NB,#detail-btn-ok,.detail-NB-italic{
-    margin: 0px;
+.detail-txt,
+.detail-NB,
+#detail-btn-ok,
+.detail-NB-italic {
+  margin: 0px;
 }
-#detail-btn-ok{
-    background-color: #00b4d8;
-    outline: none;
-    border: none;
-    height: 30px;
-    width: 40%;
-    align-self: center;
-    margin-bottom: 7px;
-    border-radius: 3px;
+#detail-btn-ok {
+  background-color: #00b4d8;
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 40%;
+  align-self: center;
+  margin-bottom: 7px;
+  border-radius: 3px;
 }
-#detail-btn-ok:hover{
-    background-color: #05bfe4;
-    cursor: pointer;
+#detail-btn-ok:hover {
+  background-color: #05bfe4;
+  cursor: pointer;
 }
-.AttandMark-table{
-    counter-reset: countRollno;
+.AttandMark-table {
+  counter-reset: countRollno;
 }
-.AttandMark-table td h6{
-    margin: 0px;
-    font-size: 16px;
-    font-weight: 100;
-    font-style: normal;
+.AttandMark-table td h6 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
 }
-.AttandMark-table td h6::before{
-    counter-increment: countRollno;
-    content: counter(countRollno);
+.AttandMark-table td h6::before {
+  counter-increment: countRollno;
+  content: counter(countRollno);
 }

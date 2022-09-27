@@ -51,10 +51,10 @@ body {
   padding-right: 197px;
 }
 
-.logTxtBoxUsrName{
+.logTxtBoxUsrName {
   text-transform: lowercase;
 }
-.logTxtBoxUsrName::placeholder{
+.logTxtBoxUsrName::placeholder {
   text-transform: capitalize;
 }
 
@@ -191,15 +191,16 @@ body {
   width: 100%;
   background-color: #cce5eb;
 }
-#GTBCACCBtn{
+#GTBCACCBtn {
   display: none;
 }
-.GTB1,.GTB2{
+.GTB1,
+.GTB2 {
   text-transform: capitalize;
 }
-.GTB3{
+.GTB3 {
   text-transform: lowercase;
 }
-.GTB3::placeholder{
+.GTB3::placeholder {
   text-transform: capitalize;
 }

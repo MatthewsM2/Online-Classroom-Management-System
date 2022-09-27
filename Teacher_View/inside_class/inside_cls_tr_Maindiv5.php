@@ -14,8 +14,8 @@
                     <option value="" disabled selected hidden>Select Module</option>
                     <?php
                     while ($SelectModule = mysqli_fetch_assoc($getSelectModule)) {
-                        $Module=$SelectModule['Module'];
-                        echo '<option value="'.$Module.'">Module-'.$Module.'</option>';
+                        $Module = $SelectModule['Module'];
+                        echo '<option value="' . $Module . '">Module-' . $Module . '</option>';
                     }
                     ?>
                 </select>

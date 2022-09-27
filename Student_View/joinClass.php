@@ -27,4 +27,3 @@ if($getTeachertableRow == 1){
 else{
     echo"Check Enter Class code";
 }
-?>

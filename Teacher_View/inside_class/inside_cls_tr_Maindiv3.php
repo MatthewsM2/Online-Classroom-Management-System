@@ -41,7 +41,7 @@
 
                 <label for="selectFile">
                     <div class="SF-container">
-                        <input type="text" class="input-upload-class" id="choose-file-click"  placeholder="Choose File" required>
+                        <input type="text" class="input-upload-class" id="choose-file-click" placeholder="Choose File" required>
                         <div class="span-icon-container">
                             <span class="material-symbols-outlined upload-icon">
                                 file_upload

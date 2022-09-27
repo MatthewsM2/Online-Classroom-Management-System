@@ -1,11 +1,10 @@
 <?php
 session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-if($_GET['clcode'] == NULL){
-    $clsCode = $_SESSION['clsCode'];   
-}
-else{
-    $clsCode=$_GET['clcode'];
+if ($_GET['clcode'] == NULL) {
+    $clsCode = $_SESSION['clsCode'];
+} else {
+    $clsCode = $_GET['clcode'];
 }
 ?>
 <!DOCTYPE html>
@@ -18,8 +17,7 @@ else{
     <title>Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="studentSub.css">
     <link rel="stylesheet" href="progressbar.css">
     <link rel="stylesheet" href="MainDiv2.css">
@@ -44,7 +42,7 @@ else{
             </span>
         </div>
 
-       <?php include 'studentSub/MainDiv1.php' ?> 
+        <?php include 'studentSub/MainDiv1.php' ?>
         <div class="MainDiv MainDiv2">
             <div class="titleContainer">
                 <h3>C Program</h3>
@@ -93,16 +91,16 @@ else{
         </div>
         <div class="MainDiv uploadDiv">
             <div class="upload-items-container">
-            <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
-            <div class="view-document-container">
-                <a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">document.pdf</a>
+                <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
+                <div class="view-document-container">
+                    <a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">document.pdf</a>
+                </div>
+                <input type="file" class="upload-document-assignment">
+                <div class="upload-student-doc-btns-container">
+                    <input class="assignment-status" type="button" value="Status: Waiting">
+                    <input class="assign-student-btn" type="button" value="Save">
+                </div>
             </div>
-            <input type="file" class="upload-document-assignment">
-            <div class="upload-student-doc-btns-container">
-                <input class="assignment-status" type="button" value="Status: Waiting">
-                <input class="assign-student-btn" type="button" value="Save">
-            </div>
-        </div>
 </body>
 <script src="counter.js"></script>
 <script src="studentSub.js"></script>

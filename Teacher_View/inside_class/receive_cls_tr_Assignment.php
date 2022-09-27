@@ -32,4 +32,3 @@ else
 {
     echo "Can't Upload";
 }
-?>

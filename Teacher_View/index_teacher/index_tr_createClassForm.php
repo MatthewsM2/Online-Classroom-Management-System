@@ -19,6 +19,3 @@ if(mysqli_query($con,$inerstForm))
 else{
     echo "Can't Connect to table Teacher";
 }
-?>
-
-

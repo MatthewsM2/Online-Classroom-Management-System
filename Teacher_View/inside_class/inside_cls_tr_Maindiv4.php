@@ -12,9 +12,11 @@
             <th>Name:</th>
             <th>Status</th>
         </tr>
-        
+
         <tr>
-            <td><h6></h6></td>
+            <td>
+                <h6></h6>
+            </td>
             <td>Jilson</td>
             <td>
                 <div class="container">
@@ -25,7 +27,9 @@
             </td>
         </tr>
         <tr>
-            <td><h6></h6></td>
+            <td>
+                <h6></h6>
+            </td>
             <td>Adam John </td>
             <td>
                 <div class="container">
