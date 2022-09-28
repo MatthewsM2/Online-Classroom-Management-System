@@ -91,6 +91,7 @@
 }
 .AttandMark-table {
   counter-reset: countRollno;
+  text-transform: capitalize;
 }
 .AttandMark-table td h6 {
   margin: 0px;

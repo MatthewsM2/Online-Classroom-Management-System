@@ -13,11 +13,22 @@
             <th>Status</th>
         </tr>
 
-        <tr>
+        <?php
+        $QuerycheckStudentName="SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
+        $ExecheckStudentName=mysqli_query($con, $QuerycheckStudentName);
+        while ($checkStudentName=mysqli_fetch_assoc($ExecheckStudentName))
+        {
+            $passUserName=$checkStudentName['St_UsrName'];
+            $queryTakeStduentName="SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
+            $exeTakeStudentName=mysqli_query($con, $queryTakeStduentName);
+            while ($TakeStudentName=mysqli_fetch_assoc($exeTakeStudentName))
+            {
+            echo'
+            <tr>
             <td>
                 <h6></h6>
             </td>
-            <td>Jilson</td>
+            <td>'.$TakeStudentName['First_Name']." ".$TakeStudentName['Last_Name'].'</td>
             <td>
                 <div class="container">
                     <label class="switch"><input type="checkbox">
@@ -25,20 +36,13 @@
                     </label>
                 </div>
             </td>
-        </tr>
-        <tr>
-            <td>
-                <h6></h6>
-            </td>
-            <td>Adam John </td>
-            <td>
-                <div class="container">
-                    <label class="switch"><input type="checkbox">
-                        <div></div>
-                    </label>
-                </div>
-            </td>
-        </tr>
+        </tr>';
+            }
+        }
+
+        ?>
+        
+        
     </table>
     <div class="detailBox">
         <div>

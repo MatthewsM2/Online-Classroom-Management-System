@@ -10,7 +10,7 @@ $getTeachertableRow=mysqli_num_rows($getTeachertable);
 if($getTeachertableRow == 1){
     $getTeacherTableClassSem=mysqli_fetch_assoc($getTeachertable);
     $ClassSem=$getTeacherTableClassSem['Semester'];
-    $queryStudenttable="SELECT * FROM student_table WHERE Class_Code = '$clsCode' ;";
+    $queryStudenttable="SELECT * FROM student_table WHERE Class_Code = '$clsCode' and St_UsrName = '$usrName' ;";
     $getStudenttable=mysqli_query($con, $queryStudenttable);
     $getStudenttableRow=mysqli_num_rows($getStudenttable);
     var_dump($getStudenttableRow);
