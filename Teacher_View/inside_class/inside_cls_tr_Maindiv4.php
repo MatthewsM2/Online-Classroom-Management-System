@@ -23,6 +23,8 @@
             $exeTakeStudentName=mysqli_query($con, $queryTakeStduentName);
             while ($TakeStudentName=mysqli_fetch_assoc($exeTakeStudentName))
             {
+                /* create a form to submit and store the datas that are passed from
+                the starts from here */
             echo'
             <tr>
             <td>
