@@ -14,23 +14,21 @@
         </tr>
 
         <?php
-        $QuerycheckStudentName="SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
-        $ExecheckStudentName=mysqli_query($con, $QuerycheckStudentName);
-        while ($checkStudentName=mysqli_fetch_assoc($ExecheckStudentName))
-        {
-            $passUserName=$checkStudentName['St_UsrName'];
-            $queryTakeStduentName="SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
-            $exeTakeStudentName=mysqli_query($con, $queryTakeStduentName);
-            while ($TakeStudentName=mysqli_fetch_assoc($exeTakeStudentName))
-            {
+        $QuerycheckStudentName = "SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
+        $ExecheckStudentName = mysqli_query($con, $QuerycheckStudentName);
+        while ($checkStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
+            $passUserName = $checkStudentName['St_UsrName'];
+            $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
+            $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
+            while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
                 /* create a form to submit and store the datas that are passed from
                 the starts from here */
-            echo'
+                echo '
             <tr>
             <td>
                 <h6></h6>
             </td>
-            <td>'.$TakeStudentName['First_Name']." ".$TakeStudentName['Last_Name'].'</td>
+            <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '</td>
             <td>
                 <div class="container">
                     <label class="switch"><input type="checkbox">
@@ -43,8 +41,8 @@
         }
 
         ?>
-        
-        
+
+
     </table>
     <div class="detailBox">
         <div>
