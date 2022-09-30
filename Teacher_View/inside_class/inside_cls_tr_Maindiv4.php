@@ -1,49 +1,51 @@
 <div class="MainDiv MainDiv4">
     <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
-    <div class="attandDiv-btn-container">
-        <input class="attand-btns" type="date">
-        <input class="attand-btns" type="time">
-        <input class="attand-btns" type="button" value="Details" onclick="disAttandDetails()">
-        <input class="attand-btns" type="button" value="Save">
-    </div>
-    <table id="StudentTable" class="AttandMark-table">
-        <tr>
-            <th>Roll No:</th>
-            <th>Name:</th>
-            <th>Status</th>
-        </tr>
+    <form method="POST" action="inside_class/Attand/verifyAttand.php">
+        <div class="attandDiv-btn-container">
+            <input class="attand-btns" name="AttDate" type="date" required>
+            <input class="attand-btns" name="AttTime" type="time" required>
+            <input class="attand-btns" type="button" value="Details" onclick="disAttandDetails()">
+            <input class="attand-btns" type="Submit" value="Save">
+        </div>
+        <table id="StudentTable" class="AttandMark-table">
+            <tr>
+                <th>Roll No:</th>
+                <th>Name:</th>
+                <th>Status</th>
+            </tr>
 
-        <?php
-        $QuerycheckStudentName = "SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
-        $ExecheckStudentName = mysqli_query($con, $QuerycheckStudentName);
-        while ($checkStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
-            $passUserName = $checkStudentName['St_UsrName'];
-            $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
-            $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
-            while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
-                /* create a form to submit and store the datas that are passed from
-                the starts from here checks before codeing*/
-                echo '
+            <?php
+            $QuerycheckStudentName = "SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
+            $ExecheckStudentName = mysqli_query($con, $QuerycheckStudentName);
+            while ($checkStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
+                $passUserName = $checkStudentName['St_UsrName'];
+                $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
+                $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
+                while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
+                    echo '
             <tr>
             <td>
                 <h6></h6>
             </td>
-            <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '</td>
+            <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '
+            <input type="hidden" name="studName[]" value="' . $passUserName . '">
+            </td>
             <td>
                 <div class="container">
-                    <label class="switch"><input type="checkbox">
+                    <label class="switch"><input type="checkbox" value="Yes" name="studAttStatus">
                         <div></div>
                     </label>
                 </div>
             </td>
         </tr>';
+                }
             }
-        }
 
-        ?>
+            ?>
 
 
-    </table>
+        </table>
+    </form>
     <div class="detailBox">
         <div>
             <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
