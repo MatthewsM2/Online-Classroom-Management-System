@@ -32,7 +32,7 @@
             </td>
             <td>
                 <div class="container">
-                    <label class="switch"><input type="checkbox" value="Yes" name="studAttStatus">
+                    <label class="switch"><input type="checkbox" value="Yes" name="studAttStatus[]">
                         <div></div>
                     </label>
                 </div>
