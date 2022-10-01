@@ -48,9 +48,9 @@
     </form>
     <div class="detailBox">
         <div>
-            <p class="detail-txt det-txt-1">Total Number of Students : 08</p>
-            <p class="detail-txt det-txt-2">Present:5</p>
-            <p class="detail-txt det-txt-3">Absent:3</p>
+            <p class="detail-txt det-txt-1">Total Number of Students :Not Available</p>
+            <p class="detail-txt det-txt-2">Present:0</p>
+            <p class="detail-txt det-txt-3">Absent:0</p>
             <p class="detail-NB">NB: <span class="detail-NB-italic">Calculations will be updated after
                     saving</span> </p>
             <input id="detail-btn-ok" type="button" value="Okey" onclick="disAttandOkey()">
