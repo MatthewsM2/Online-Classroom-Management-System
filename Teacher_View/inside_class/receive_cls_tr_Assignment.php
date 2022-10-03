@@ -15,6 +15,7 @@ echo $AssignTime.'<br>';
 
 // document get here
 $OldAssignDocName=$_FILES['AssignDoc']['name'];
+if($OldAssignDocName != ""){
 $AssignDocName='Assign'.time().$OldAssignDocName;
 $AssignDocTempath=$_FILES['AssignDoc']['tmp_name'];
 $AssignDocPerpath="gitignore/doc/";
@@ -22,6 +23,9 @@ move_uploaded_file($AssignDocTempath, $AssignDocPerpath.$AssignDocName) or die("
 $AssignPath = $AssignDocPerpath.$AssignDocName;
 echo $AssignDocPerpath;
 echo $AssignPath;
+}else{
+    $AssignPath=NULL;
+}
 // insert into table
 $queryInsertAssign = "INSERT INTO `Class_Table` (`Sl_No`, `Class_code`, `Module`, `Is_Assignment`, `Heading`, `Description`, `date`, `time`, `document`, `thumbnail`) VALUES (NULL, '$clsCode', '$AssignModule', '1', '$AssignHeading', '$AssignDesc', '$AssignDate', '$AssignTime', '$AssignPath', NULL);";
 if (mysqli_query($con ,$queryInsertAssign))
