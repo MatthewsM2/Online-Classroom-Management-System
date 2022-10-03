@@ -26,7 +26,8 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
             while ($ModuleMaterialValtoTrav = mysqli_fetch_assoc($GetUniqueModuleMaterial)) {
                 if ($ModuleMaterialValtoTrav['Is_Assignment'] == 0) {
                     echo '<div>
-                    <img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
+                    <a href="'.$PathtoInside.$ModuleMaterialValtoTrav['document'].'"><img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
+                    </a>
                 </div>';
                 } else if ($ModuleMaterialValtoTrav['Is_Assignment'] == 1) {
                     echo '<div onclick="CheckAssignment()">
