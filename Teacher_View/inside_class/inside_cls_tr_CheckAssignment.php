@@ -1,9 +1,9 @@
 <div class="MainDiv check-assignment">
     <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
     <div class="assignment-container">
-        <textarea name="" id="text-area-assignment-question" class="text-area-assignment-question" placeholder="Question .............."></textarea>
+        <textarea name="" id="text-area-assignment-question-forCheckTeacher" class="text-area-assignment-question" placeholder="Question .............." readonly></textarea>
 
-        <div class="assignment-arrage-div"><label id="assignment-file-label" class="assignment-file-upload"><a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Assignment.pdf</a></label>
+        <div class="assignment-arrage-div"><label id="assignment-file-label" class="assignment-file-upload"><a id="linktoAssignmentQuestion" href="">Assignment.pdf</a></label>
 
             <div class="check-assignment-btns-container">
                 <input type="button" class="assignment-bts" value="Details" onclick="disDetailsAssign()">

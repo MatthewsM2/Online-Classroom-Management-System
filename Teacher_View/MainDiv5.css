@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
 }
-#text-area-assignment-question {
+#text-area-assignment-question,#text-area-assignment-question-forCheckTeacher {
   align-self: center;
   width: 70%;
   height: 77px;

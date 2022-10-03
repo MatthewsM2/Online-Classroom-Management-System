@@ -128,7 +128,10 @@ function Assignment() {
   document.getElementById("Maindiv5").style.backgroundColor = "white";
   hideCheckAssignment();
 }
-function CheckAssignment() {
+function CheckAssignment(parent) {
+  
+  var que = parent.children[1].value;
+  var doc = parent.children[2].value;
   document.getElementById("check-assignment").style.display = "block";
   document.getElementsByClassName("check-assignment")[0].style.display =
     "block";
@@ -143,6 +146,12 @@ function CheckAssignment() {
   document.getElementById("Maindiv4").style.backgroundColor = "#00b4d8";
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
   document.getElementById("check-assignment").style.backgroundColor = "white";
+  document.getElementById("text-area-assignment-question-forCheckTeacher").innerHTML = que;
+  document.getElementById("linktoAssignmentQuestion").href=doc;
+  if(doc==""){
+    document.getElementById("linktoAssignmentQuestion").innerHTML="document not Available";
+    document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
+  }
 }
 function hideCheckAssignment() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";
