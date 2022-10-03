@@ -85,22 +85,9 @@ if ($_GET['clcode'] == NULL) {
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-        <div class="MainDiv uploadDiv">
-            <div class="upload-items-container">
-                <textarea name="" id="text-area-assignment-question" placeholder="Question .............."></textarea>
-                <div class="view-document-container">
-                    <a href="Assets/540cb75550adf33f281f29132dddd14fded85bfc.pdf">document.pdf</a>
-                </div>
-                <input type="file" class="upload-document-assignment">
-                <div class="upload-student-doc-btns-container">
-                    <input class="assignment-status" type="button" value="Status: Waiting">
-                    <input class="assign-student-btn" type="button" value="Save">
-                </div>
-            </div>
+        <?php include 'studentSub/uploadDiv.php' ?>
+
 </body>
 <script src="counter.js"></script>
 <script src="studentSub.js"></script>

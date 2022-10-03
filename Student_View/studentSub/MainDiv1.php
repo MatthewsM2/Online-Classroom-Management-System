@@ -32,9 +32,13 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
                     </a>
                 </div>';
                 } else if ($ModuleMaterialValtoTrav['Is_Assignment'] == 1) {
-                    echo '<div onclick="CheckAssignment()">
+                    echo '<div onclick="showUploadDiv(this.children[0])">
                     <span class="assignment-div">
                         <p class="assignment-heading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
+                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
+                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">
+                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['date'].'">
+                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['time'].'">
                     </span>
                  </div>';
                 }
