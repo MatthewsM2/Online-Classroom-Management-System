@@ -1,6 +1,7 @@
 <div class="MainDiv MainDiv3">
     <h3 id="class-title"><?php echo $TrClsValues['Class_Name']; ?></h3>
     <div class="uploadDiv-Container">
+    <form action="inside_class/receive_cls_tr_ModuleSub.php" method="POST" enctype="multipart/form-data">
         <div class="Master-Container">
             <div class="sub-Master-Container">
                 <?php
@@ -14,7 +15,7 @@
                     </select>
                 </div>
 
-                <form action="inside_class/receive_cls_tr_ModuleSub.php" method="POST" enctype="multipart/form-data">
+                
                     <div class="uploadDiv-OuterDiv">
                         <label for="Input-Type-File">
                             <div class="uploadDiv">

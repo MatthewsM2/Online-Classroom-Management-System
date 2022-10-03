@@ -11,7 +11,7 @@ $docDes=$_POST['docDescription'];
 $oldDocmentName=$_FILES['documentUpload']['name'];
 $docmentName=time().$oldDocmentName;
 $documentTmpPath=$_FILES['documentUpload']['tmp_name'];
-$documentPerPath=".gitignore/doc/";
+$documentPerPath="gitignore/doc/";
 move_uploaded_file($documentTmpPath,$documentPerPath.$docmentName) or die("document can't uploaded");
 $documentPath=$documentPerPath.$docmentName;
 
