@@ -24,7 +24,7 @@
 .mask.full,
 .circle .fill {
   animation: fill ease-in-out 3s;
-  transform: rotate(180deg);
+  transform: rotate(var(--value));
 }
 
 @keyframes fill {
@@ -32,7 +32,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(var(--value));
   }
 }
 .circle-wrap .inside-circle {

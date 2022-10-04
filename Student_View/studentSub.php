@@ -6,6 +6,10 @@ if ($_GET['clcode'] == NULL) {
 } else {
     $clsCode = $_GET['clcode'];
 }
+$usrName = $_SESSION['user'];
+$queryGetAcoountDetails = "SELECT * FROM Account WHERE Usr_Name = '$usrName';";
+$GetAccountDetails = mysqli_query($con, $queryGetAcoountDetails);
+$AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,20 +49,39 @@ if ($_GET['clcode'] == NULL) {
         <?php include 'studentSub/MainDiv1.php' ?>
         <div class="MainDiv MainDiv2">
             <div class="titleContainer">
-                <h3>C Program</h3>
+                <h3><?php echo $TrTable['Subject']?></h3>
             </div>
+            <?php 
+            $queryAttandTotalNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode';";
+            $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode' AND Attendance = 1;";
+            $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
+            $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
+            $AttandPresentRows=mysqli_num_rows($exeAttandPresentNumber);
+            $AttandTotalRows=mysqli_num_rows($exeAttandTotalNumber);
+            $AttandPercent=round(($AttandPresentRows/$AttandTotalRows)*100);
+            $ProgressBar=180*($AttandPercent/100);
+            ?>
             <div class="attaend-assign-profile-container">
                 <div class="Attendance-Section">
                     <p class="attendance-title">Attendance</p>
                     <div class="circle-wrap">
-                        <div class="circle">
+                        <div class="circle"
+                        style="
+                                --value:<?php echo $ProgressBar?>deg;
+                                ">
                             <div class="mask half">
+                                <div class="fill"
+                                style="
+                                --value:<?php echo $ProgressBar?>deg;
+                                "></div>
+                            </div>
+                            <div class="mask full"
+                            style="
+                                --value:<?php echo $ProgressBar?>deg;
+                                ">
                                 <div class="fill"></div>
                             </div>
-                            <div class="mask full">
-                                <div class="fill"></div>
-                            </div>
-                            <div class="inside-circle"> 100% </div>
+                            <div class="inside-circle"> <?php echo $AttandPercent ?>%</div>
 
                         </div>
                     </div>
@@ -81,7 +104,7 @@ if ($_GET['clcode'] == NULL) {
                         </span>
                     </div>
                     <div>
-                        <p class="details-name-student">Adam John</p>
+                        <p class="details-name-student"><?php echo $AccountDetails['First_Name']." ".$AccountDetails['Last_Name']  ?></p>
                     </div>
                 </div>
             </div>
