@@ -39,6 +39,7 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
                         <input type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">
                         <input type="hidden"  value="'.$ModuleMaterialValtoTrav['date'].'">
                         <input type="hidden"  value="'.$ModuleMaterialValtoTrav['time'].'">
+                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['Sl_No'].'">
                     </span>
                  </div>';
                 }

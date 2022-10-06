@@ -22,6 +22,7 @@ function showUploadDiv(parent) {
   var docuMENT  = parent.children[2].value;
   var DaTe      = parent.children[3].value;
   var TiMe      = parent.children[4].value;
+  var Slno      = parent.children[5].value;
   console.log(quenstion);
   document.getElementById("upload_file-icon").style.display = "block";
   document.getElementsByClassName("uploadDiv")[0].style.display = "block";
@@ -33,9 +34,10 @@ function showUploadDiv(parent) {
   document.getElementById("text-area-assignment-question").innerHTML = quenstion;
   document.getElementById("AnchorTagforDocu").href=docuMENT;
   if(docuMENT==""){
-    document.getElementById("AnchorTagforDocu").innerHTML="document not Available";
+    document.getElementById("AnchorTagforDocu").innerHTML="Document not Available";
     document.getElementById("AnchorTagforDocu").style.pointerEvents = "none";
   }
   document.getElementById("uploadDivViewDate").value = DaTe;
   document.getElementById("uploadDivViewTime").value = TiMe;
+  document.getElementById("uploadDivViewSlno").value = Slno;
 }
