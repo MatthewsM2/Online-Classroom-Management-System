@@ -9,9 +9,9 @@
             <div class="view-document-container">
                 <a id="AnchorTagforDocu" href="">document.pdf</a>
             </div>
-            <input type="file" class="upload-document-assignment" required>
+            <input type="file" name="Assign" class="upload-document-assignment" required>
             <div class="upload-student-doc-btns-container">
-                <input id="uploadDivViewSlno" type="hidden" value="">
+                <input id="uploadDivViewSlno" type="hidden" name="slnumber" value="">
                 <input id="uploadDivViewDate" class="assignment-status" type="button" value="Date: Waiting">
                 <input id="uploadDivViewTime" class="assignment-status" type="button" value="Time: Waiting">
                 <input id="uploadDivViewStatus" class="assignment-status" type="button" value="Status: Waiting">
