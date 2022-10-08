@@ -18,6 +18,9 @@
                     <th>Marks</th>
                     <th></th>
                 </tr>
+                <?php 
+                // starts from here
+                ?>
                 <tr>
                     <td>01</td>
                     <td>Jilson</td>
