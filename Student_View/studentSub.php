@@ -6,7 +6,7 @@ if ($_GET['clcode'] == NULL) {
 } else {
     $clsCode = $_GET['clcode'];
 }
-$_SESSION['clscode'] = $clsCode;
+$_SESSION['clsCode'] = $clsCode;
 $usrName = $_SESSION['user'];
 $queryGetAcoountDetails = "SELECT * FROM Account WHERE Usr_Name = '$usrName';";
 $GetAccountDetails = mysqli_query($con, $queryGetAcoountDetails);

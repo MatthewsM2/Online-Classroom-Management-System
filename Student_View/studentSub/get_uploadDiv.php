@@ -18,11 +18,11 @@ $AssignName=time().$AssignName;
 $documentTmpPath=$_FILES['Assign']['tmp_name'];
 $documentPerPath="gitignore/AssignStudent/";
 move_uploaded_file($documentTmpPath,$documentPerPath.$AssignName) or die("document can't uploaded");
-$documentPath=$documentPerPath.$docmentName;
+$documentPath=$documentPerPath.$AssignName;
 // insert query
 $queryInsertAssign="INSERT INTO `Assign_Table` (`tr_slno`, `UserName`, `clscode`, `date`, `time`, `Status`, `document`) VALUES ('$serialNo', '$usrName', '$clsCode', '$day', '$tim', 'Waiting', '$documentPath');";
 if (mysqli_query($con, $queryInsertAssign)){
-
+    header("Location:http://localhost/MiniProject/Student_View/studentSub.php");
 }else{
     echo "Something Went Wrong";
 }
