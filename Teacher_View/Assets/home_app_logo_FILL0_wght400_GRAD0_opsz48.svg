@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="48"
+   width="48"
+   version="1.1"
+   id="svg395"
+   sodipodi:docname="home_app_logo_FILL0_wght400_GRAD0_opsz48.svg"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs399" />
+  <sodipodi:namedview
+     id="namedview397"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.554615"
+     inkscape:cx="17.932457"
+     inkscape:cy="36.277154"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg395" />
+  <path
+     d="m 16,42.244231 v -8 h 16 v 8 z m -10,-9.5 v -9.15 q 0,-0.65 0.25,-1.25 0.25,-0.6 0.75,-1 l 15,-13.3 q 0.4,-0.4 0.925,-0.575 0.525,-0.175 1.075,-0.175 0.55,0 1.075,0.175 0.525,0.175 0.925,0.575 l 4,3.55 z m 3,9.5 q -1.25,0 -2.125,-0.875 Q 6,40.494231 6,39.244231 v -3.8 l 8,-7.1 v 13.9 z m 25,0 v -16.4 l -8.55,-7.6 6.05,-5.35 9.5,8.45 q 0.5,0.45 0.75,1.025 0.25,0.575 0.25,1.225 v 15.65 q 0,1.25 -0.875,2.125 -0.875,0.875 -2.125,0.875 z"
+     id="path1114"
+     style="fill:#00b4d8;fill-opacity:1;stroke-width:0.29102362;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1" />
+</svg>
