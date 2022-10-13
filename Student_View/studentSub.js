@@ -23,7 +23,7 @@ function showUploadDiv(parent) {
   var DaTe      = parent.children[3].value;
   var TiMe      = parent.children[4].value;
   var Slno      = parent.children[5].value;
-  console.log(quenstion);
+  // console.log("Don't paste or type anything to the here.\n It is consider as a Cyber crime and you will be punished");
   document.getElementById("upload_file-icon").style.display = "block";
   document.getElementsByClassName("uploadDiv")[0].style.display = "block";
   document.getElementsByClassName("MainDiv2")[0].style.display = "none";
@@ -39,5 +39,6 @@ function showUploadDiv(parent) {
   }
   document.getElementById("uploadDivViewDate").value = DaTe;
   document.getElementById("uploadDivViewTime").value = TiMe;
-  document.getElementById("uploadDivViewSlno").value = Slno;
+  document.getElementsByClassName("uploadDivViewSlno")[0].value = Slno;
+  document.getElementsByClassName("uploadDivViewSlno")[1].value = Slno;
 }

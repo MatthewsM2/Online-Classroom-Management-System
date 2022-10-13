@@ -116,6 +116,6 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 </body>
 <script src="counter.js"></script>
 <script src="studentSub.js"></script>
-
-
+<script src="../jquery.js"></script>
+<script src="studentSub/ExistAssign.js"></script>
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-$clsCode=$_SESSION['clscode'];
+$clsCode=$_SESSION['clsCode'];
 var_dump($clsCode);
 $usrName = $_SESSION['user'];
 
