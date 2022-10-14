@@ -34,7 +34,7 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
                     <span class="assignment-div">
                         <p id="AssignHeading" class="assignment-heading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
                         <input id="AssignDescr" type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
-                        <input id="AssignDocmen" type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">
+                        <input id="AssignDocmen" type="hidden"  value="inside_class/'.$ModuleMaterialValtoTrav['document'].'">
                     </span>
                  </div>';
                 }

@@ -1,13 +1,23 @@
 function hello() {
     console.log("Iaminhere");
+  var slnoData=$('.uploadDivViewSlno').val();
+  console.log(slnoData);
 }
-// $.ajax({
-//     url: 'ajaxfile.php',
-//     type: 'post',
-//     data: {username: username},
-//     success: function(response){
-
-//         $('#uname_response').html(response);
-
-//      }
-//  });
+function workAjax(){
+  var slnoData=$('.uploadDivViewSlno').val();
+jQuery.ajax({
+    url: 'http://localhost/MiniProject/Student_View/studentSub/ExistAssign.php',
+    type: 'post',
+    data: "slno=" + slnoData,
+    success: function(response){
+        if(response=="Zero"){
+        }else{
+          var link="studentSub/"+response;
+        $('#aAssignAnchortag').attr("href", link);
+        $('#AssignAnchortag').css("display", "flex");
+        $('#InputAssignAnchortag').css("display", "none");  
+        $('#SubmitAssignAnchortag').css("display", "none");
+        }
+     }
+ });
+}

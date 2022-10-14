@@ -69,3 +69,12 @@
 #upload_file-icon {
   display: none;
 }
+#AssignAnchortag{
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+#InputAssignAnchortag{
+  display: block;
+}
