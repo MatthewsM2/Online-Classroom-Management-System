@@ -91,11 +91,20 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 
 
                 <div class="Assignment-Section">
+                    <?php
+                    $queryAssignNumberTotal = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode';";
+                    $executeAssignNumberTotal = mysqli_query($con, $queryAssignNumberTotal);
+                    $AssignNumberTotal = mysqli_num_rows($executeAssignNumberTotal);
+    
+                    $queryAssignStudentNumber = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode' AND UserName = '$usrName';";
+                    $executeAssignStudentNumber = mysqli_query($con, $queryAssignStudentNumber);
+                    $AssignStudentNumber = mysqli_num_rows($executeAssignStudentNumber);
+                    ?>
                     <p class="assignment-tilte">Assignment</p>
                     <div class="assign-circle-wrap">
                         <p>
-                        <p class="num assignment-values" data-val="5">0</p>
-                        <p class="assignment-values">/8</p>
+                        <p class="num assignment-values" data-val="<?php echo $AssignStudentNumber ?>">0</p>
+                        <p class="assignment-values">/<?php echo $AssignNumberTotal ?></p>
                     </div>
                 </div>
 
