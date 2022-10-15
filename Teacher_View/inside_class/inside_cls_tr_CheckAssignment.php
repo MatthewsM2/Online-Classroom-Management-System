@@ -18,18 +18,7 @@
                     <th>Marks</th>
                     <th></th>
                 </tr>
-                <?php 
-                $QuerycheckAssignStudentName = "SELECT * FROM Assign_Table WHERE Class_Code = '$clsCode';";
-                $ExecheckAssignStudentName = mysqli_query($con, $QuerycheckAssignStudentName);
-                while ($checkAssignStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
-                    $passUserName = $checkStudentName['St_UsrName'];
-                    $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
-                    $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
-                    while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
-                        
-                    }
-                }
-                ?>
+                
                 <tr>
                     <td>01</td>
                     <td>Jilson</td>

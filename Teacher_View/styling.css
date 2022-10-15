@@ -118,7 +118,8 @@ body {
   flex: 0 0 180px;
   width: 180px;
   height: 270px;
-  background-color: yellowgreen;
+  border: solid;
+  background-color:#00b4d8;
   overflow: hidden;
   transition: 1.7s;
 }
@@ -145,4 +146,11 @@ body {
 }
 #check-assignment {
   display: none;
+}
+.assignment-div{
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  background-color: white;
+  border: solid 1px;
 }
