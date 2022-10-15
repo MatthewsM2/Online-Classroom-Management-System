@@ -32,10 +32,11 @@ function showUploadDiv(parent) {
   document.getElementById("person-icon").style.backgroundColor = "#00b4d8";
   document.getElementById("upload_file-icon").style.backgroundColor = "white";
   document.getElementById("text-area-assignment-question").innerHTML = quenstion;
-  document.getElementById("AnchorTagforDocu").href="../Teacher_View/inside_class/"+docuMENT;
   if(docuMENT==""){
     document.getElementById("AnchorTagforDocu").innerHTML="Document not Available";
     document.getElementById("AnchorTagforDocu").style.pointerEvents = "none";
+  }else{
+    document.getElementById("AnchorTagforDocu").href="../Teacher_View/inside_class/"+docuMENT;
   }
   document.getElementById("uploadDivViewDate").value = DaTe;
   document.getElementById("uploadDivViewTime").value = TiMe;

@@ -19,13 +19,22 @@
                     <th></th>
                 </tr>
                 <?php 
-                // starts from here
+                $QuerycheckAssignStudentName = "SELECT * FROM Assign_Table WHERE Class_Code = '$clsCode';";
+                $ExecheckAssignStudentName = mysqli_query($con, $QuerycheckAssignStudentName);
+                while ($checkAssignStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
+                    $passUserName = $checkStudentName['St_UsrName'];
+                    $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
+                    $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
+                    while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
+                        
+                    }
+                }
                 ?>
                 <tr>
                     <td>01</td>
                     <td>Jilson</td>
-                    <td><label>document.pdf</label></td>
-                    <td><label> Late</label></td>
+                    <td><label><a herf="">document</a></label></td>
+                    <td><label>Late</label></td>
                     <td>
                         <input type="number" class="check-assignment-mark">
                     </td>
@@ -36,21 +45,7 @@
                         <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment">Reject</label>
                     </td>
                 </tr>
-                <tr>
-                    <td>02</td>
-                    <td>Manu</td>
-                    <td><label>document.pdf</label></td>
-                    <td><label>Ontime</label></td>
-                    <td>
-                        <input type="number" class="check-assignment-mark">
-                    </td>
-                    <td>
-                        <input type="radio" name="radio-input-checkAssignment-01" id="Accept-input-checkAssignment-01" class="radio-checkAssignment">
-                        <label for="Accept-input-checkAssignment-01" class="Accept-btn-checkAssignment">Accept</label>
-                        <input type="radio" name="radio-input-checkAssignment-01" id="Reject-input-checkAssignment-01" class="radio-checkAssignment">
-                        <label for="Reject-input-checkAssignment-01" class="Reject-btn-checkAssignment">Reject</label>
-                    </td>
-                </tr>
+                
             </table>
             <div class="detailBox-checkAssignment">
                 <div>

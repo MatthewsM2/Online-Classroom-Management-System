@@ -33,9 +33,13 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
                     echo '<div onclick="CheckAssignment(this.children[0])">
                     <span class="assignment-div">
                         <p id="AssignHeading" class="assignment-heading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
-                        <input id="AssignDescr" type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
-                        <input id="AssignDocmen" type="hidden"  value="inside_class/'.$ModuleMaterialValtoTrav['document'].'">
-                    </span>
+                        <input id="AssignDescr" type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">';
+                        if($ModuleMaterialValtoTrav['document']==""){
+                            echo '<input id="AssignDocmen" type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">';    
+                        }else{
+                           echo' <input id="AssignDocmen" type="hidden"  value="inside_class/'.$ModuleMaterialValtoTrav['document'].'">';
+                        }
+                        echo '</span>
                  </div>';
                 }
             }
@@ -43,5 +47,5 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
         }
     }
     echo '</div>';
-    ?>
-    
+
+    ?>    
