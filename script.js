@@ -152,6 +152,7 @@ function CheckAssignment(parent) {
     document.getElementById("linktoAssignmentQuestion").innerHTML="document not Available";
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
   }
+  //call new function here for assignment
 }
 function hideCheckAssignment() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";

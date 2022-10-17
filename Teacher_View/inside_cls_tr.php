@@ -69,5 +69,6 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
 <script src="/MiniProject/script.js"></script>
 <script src="selectbox.js"></script>
 <script src="fileSelect.js"></script>
-
+<script src="/MiniProject/jquery.js"></script>
+<script src="CheckAssignment.js"></script>
 </html>
