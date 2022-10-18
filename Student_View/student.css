@@ -24,6 +24,10 @@ body {
   background-color: #00b4d8;
   text-align: center;
 }
+.subDiv a{
+  text-decoration: none;
+  color: black;
+}
 .MainDiv {
   position: relative;
   margin-top: 1%;

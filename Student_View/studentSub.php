@@ -43,9 +43,9 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
             <span class="material-symbols-outlined icons" id="upload_file-icon">
                 upload_file
             </span>
-            <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
+            <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                 logout
-            </span>
+            </span></a>
         </div>
 
         <?php include 'studentSub/MainDiv1.php' ?>

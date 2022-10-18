@@ -54,9 +54,9 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
             <span class="material-symbols-outlined icons" id="check-assignment" title="Check Assignment" onclick="CheckAssignment()">
                 inventory
             </span>
-            <span class="material-symbols-outlined icons" id="logOut" title="Sign Out">
+            <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                 logout
-            </span>
+            </span></a>
         </div>
 
         <?php include 'inside_class/inside_cls_tr_Maindiv1.php' ?>

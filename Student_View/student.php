@@ -31,9 +31,9 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
             <span class="material-symbols-outlined icons" id="account" onclick="AccClick()">
                 account_circle
             </span>
-            <span class="material-symbols-outlined icons" id="logOut">
+            <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                 logout
-            </span>
+            </span></a>
 
         </div>
         <div class="MainDiv MainDiv1">
