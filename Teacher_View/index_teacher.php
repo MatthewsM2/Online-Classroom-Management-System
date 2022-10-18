@@ -1,4 +1,10 @@
 <?php session_start() ?>
+<?php 
+      if($_SESSION['user']==NULL){ 
+      header("Location: ../index.html");  
+      }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,6 +41,9 @@
                 logout
             </span></a>
         </div>
+        
+
+        
         <div class="MainDiv MainDiv1">
             <?php include 'index_teacher/index_tr_home.php'; ?>
         </div>

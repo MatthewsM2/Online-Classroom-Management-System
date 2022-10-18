@@ -1,5 +1,10 @@
 <?php
 session_start();
+      if($_SESSION['user']==NULL){ 
+      header("Location: ../index.html");  
+      }
+?>
+<?php
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
 $usrName = $_SESSION['user'];
 $queryGetAcoountDetails = "SELECT * FROM Account WHERE Usr_Name = '$usrName';";

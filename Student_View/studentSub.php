@@ -1,5 +1,8 @@
 <?php
 session_start();
+if($_SESSION['user']==NULL){ 
+    header("Location: ../index.html");  
+    }
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
 if ($_GET['clcode'] == NULL) {
     $clsCode = $_SESSION['clsCode'];
