@@ -1,19 +1,10 @@
-// work on here
-function workAjax(){
-    var slnoData=$('.uploadDivViewSlno').val();
+function checkAssignmentAjax(serialNo){
   jQuery.ajax({
-      url: '',
+      url: 'inside_class/getAssignment.php',
       type: 'post',
-      data: "slno=" + slnoData,
+      data: "slno=" + serialNo,
       success: function(response){
-          if(response=="Zero"){
-          }else{
-            var link="studentSub/"+response;
-          $('#aAssignAnchortag').attr("href", link);
-          $('#AssignAnchortag').css("display", "flex");
-          $('#InputAssignAnchortag').css("display", "none");  
-          $('#SubmitAssignAnchortag').css("display", "none");
-          }
+          console.log(response);
        }
    });
   }

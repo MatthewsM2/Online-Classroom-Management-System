@@ -131,7 +131,8 @@ function Assignment() {
 function CheckAssignment(parent) {
   
   var que = parent.children[1].value;
-  var doc = parent.children[2].value;
+  var doc = parent.children[3].value;
+  var serialNo = parent.children[2].value;
   document.getElementById("check-assignment").style.display = "block";
   document.getElementsByClassName("check-assignment")[0].style.display =
     "block";
@@ -153,6 +154,7 @@ function CheckAssignment(parent) {
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
   }
   //call new function here for assignment
+  checkAssignmentAjax(serialNo);
 }
 function hideCheckAssignment() {
   document.getElementsByClassName("check-assignment")[0].style.display = "none";

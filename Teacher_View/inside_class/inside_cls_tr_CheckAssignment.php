@@ -14,7 +14,7 @@
                     <th>Roll No</th>
                     <th>Name</th>
                     <th>File</th>
-                    <th>Time</th>
+                    <th>Status</th>
                     <th>Marks</th>
                     <th></th>
                 </tr>
