@@ -5,6 +5,7 @@ function checkAssignmentAjax(serialNo){
       data: "slno=" + serialNo,
       success: function(response){
           console.log(response);
+          
        }
    });
   }

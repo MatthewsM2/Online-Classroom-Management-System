@@ -95,7 +95,7 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 
                 <div class="Assignment-Section">
                     <?php
-                    $queryAssignNumberTotal = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode';";
+                    $queryAssignNumberTotal = "SELECT * FROM `Class_Table` WHERE Class_code = '$clsCode' AND Is_Assignment = '1';";
                     $executeAssignNumberTotal = mysqli_query($con, $queryAssignNumberTotal);
                     $AssignNumberTotal = mysqli_num_rows($executeAssignNumberTotal);
     
