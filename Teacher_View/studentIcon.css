@@ -1,18 +1,20 @@
-#StudentTable {
+#StudentTable,#CheckAssignStudentTable {
   border-collapse: collapse;
   width: 97%;
   margin: auto;
   margin-top: 27px;
 }
 #StudentTable td,
-#StudentTable th {
+#StudentTable th,
+#CheckAssignStudentTable td,
+#CheckAssignStudentTable th {
   border: 1px solid grey;
   padding: 7px;
 }
 #StudentTable tr:nth-child(even) {
   background-color: #eee;
 }
-#StudentTable th {
+#StudentTable th,#CheckAssignStudentTable th{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
