@@ -1,4 +1,25 @@
 <!-- J.M.J -->
+<?php
+session_start();
+if($_SESSION['user']!=NULL){
+    $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+    $user = $_SESSION['user'];
+    var_dump($user);
+    $queryCheck = "SELECT * FROM `Account` WHERE Usr_Name = '$user' ;";
+    var_dump($queryCheck);
+    $execute = mysqli_query($con, $queryCheck);
+    var_dump($execute);
+    $dataFetch = mysqli_fetch_assoc($execute);
+    var_dump($dataFetch);
+    if($dataFetch['Account']=="teacher"){
+        header("Location:Teacher_View/index_teacher.php");
+    }
+    if($dataFetch['Account']=="student"){
+        header("Location:Student_View/student.php");
+    } 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

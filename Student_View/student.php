@@ -1,8 +1,8 @@
 <?php
 session_start();
-      if($_SESSION['user']==NULL){ 
-      header("Location: ../index.html");  
-      }
+if ($_SESSION['user'] == NULL) {
+    header("Location: ../index.php");
+}
 ?>
 <?php
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
@@ -37,8 +37,8 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                 account_circle
             </span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
-                logout
-            </span></a>
+                    logout
+                </span></a>
 
         </div>
         <div class="MainDiv MainDiv1">

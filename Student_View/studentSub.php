@@ -1,8 +1,8 @@
 <?php
 session_start();
-if($_SESSION['user']==NULL){ 
-    header("Location: ../index.html");  
-    }
+if ($_SESSION['user'] == NULL) {
+    header("Location: ../index.php");
+}
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
 if ($_GET['clcode'] == NULL) {
     $clsCode = $_SESSION['clsCode'];
@@ -47,42 +47,39 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                 upload_file
             </span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
-                logout
-            </span></a>
+                    logout
+                </span></a>
         </div>
 
         <?php include 'studentSub/MainDiv1.php' ?>
         <div class="MainDiv MainDiv2">
             <div class="titleContainer">
-                <h3><?php echo $TrTable['Subject']?></h3>
+                <h3><?php echo $TrTable['Subject'] ?></h3>
             </div>
-            <?php 
+            <?php
             $queryAttandTotalNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode';";
             $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode' AND Attendance = 1;";
             $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
             $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
-            $AttandPresentRows=mysqli_num_rows($exeAttandPresentNumber);
-            $AttandTotalRows=mysqli_num_rows($exeAttandTotalNumber);
-            $AttandPercent=round(($AttandPresentRows/$AttandTotalRows)*100);
-            $ProgressBar=180*($AttandPercent/100);
+            $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
+            $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
+            $AttandPercent = round(($AttandPresentRows / $AttandTotalRows) * 100);
+            $ProgressBar = 180 * ($AttandPercent / 100);
             ?>
             <div class="attaend-assign-profile-container">
                 <div class="Attendance-Section">
                     <p class="attendance-title">Attendance</p>
                     <div class="circle-wrap">
-                        <div class="circle"
-                        style="
-                                --value:<?php echo $ProgressBar?>deg;
+                        <div class="circle" style="
+                                --value:<?php echo $ProgressBar ?>deg;
                                 ">
                             <div class="mask half">
-                                <div class="fill"
-                                style="
-                                --value:<?php echo $ProgressBar?>deg;
+                                <div class="fill" style="
+                                --value:<?php echo $ProgressBar ?>deg;
                                 "></div>
                             </div>
-                            <div class="mask full"
-                            style="
-                                --value:<?php echo $ProgressBar?>deg;
+                            <div class="mask full" style="
+                                --value:<?php echo $ProgressBar ?>deg;
                                 ">
                                 <div class="fill"></div>
                             </div>
@@ -98,7 +95,7 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                     $queryAssignNumberTotal = "SELECT * FROM `Class_Table` WHERE Class_code = '$clsCode' AND Is_Assignment = '1';";
                     $executeAssignNumberTotal = mysqli_query($con, $queryAssignNumberTotal);
                     $AssignNumberTotal = mysqli_num_rows($executeAssignNumberTotal);
-    
+
                     $queryAssignStudentNumber = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode' AND UserName = '$usrName';";
                     $executeAssignStudentNumber = mysqli_query($con, $queryAssignStudentNumber);
                     $AssignStudentNumber = mysqli_num_rows($executeAssignStudentNumber);
@@ -118,16 +115,17 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                         </span>
                     </div>
                     <div>
-                        <p class="details-name-student"><?php echo $AccountDetails['First_Name']." ".$AccountDetails['Last_Name']  ?></p>
+                        <p class="details-name-student"><?php echo $AccountDetails['First_Name'] . " " . $AccountDetails['Last_Name']  ?></p>
                     </div>
                 </div>
             </div>
         </div>
-        <?php include 'studentSub/uploadDiv.php' ?>
+        <?php include 'studentSub/uploadDiv.html' ?>
 
 </body>
 <script src="counter.js"></script>
 <script src="studentSub.js"></script>
 <script src="../jquery.js"></script>
 <script src="studentSub/ExistAssign.js"></script>
+
 </html>
