@@ -21,7 +21,7 @@ while ($fetch = mysqli_fetch_array($exe)) {
             <h6></h6>
         </td>
         <td><?php echo $RealName ?></td>
-        <td><a href="<?php echo $RealDocument ?>">Document</a></td>
+        <td><a href="<?php echo $RealDocument ?>"target="_blank">Document</a></td>
         <td><?php echo $fetch['Status'] ?></td>
         <td>
             <input type="number" class="check-assignment-mark">
