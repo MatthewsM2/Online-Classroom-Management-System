@@ -150,7 +150,7 @@ function CheckAssignment(parent) {
   document.getElementById("text-area-assignment-question-forCheckTeacher").innerHTML = que;
   document.getElementById("linktoAssignmentQuestion").href=doc;
   if(doc==""){
-    document.getElementById("linktoAssignmentQuestion").innerHTML="document not Available";
+    document.getElementById("linktoAssignmentQuestion").innerHTML="Document Not Available";
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
   }
   //call new function here for assignment
