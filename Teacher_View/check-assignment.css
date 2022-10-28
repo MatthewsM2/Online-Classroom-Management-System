@@ -53,7 +53,6 @@
 
 .form-control-container{
   font-size: 17px;
-  font-weight: bold;
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
@@ -72,7 +71,7 @@
   margin: 0;
   cursor: pointer;
   font: inherit;
-  color: currentColor;
+  color:#f7444eff;
   width: 1.15em;
   height: 1.15em;
   border: 0.15em solid currentColor;
@@ -96,6 +95,9 @@
 
 .form-control:checked::before {
   transform: scale(1);
+}
+.form-control:checked{
+  color: #2ff793ff;
 }
 .detailBox-checkAssignment {
   display: none;

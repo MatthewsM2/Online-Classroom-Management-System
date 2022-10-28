@@ -21,18 +21,16 @@ while ($fetch = mysqli_fetch_array($exe)) {
             <h6></h6>
         </td>
         <td><?php echo $RealName ?></td>
+        <input type="hidden" value="<?php echo $AccUser ?>" name="UserNameArr[]">
+        <input type="hidden" value="<?php echo $serialNo ?>" name="trSerialNumber">
         <td><a href="<?php echo $RealDocument ?>" target="_blank">Document</a></td>
         <td><?php echo $fetch['Status'] ?></td>
         <td>
             <input type="number" class="check-assignment-mark">
         </td>
         <td>
-            <!-- <input type="radio" name="radio-input-checkAssignment" id="Accept-input-checkAssignment" class="radio-checkAssignment">
-            <label for="Accept-input-checkAssignment" class="Accept-btn-checkAssignment">Accept</label>
-            <input type="radio" name="radio-input-checkAssignment" id="Reject-input-checkAssignment" class="radio-checkAssignment">
-            <label for="Reject-input-checkAssignment" class="Reject-btn-checkAssignment">Reject</label> -->
             <label class="form-control-container">
-                <input class="form-control" type="checkbox" name="checkbox-checked" checked />
+                <input class="form-control" type="checkbox" name="checkboxAssign[]" value="Accpted" checked />
                 Accept
             </label>
         </td>
