@@ -2,12 +2,12 @@
   display: none;
 }
 .check-assignment-btns-container {
-  margin-top: 10px;
+  margin-top: 27px;
   display: flex;
   gap: 20px;
   width: 100%;
   align-self: center;
-  justify-content: end;
+  justify-content: space-between;
 }
 .check-assignment-mark {
   outline: none;

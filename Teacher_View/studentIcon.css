@@ -4,6 +4,9 @@
   margin: auto;
   margin-top: 27px;
 }
+#CheckAssignStudentTable{
+  width: 100%;
+}
 #StudentTable td,
 #StudentTable th,
 #CheckAssignStudentTable td,

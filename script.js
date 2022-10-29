@@ -131,8 +131,10 @@ function Assignment() {
 function CheckAssignment(parent) {
   
   var que = parent.children[1].value;
-  var doc = parent.children[3].value;
+  var doc = parent.children[5].value;
   var serialNo = parent.children[2].value;
+  var day = parent.children[3].value;
+  var time = parent.children[4].value;
   document.getElementById("check-assignment").style.display = "block";
   document.getElementsByClassName("check-assignment")[0].style.display =
     "block";
@@ -148,13 +150,17 @@ function CheckAssignment(parent) {
   document.getElementById("Maindiv5").style.backgroundColor = "#00b4d8";
   document.getElementById("check-assignment").style.backgroundColor = "white";
   document.getElementById("text-area-assignment-question-forCheckTeacher").innerHTML = que;
+  document.getElementById("AssignDateCheckAssign").value = day;
+  document.getElementById("AssignTimeCheckAssign").value = time;
   document.getElementById("linktoAssignmentQuestion").href=doc;
   if(doc==""){
     document.getElementById("linktoAssignmentQuestion").innerHTML="Document Not Available";
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
+    document.getElementById("assignment-file-label-checkAssign").style.display = "none";
   }else{
     document.getElementById("linktoAssignmentQuestion").innerHTML="Assignment.pdf";
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "auto";
+    document.getElementById("assignment-file-label-checkAssign").style.display = "flex";
   }
   //call new function here for assignment
   checkAssignmentAjax(serialNo);

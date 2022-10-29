@@ -34,7 +34,9 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
                     <span class="assignment-div">
                         <p id="AssignHeading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
                         <input id="AssignDescr" type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
-                        <input id="AssignSlNo" type="hidden"  value="'.$ModuleMaterialValtoTrav['Sl_No'].'">';
+                        <input id="AssignSlNo" type="hidden"  value="'.$ModuleMaterialValtoTrav['Sl_No'].'">
+                        <input id="AssignDate" type="hidden"  value="'.$ModuleMaterialValtoTrav['date'].'">
+                        <input id="AssignTime" type="hidden"  value="'.$ModuleMaterialValtoTrav['time'].'">';
                         if($ModuleMaterialValtoTrav['document']==""){
                             echo '<input id="AssignDocmen" type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">';    
                         }else{

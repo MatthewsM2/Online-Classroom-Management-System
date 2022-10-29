@@ -19,11 +19,9 @@
   background-color: #eee;
 }
 .assignment-arrage-div {
-  margin-top: 4px;
+  margin:0px;
   width: 74%;
-  height: 40px;
   align-self: center;
-  background-color: yellowgreen;
 }
 .assignment-file-upload {
   margin: 0px;
@@ -32,8 +30,10 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 27px;
   height: 33px;
   padding: 2px;
+  border-radius: 7px;
   border: 1px solid black;
   color: white;
   background-color: gray;
@@ -48,7 +48,7 @@
   opacity: 0;
 }
 .assignment-inputs {
-  margin-top: 37px;
+  margin-top: 27px;
   align-self: center;
   display: flex;
   justify-content: space-between;
