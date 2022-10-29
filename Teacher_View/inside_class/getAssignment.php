@@ -15,6 +15,7 @@ while ($fetch = mysqli_fetch_array($exe)) {
     $AccFetch = mysqli_fetch_assoc($Accexe);
     $RealName = $AccFetch['First_Name'] . " " . $AccFetch['Last_Name'];
     $RealDocument = "../Student_View/studentSub/" . $fetch['document'];
+    $RealMark = $fetch['marks'];
 ?>
     <tr>
         <td>
@@ -26,7 +27,7 @@ while ($fetch = mysqli_fetch_array($exe)) {
         <td><a href="<?php echo $RealDocument ?>" target="_blank">Document</a></td>
         <td><?php echo $fetch['Status'] ?></td>
         <td>
-            <input type="number" class="check-assignment-mark">
+            <input type="number" class="check-assignment-mark" min="0" name="AssignMarks[]" value="<?php echo $RealMark ?>">
         </td>
         <td>
             <label class="form-control-container">

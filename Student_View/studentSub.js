@@ -36,7 +36,9 @@ function showUploadDiv(parent) {
     document.getElementById("AnchorTagforDocu").innerHTML="Document not Available";
     document.getElementById("AnchorTagforDocu").style.pointerEvents = "none";
   }else{
+    document.getElementById("AnchorTagforDocu").innerHTML="Document.pdf";
     document.getElementById("AnchorTagforDocu").href="../Teacher_View/inside_class/"+docuMENT;
+    document.getElementById("AnchorTagforDocu").style.pointerEvents = "auto";
   }
   document.getElementById("uploadDivViewDate").value = DaTe;
   document.getElementById("uploadDivViewTime").value = TiMe;

@@ -152,6 +152,9 @@ function CheckAssignment(parent) {
   if(doc==""){
     document.getElementById("linktoAssignmentQuestion").innerHTML="Document Not Available";
     document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "none";
+  }else{
+    document.getElementById("linktoAssignmentQuestion").innerHTML="Assignment.pdf";
+    document.getElementById("linktoAssignmentQuestion").style.pointerEvents = "auto";
   }
   //call new function here for assignment
   checkAssignmentAjax(serialNo);
