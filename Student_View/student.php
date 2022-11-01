@@ -10,6 +10,13 @@ $usrName = $_SESSION['user'];
 $queryGetAcoountDetails = "SELECT * FROM Account WHERE Usr_Name = '$usrName';";
 $GetAccountDetails = mysqli_query($con, $queryGetAcoountDetails);
 $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
+
+// check if the account is teacher or 
+// not and redirct to teacher account
+$AccToCheckTr = $AccountDetails['Account'];
+if ($AccToCheckTr=="teacher"){
+    header("Location: ../Teacher_View/index_teacher.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

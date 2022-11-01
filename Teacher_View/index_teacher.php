@@ -1,8 +1,8 @@
 <?php session_start() ?>
-<?php 
-      if($_SESSION['user']==NULL){ 
-      header("Location: ../index.php");  
-      }
+<?php
+if ($_SESSION['user'] == NULL) {
+    header("Location: ../index.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +27,14 @@
     $queryGetAccValues = "SELECT * FROM Account WHERE Usr_Name = '$userName';";
     $GetAccValues = mysqli_query($con, $queryGetAccValues);
     $AccValues = mysqli_fetch_assoc($GetAccValues);
+    
+    
+    // check if the account is Student or 
+    // not and redirct to teacher account
+    $AccToCheckStudent = $AccValues['Account'];
+    if ($AccToCheckStudent == "student") {
+        header("Location: ../Student_View/student.php");
+    }
     ?>
     <div class="DivContainers">
         <div class="subDiv">
@@ -36,14 +44,14 @@
             <span class="material-symbols-outlined icons" id="account" onclick="AccClick()">
                 account_circle
             </span>
-            
-            <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
-                logout
-            </span></a>
-        </div>
-        
 
-        
+            <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
+                    logout
+                </span></a>
+        </div>
+
+
+
         <div class="MainDiv MainDiv1">
             <?php include 'index_teacher/index_tr_home.php'; ?>
         </div>
