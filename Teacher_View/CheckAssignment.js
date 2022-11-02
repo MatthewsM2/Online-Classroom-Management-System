@@ -4,11 +4,10 @@ function checkAssignmentAjax(serialNo) {
     type: "post",
     data: "slno=" + serialNo,
     success: function (response) {
-    $('#CheckAssignStudentTableTbody').html(response);
+      $("#CheckAssignStudentTableTbody").html(response);
     },
   });
 }
-
 
 // var dataRecive = JSON.parse(response);
 //       console.log(dataRecive.length);
@@ -20,7 +19,7 @@ function checkAssignmentAjax(serialNo) {
 //         array1.forEach((element) => {
 //           typeof(element);
 //            tb.innerHTML +="<td>"+element+"</td>";
-          
+
 //         });
 //         table.innerHTML +="</tr>"
 //       });

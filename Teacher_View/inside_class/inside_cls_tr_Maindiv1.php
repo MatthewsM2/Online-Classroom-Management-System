@@ -26,23 +26,23 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
             while ($ModuleMaterialValtoTrav = mysqli_fetch_assoc($GetUniqueModuleMaterial)) {
                 if ($ModuleMaterialValtoTrav['Is_Assignment'] == 0) {
                     echo '<div>
-                    <a href="'.$PathtoInside.$ModuleMaterialValtoTrav['document'].'"><img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
+                    <a href="' . $PathtoInside . $ModuleMaterialValtoTrav['document'] . '"><img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
                     </a>
                 </div>';
                 } else if ($ModuleMaterialValtoTrav['Is_Assignment'] == 1) {
                     echo '<div onclick="CheckAssignment(this.children[0])">
                     <span class="assignment-div">
                         <p id="AssignHeading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
-                        <input id="AssignDescr" type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
-                        <input id="AssignSlNo" type="hidden"  value="'.$ModuleMaterialValtoTrav['Sl_No'].'">
-                        <input id="AssignDate" type="hidden"  value="'.$ModuleMaterialValtoTrav['date'].'">
-                        <input id="AssignTime" type="hidden"  value="'.$ModuleMaterialValtoTrav['time'].'">';
-                        if($ModuleMaterialValtoTrav['document']==""){
-                            echo '<input id="AssignDocmen" type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">';    
-                        }else{
-                           echo' <input id="AssignDocmen" type="hidden"  value="inside_class/'.$ModuleMaterialValtoTrav['document'].'">';
-                        }
-                        echo '</span>
+                        <input id="AssignDescr" type="hidden"  value="' . $ModuleMaterialValtoTrav['Description'] . '">
+                        <input id="AssignSlNo" type="hidden"  value="' . $ModuleMaterialValtoTrav['Sl_No'] . '">
+                        <input id="AssignDate" type="hidden"  value="' . $ModuleMaterialValtoTrav['date'] . '">
+                        <input id="AssignTime" type="hidden"  value="' . $ModuleMaterialValtoTrav['time'] . '">';
+                    if ($ModuleMaterialValtoTrav['document'] == "") {
+                        echo '<input id="AssignDocmen" type="hidden"  value="' . $ModuleMaterialValtoTrav['document'] . '">';
+                    } else {
+                        echo ' <input id="AssignDocmen" type="hidden"  value="inside_class/' . $ModuleMaterialValtoTrav['document'] . '">';
+                    }
+                    echo '</span>
                  </div>';
                 }
             }
@@ -51,4 +51,4 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
     }
     echo '</div>';
 
-    ?>    
+    ?>

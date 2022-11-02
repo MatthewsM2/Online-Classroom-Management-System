@@ -5,10 +5,10 @@
         <div class="assignment-arrage-div"><label id="assignment-file-label-checkAssign" class="assignment-file-upload"><a id="linktoAssignmentQuestion" href="">Assignment.pdf</a></label>
             <form action="inside_class/sentAssignment.php" method="POST">
                 <div class="check-assignment-btns-container">
-                <input id="AssignDateCheckAssign" type="button" class="assignment-bts" value="">
-                <input id="AssignTimeCheckAssign" type="button" class="assignment-bts" value="">
-                    <input  type="button" class="assignment-bts" value="Details" onclick="disDetailsAssign()">
-                    <input  type="submit" class="assignment-bts" value="Save">
+                    <input id="AssignDateCheckAssign" type="button" class="assignment-bts" value="">
+                    <input id="AssignTimeCheckAssign" type="button" class="assignment-bts" value="">
+                    <input type="button" class="assignment-bts" value="Details" onclick="disDetailsAssign()">
+                    <input type="submit" class="assignment-bts" value="Save">
                 </div>
                 <table id="CheckAssignStudentTable">
                     <thead>

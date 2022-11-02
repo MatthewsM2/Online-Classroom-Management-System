@@ -23,4 +23,3 @@ while ($StudentUsrName[$loop] != NULL) {
     $loop = $loop + 1;
 }
 header("Location:http://localhost/MiniProject/Teacher_View/inside_cls_tr.php");
-?>

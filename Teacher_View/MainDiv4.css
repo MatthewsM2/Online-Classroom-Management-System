@@ -104,6 +104,6 @@
   counter-increment: countRollno;
   content: counter(countRollno);
 }
-table{
+table {
   text-transform: capitalize;
 }

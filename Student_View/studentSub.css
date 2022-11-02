@@ -23,7 +23,7 @@ body {
   background-color: #00b4d8;
   text-align: center;
 }
-.subDiv a{
+.subDiv a {
   text-decoration: none;
   color: black;
 }
@@ -149,7 +149,7 @@ body {
 .MainDiv1 {
   display: block;
 }
-.assignment-div{
+.assignment-div {
   display: flex;
   font-weight: 700;
   justify-content: center;

@@ -51,7 +51,7 @@
   color: black;
 } */
 
-.form-control-container{
+.form-control-container {
   font-size: 17px;
   line-height: 1.1;
   display: grid;
@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-.form-control{
+.form-control {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   /* Remove most all native input styles */
@@ -71,7 +71,7 @@
   margin: 0;
   cursor: pointer;
   font: inherit;
-  color:#f7444eff;
+  color: #f7444eff;
   width: 1.15em;
   height: 1.15em;
   border: 0.15em solid currentColor;
@@ -96,7 +96,7 @@
 .form-control:checked::before {
   transform: scale(1);
 }
-.form-control:checked{
+.form-control:checked {
   color: #2ff793ff;
 }
 .detailBox-checkAssignment {
@@ -126,7 +126,7 @@
 }
 #CheckAssignStudentTable {
   counter-reset: countRollno;
-  }
+}
 #CheckAssignStudentTable td h6 {
   margin: 0px;
   font-size: 16px;

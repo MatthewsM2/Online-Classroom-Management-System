@@ -1,8 +1,8 @@
 <?php
-session_start(); 
-      if($_SESSION['user']==NULL){ 
-      header("Location: ../index.php");  
-      }
+session_start();
+if ($_SESSION['user'] == NULL) {
+    header("Location: ../index.php");
+}
 ?>
 <?php
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
@@ -60,8 +60,8 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
                 inventory
             </span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
-                logout
-            </span></a>
+                    logout
+                </span></a>
         </div>
 
         <?php include 'inside_class/inside_cls_tr_Maindiv1.php' ?>
@@ -76,4 +76,5 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
 <script src="fileSelect.js"></script>
 <script src="/MiniProject/jquery.js"></script>
 <script src="CheckAssignment.js"></script>
+
 </html>

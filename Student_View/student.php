@@ -14,7 +14,7 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 // check if the account is teacher or 
 // not and redirct to teacher account
 $AccToCheckTr = $AccountDetails['Account'];
-if ($AccToCheckTr=="teacher"){
+if ($AccToCheckTr == "teacher") {
     header("Location: ../Teacher_View/index_teacher.php");
 }
 ?>

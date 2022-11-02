@@ -1,16 +1,15 @@
 <?php
-$Account=$_POST["AccountStatus"];
-$Firstname=$_POST["AccFirstname"];
-$Lastname=$_POST["AccLastname"];
-$Username=$_POST["AccUsrname"];
-$pass=$_POST["AccPass"];
-$rePass=$_POST["AccRepass"];
-$con = new mysqli("localhost","root","","smart_project") or die("Connection Failed");
-if($pass == $rePass){
+$Account = $_POST["AccountStatus"];
+$Firstname = $_POST["AccFirstname"];
+$Lastname = $_POST["AccLastname"];
+$Username = $_POST["AccUsrname"];
+$pass = $_POST["AccPass"];
+$rePass = $_POST["AccRepass"];
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+if ($pass == $rePass) {
     $con->query("INSERT INTO `Account` (`Account`, `First_Name`, `Last_Name`, `Usr_Name`, `Pasword`) VALUES ('$Account', '$Firstname', '$Lastname', '$Username', '$pass')");
     header("Location: http://localhost/MiniProject/");
     exit;
-}
-else{
-echo "check your password";
+} else {
+    echo "check your password";
 }

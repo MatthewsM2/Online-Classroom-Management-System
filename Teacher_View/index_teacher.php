@@ -27,8 +27,8 @@ if ($_SESSION['user'] == NULL) {
     $queryGetAccValues = "SELECT * FROM Account WHERE Usr_Name = '$userName';";
     $GetAccValues = mysqli_query($con, $queryGetAccValues);
     $AccValues = mysqli_fetch_assoc($GetAccValues);
-    
-    
+
+
     // check if the account is Student or 
     // not and redirct to teacher account
     $AccToCheckStudent = $AccValues['Account'];

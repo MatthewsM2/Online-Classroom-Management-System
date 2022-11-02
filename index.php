@@ -1,7 +1,7 @@
 <!-- J.M.J -->
 <?php
 session_start();
-if($_SESSION['user']!=NULL){
+if ($_SESSION['user'] != NULL) {
     $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
     $user = $_SESSION['user'];
     var_dump($user);
@@ -11,13 +11,13 @@ if($_SESSION['user']!=NULL){
     var_dump($execute);
     $dataFetch = mysqli_fetch_assoc($execute);
     var_dump($dataFetch);
-    if($dataFetch['Account']=="teacher"){
+    if ($dataFetch['Account'] == "teacher") {
         header("Location:Teacher_View/index_teacher.php");
     }
-    if($dataFetch['Account']=="student"){
+    if ($dataFetch['Account'] == "student") {
         header("Location:Student_View/student.php");
-    } 
     }
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,10 +40,8 @@ if($_SESSION['user']!=NULL){
         <h1 class="loginTxt">Login</h1>
         <h5 class="loginSubTxt">Login if you have an account in here</h5>
         <form action="Login.php" method="post">
-            <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name"
-                autocomplete="off" required>
-            <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password"
-                required>
+            <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name" autocomplete="off" required>
+            <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password" required>
             <div class="ConTlogSumbit">
                 <input type="submit" class="logSumbit" value="Login">
             </div>
@@ -72,14 +70,10 @@ if($_SESSION['user']!=NULL){
                     <input type="hidden" id="Account-Status" name="AccountStatus">
                     <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
                     <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
-                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" id="userNameId" placeholder="User Name"
-                        oninput="checkUsername()" onblur="userinRed()" autocomplete="off" required>
-                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password"
-                        required>
-                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass"
-                        placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
-                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn"
-                        onclick="AlertBoxCheck()">
+                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" id="userNameId" placeholder="User Name" oninput="checkUsername()" onblur="userinRed()" autocomplete="off" required>
+                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
+                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
+                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn" onclick="AlertBoxCheck()">
                     <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn">
                 </div>
             </form>
