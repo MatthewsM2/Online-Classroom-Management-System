@@ -1,3 +1,4 @@
+<!-- error happens here while a new user comes -->
 <div class="MainDiv MainDiv2">
     <div class="titleContainer">
         <h3><?php echo $TrClsValues['Class_Name']; ?></h3>
