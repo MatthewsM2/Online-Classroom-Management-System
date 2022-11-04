@@ -17,6 +17,7 @@
             <?php
             $QuerycheckStudentName = "SELECT * FROM student_table WHERE Class_Code = '$clsCode';";
             $ExecheckStudentName = mysqli_query($con, $QuerycheckStudentName);
+            $loopToTravel=0;
             while ($checkStudentName = mysqli_fetch_assoc($ExecheckStudentName)) {
                 $passUserName = $checkStudentName['St_UsrName'];
                 $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
@@ -28,16 +29,17 @@
                 <h6></h6>
             </td>
             <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '
-            <input type="hidden" name="studName[]" value="' . $passUserName . '">
+            <input type="hidden" name="studName['.$loopToTravel.']" value="' . $passUserName . '">
             </td>
             <td>
                 <div class="container">
-                    <label class="switch"><input type="checkbox" value="Yes" name="studAttStatus[]">
+                    <label class="switch"><input type="checkbox" value="Yes" name="studAttStatus['.$loopToTravel.']">
                         <div></div>
                     </label>
                 </div>
             </td>
         </tr>';
+        $loopToTravel=$loopToTravel+1;
                 }
             }
 

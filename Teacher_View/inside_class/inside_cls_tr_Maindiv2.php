@@ -19,9 +19,10 @@
             $queryTakeStduentName = "SELECT * FROM Account WHERE Usr_Name = '$passUserName';";
             $exeTakeStudentName = mysqli_query($con, $queryTakeStduentName);
             while ($TakeStudentName = mysqli_fetch_assoc($exeTakeStudentName)) {
-                $queryAttandTotalNumber = "SELECT * FROM Attand WHERE St_UsrName = '$passUserName' and Class_Code = '$clsCode';";
+                $queryAttandTotalNumber = "SELECT * FROM Attand WHERE Class_Code = '$clsCode';";
                 $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
                 $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
+                if($AttandTotalRows != 0){
                 $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$passUserName' AND Class_Code = '$clsCode' AND Attendance = 1;";
                 $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
                 $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
@@ -42,6 +43,15 @@
                 $AssignStudentNumber = mysqli_num_rows($executeAssignStudentNumber);
                 echo '<td>' . $AssignStudentNumber . '/' . $AssignNumberTotal . '</td>
             </tr>';
+                }else{
+                    echo '<tr>
+                    <td>
+                    <h6></h6>
+                    </td>
+                    <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '</td>
+                    <td>0%</td>
+                    <td>0/' . $AssignNumberTotal . '</td></tr>';
+                }
             }
         }
         ?>
