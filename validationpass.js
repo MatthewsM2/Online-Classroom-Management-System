@@ -18,14 +18,14 @@ function checkPasswordMatch() {
 }
 
 function AlertBoxCheck() {
-  swal("The password confirmation does not match!");
+  swal('Oops...',"The password confirmation does not match!");
 }
 
 function userinRed() {
   var red = "red";
   var redCol = document.getElementById("userNameId").style.borderColor;
   if (redCol == red) {
-    swal("User Name Already taken");
+    swal('Oops...',"Username already exists");
     document.getElementById("userNameId").focus();
   }
 }

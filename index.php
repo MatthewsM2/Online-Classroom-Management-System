@@ -4,13 +4,9 @@ session_start();
 if ($_SESSION['user'] != NULL) {
     $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
     $user = $_SESSION['user'];
-    var_dump($user);
     $queryCheck = "SELECT * FROM `Account` WHERE Usr_Name = '$user' ;";
-    var_dump($queryCheck);
     $execute = mysqli_query($con, $queryCheck);
-    var_dump($execute);
     $dataFetch = mysqli_fetch_assoc($execute);
-    var_dump($dataFetch);
     if ($dataFetch['Account'] == "teacher") {
         header("Location:Teacher_View/index_teacher.php");
     }
@@ -39,7 +35,7 @@ if ($_SESSION['user'] != NULL) {
     <div class="whiteBox WBox1">
         <h1 class="loginTxt">Login</h1>
         <h5 class="loginSubTxt">Login if you have an account in here</h5>
-        <form action="Login.php" method="post">
+        <form action="index.php" method="post">
             <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name" autocomplete="off" required>
             <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password" required>
             <div class="ConTlogSumbit">
@@ -87,5 +83,24 @@ if ($_SESSION['user'] != NULL) {
 <script src="validationpass.js"></script>
 <script src="jquery.js"></script>
 <script src="checkUsrName.js"></script>
-
 </html>
+<?php
+session_start();
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+$usr = $_POST["loginUsrName"];
+$pass = $_POST["loginPassword"];
+$_SESSION['user'] = "$usr";
+// add some ajax code to check user name and password in live
+if($usr != NULL){
+$queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";
+$acc = mysqli_query($con, $queryUser);
+$resultAcc = mysqli_fetch_assoc($acc);
+if ($resultAcc['Account'] == "teacher") {
+    header("Location:http://localhost/MiniProject/Teacher_View/index_teacher.php");
+} else if ($resultAcc['Account'] == "student") {
+    header("Location:http://localhost/MiniProject/Student_View/student.php");
+} else {
+    echo "page Not Found";
+}
+}
+?>
