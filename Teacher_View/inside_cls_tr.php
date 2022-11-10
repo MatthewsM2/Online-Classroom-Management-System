@@ -41,6 +41,32 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
 <body>
     <div class="DivContainers">
         <div class="subDiv">
+
+            <span class="custom-icon-4-smart">
+            <svg
+   viewBox="0 0 144.58165 40.34594"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve">
+   <sodipodi:namedview
+     id="namedview7"
+     showgrid="false" /><defs
+     id="defs2" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.762391,-114.20398)"><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.5092px;line-height:68.9452px;font-family:'AvantGarde LT Medium';-inkscape-font-specification:'AvantGarde LT Medium, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0"
+       x="96.598351"
+       y="153.8008"
+       id="text512"><tspan
+         sodipodi:role="line"
+         id="tspan510"
+         x="96.598351"
+         y="153.8008"
+         >smart</tspan></text></g></svg>
+            </span>
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
             </span>
