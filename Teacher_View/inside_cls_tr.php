@@ -57,16 +57,15 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
      id="layer1"
      transform="translate(-24.762391,-114.20398)"><text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.5092px;line-height:68.9452px;font-family:'AvantGarde LT Medium';-inkscape-font-specification:'AvantGarde LT Medium, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'AvantGarde LT Medium';-inkscape-font-specification:'AvantGarde LT Medium, ';text-align:center;text-anchor:middle;fill:currentColor;stroke-width:0"
        x="96.598351"
        y="153.8008"
        id="text512"><tspan
          sodipodi:role="line"
          id="tspan510"
-         x="96.598351"
-         y="153.8008"
          >smart</tspan></text></g></svg>
             </span>
+
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
             </span>

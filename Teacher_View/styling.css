@@ -158,7 +158,8 @@ body {
   background-color: white;
   border: solid 1px;
 }
-.custom-icon-4-smart{
+.custom-icon-4-smart {
   width: 20px;
-  color: green;
+  font-size: 2em;
+  color: white;
 }
