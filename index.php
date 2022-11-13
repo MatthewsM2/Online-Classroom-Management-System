@@ -100,7 +100,16 @@ if ($resultAcc['Account'] == "teacher") {
 } else if ($resultAcc['Account'] == "student") {
     header("Location:http://localhost/MiniProject/Student_View/student.php");
 } else {
-    echo "page Not Found";
+    echo '
+    <script>
+    swal({
+        title: "Invalid Login Credentials !",
+        text: "You have entered an invalid username or password !",
+        icon: "warning",
+        dangerMode: true
+      });
+    </script>';
+      
 }
 }
 ?>
