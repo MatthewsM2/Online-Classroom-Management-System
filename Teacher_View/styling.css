@@ -158,8 +158,17 @@ body {
   background-color: white;
   border: solid 1px;
 }
-.custom-icon-4-smart {
-  width: 20px;
-  font-size: 2em;
+#title-svg-image {
+  width: 50px;
+  font-weight: 700;
   color: white;
+  animation:glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+  }
 }
