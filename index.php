@@ -32,50 +32,55 @@ if ($_SESSION['user'] != NULL) {
 
 <body>
     <!-- div whitebox1 -->
-    <div class="whiteBox WBox1">
-        <h1 class="loginTxt">Login</h1>
-        <h5 class="loginSubTxt">Login if you have an account in here</h5>
-        <form action="index.php" method="post">
-            <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name" autocomplete="off" required>
-            <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password" required>
-            <div class="ConTlogSumbit">
-                <input type="submit" class="logSumbit" value="Login">
-            </div>
-        </form>
-        <label for="newUser" class="txtNewuser">New User?</label>
-        <label for="createAccount" class="txtCreateAcc" onclick="CreateAccount()">Create Account</label>
-    </div>
-    <!-- div whitebox2 -->
-    <div class="whiteBox WBox2">
-        <h1 class="loginTxt" id="iamA">I'm A</h1>
-        <div class="ConTlogSumbit" id="BtnTrAndSt">
-            <input type="button" class="BtnGradent BtnTr" value="Teacher" onclick="teacher()">
-            <input type="button" class="BtnGradent BtnSt" value="Student" onclick="student()">
+    <div class="outer-container-white-boxes">
+        <div class="left-div-parent">
+            <h1>hello</h1>
         </div>
-        <label for="loginExistUsr" class="txtNewuser">Hava an Account Already?</label>
-        <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
-    </div>
-    <!-- div whitebox3 -->
-    <div class="whiteBox WBox3">
-        <div class="AvAndGTBContainer">
-            <div class="avatarContainer">
-                <div class="avatar"></div>
-            </div>
-            <form onsubmit="checkValidation()" action="createAcc.php" method="post">
-                <div class="GreyTxtBoxContainer">
-                    <input type="hidden" id="Account-Status" name="AccountStatus">
-                    <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
-                    <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
-                    <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" id="userNameId" placeholder="User Name" oninput="checkUsername()" onblur="userinRed()" autocomplete="off" required>
-                    <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
-                    <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
-                    <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn" onclick="AlertBoxCheck()">
-                    <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn">
+        <div class="whiteBox WBox1">
+            <h1 class="loginTxt">Login</h1>
+            <h5 class="loginSubTxt">Login if you have an account in here</h5>
+            <form action="index.php" method="post">
+                <input type="text" name="loginUsrName" class="logTxtBoxUsrName" placeholder="Enter Your User Name" autocomplete="off" required>
+                <input type="password" name="loginPassword" class="logTxtBoxPassword" placeholder="Enter Your Password" required>
+                <div class="ConTlogSumbit">
+                    <input type="submit" class="logSumbit" value="Login">
                 </div>
             </form>
+            <label for="newUser" class="txtNewuser">New User?</label>
+            <label for="createAccount" class="txtCreateAcc" onclick="CreateAccount()">Create Account</label>
         </div>
-        <label for="loginExistUsr" class="txtNewuser GTBTxtAccAl">Hava an Account Already?</label>
-        <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
+        <!-- div whitebox2 -->
+        <div class="whiteBox WBox2">
+            <h1 class="loginTxt" id="iamA">I'm A</h1>
+            <div class="ConTlogSumbit" id="BtnTrAndSt">
+                <input type="button" class="BtnGradent BtnTr" value="Teacher" onclick="teacher()">
+                <input type="button" class="BtnGradent BtnSt" value="Student" onclick="student()">
+            </div>
+            <label for="loginExistUsr" class="txtNewuser">Hava an Account Already?</label>
+            <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
+        </div>
+        <!-- div whitebox3 -->
+        <div class="whiteBox WBox3">
+            <div class="AvAndGTBContainer">
+                <div class="avatarContainer">
+                    <div class="avatar"></div>
+                </div>
+                <form onsubmit="checkValidation()" action="createAcc.php" method="post">
+                    <div class="GreyTxtBoxContainer">
+                        <input type="hidden" id="Account-Status" name="AccountStatus">
+                        <input type="text" class="GreyTxtBox GTB1" name="AccFirstname" placeholder="First Name" required>
+                        <input type="text" class="GreyTxtBox GTB2" name="AccLastname" placeholder="Last Name">
+                        <input type="text" class="GreyTxtBox GTB3" name="AccUsrname" id="userNameId" placeholder="User Name" oninput="checkUsername()" onblur="userinRed()" autocomplete="off" required>
+                        <input type="password" class="GreyTxtBox GTB4" id="passOne" name="AccPass" placeholder="Password" required>
+                        <input type="password" class="GreyTxtBox GTB5" id="passOneConfirm" name="AccRepass" placeholder="Re-Password" onkeyup="checkPasswordMatch()" required>
+                        <input type="button" value="Create Account" id="GTBCACCBtn" class="BtnGradent GTBCreateAccBtn" onclick="AlertBoxCheck()">
+                        <input type="submit" value="Create Account" id="GTBCACCSub" class="BtnGradent GTBCreateAccBtn">
+                    </div>
+                </form>
+            </div>
+            <label for="loginExistUsr" class="txtNewuser GTBTxtAccAl">Hava an Account Already?</label>
+            <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
+        </div>
     </div>
 </body>
 <script src="customAlert.js"></script>
@@ -83,6 +88,7 @@ if ($_SESSION['user'] != NULL) {
 <script src="validationpass.js"></script>
 <script src="jquery.js"></script>
 <script src="checkUsrName.js"></script>
+
 </html>
 <?php
 session_start();
@@ -91,16 +97,16 @@ $usr = $_POST["loginUsrName"];
 $pass = $_POST["loginPassword"];
 $_SESSION['user'] = "$usr";
 // add some ajax code to check user name and password in live
-if($usr != NULL){
-$queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";
-$acc = mysqli_query($con, $queryUser);
-$resultAcc = mysqli_fetch_assoc($acc);
-if ($resultAcc['Account'] == "teacher") {
-    header("Location:http://localhost/MiniProject/Teacher_View/index_teacher.php");
-} else if ($resultAcc['Account'] == "student") {
-    header("Location:http://localhost/MiniProject/Student_View/student.php");
-} else {
-    echo '
+if ($usr != NULL) {
+    $queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";
+    $acc = mysqli_query($con, $queryUser);
+    $resultAcc = mysqli_fetch_assoc($acc);
+    if ($resultAcc['Account'] == "teacher") {
+        header("Location:http://localhost/MiniProject/Teacher_View/index_teacher.php");
+    } else if ($resultAcc['Account'] == "student") {
+        header("Location:http://localhost/MiniProject/Student_View/student.php");
+    } else {
+        echo '
     <script>
     swal({
         title: "Invalid Login Credentials !",
@@ -109,7 +115,6 @@ if ($resultAcc['Account'] == "teacher") {
         dangerMode: true
       });
     </script>';
-      
-}
+    }
 }
 ?>

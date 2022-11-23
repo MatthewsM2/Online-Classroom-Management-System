@@ -12,7 +12,7 @@ body {
   border: 5px solid;
   border-color: white;
   border-radius: 17px;
-  margin-left: 57%;
+  /* margin-left: 57%; */
   margin-top: 97px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
@@ -203,4 +203,11 @@ body {
 }
 .GTB3::placeholder {
   text-transform: capitalize;
+}
+.outer-container-white-boxes{
+display: flex;
+gap: 50%;
+}
+.left-div-parent{
+  background-color: #eee;
 }
