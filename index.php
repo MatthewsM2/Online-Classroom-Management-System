@@ -34,7 +34,7 @@ if ($_SESSION['user'] != NULL) {
     <!-- div whitebox1 -->
     <div class="outer-container-white-boxes">
         <div class="left-div-parent">
-            <h1>hello</h1>
+            <img src="Teacher_View/Assets/title.svg" alt="">
         </div>
         <div class="whiteBox WBox1">
             <h1 class="loginTxt">Login</h1>

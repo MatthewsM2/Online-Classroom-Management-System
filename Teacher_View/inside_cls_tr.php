@@ -43,7 +43,7 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
         <div class="subDiv">
 
             <a href="../Teacher_View/index_teacher.php"><span class="custom-icon-4-smart" title="Back to home">
-            <img id="title-svg-image" src="../Teacher_View/Assets/title.svg" alt="">
+            <img id="title-svg-image" src="../Teacher_View/Assets/titleOnly.svg" alt="">
             </span></a>
 
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">

@@ -14,6 +14,7 @@ body {
   border-radius: 17px;
   /* margin-left: 57%; */
   margin-top: 97px;
+  margin-right: 57px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -145,7 +146,7 @@ body {
   background-color: #eee;
   border-color: #eee;
   border-radius: 7px;
-  padding: 7px 12px;
+  padding: 7px 0px;
   padding-right: 77px;
 }
 
@@ -206,8 +207,9 @@ body {
 }
 .outer-container-white-boxes{
 display: flex;
-gap: 50%;
+justify-content: space-between;
 }
 .left-div-parent{
-  background-color: #eee;
+  margin-top: 97px;
+  margin-left: 27px;
 }
