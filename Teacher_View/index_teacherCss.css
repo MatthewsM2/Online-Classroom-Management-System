@@ -307,3 +307,11 @@ body {
 .usrName {
   text-transform: capitalize;
 }
+a.fakeLink {
+  color: red;
+  text-decoration: underline;
+}
+a.fakeLink:hover{
+  color: #f7444eff;
+  cursor: pointer;
+}

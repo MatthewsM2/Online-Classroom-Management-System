@@ -60,6 +60,7 @@ if ($_SESSION['user'] == NULL) {
         </div>
     </div>
 </body>
+<script src="../customAlert.js"></script>
+<script src="../jquery.js"></script>
 <script src="index_teacher.js"></script>
-
 </html>

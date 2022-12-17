@@ -111,7 +111,7 @@ if ($usr != NULL) {
     swal({
         title: "Invalid Login Credentials !",
         text: "You have entered an invalid username or password !",
-        icon: "warning",
+        icon: "error",
         dangerMode: true
       });
     </script>';
