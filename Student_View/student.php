@@ -128,11 +128,15 @@ if ($AccToCheckTr == "teacher") {
                     <h1 class="usrName"><?php echo $AccountDetails["Last_Name"]; ?></h1>
                 </div>
                 <h3 class="usrIdName">@<?php echo $usrName; ?></h3>
+                <input id="UsrNameTwoDel" type="hidden" value="<?php echo $usrName; ?>">
+                <h4><a class="fakeLink" onclick="DelAcc()">Delete Account</a></h4>
             </div>
 
         </div>
     </div>
 </body>
+<script src="../customAlert.js"></script>
+<script src="../jquery.js"></script>
 <script src="student.js"></script>
 
 </html>

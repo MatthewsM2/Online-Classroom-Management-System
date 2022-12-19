@@ -299,4 +299,14 @@ body {
 }
 .usrName {
   text-transform: capitalize;
+  margin: 0px;
+  padding: 0px;
+}
+a.fakeLink {
+  color: red;
+  text-decoration: underline;
+}
+a.fakeLink:hover{
+  color: #f7444eff;
+  cursor: pointer;
 }
