@@ -80,6 +80,8 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
 <script src="selectbox.js"></script>
 <script src="fileSelect.js"></script>
 <script src="/MiniProject/jquery.js"></script>
+<script src="/MiniProject/customAlert.js"></script>
 <script src="CheckAssignment.js"></script>
+<script src="cus-alert-js.js"></script>
 
 </html>

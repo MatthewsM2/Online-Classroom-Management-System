@@ -9,6 +9,7 @@
             <th>Name</th>
             <th>Attendance %</th>
             <th>Assignments</th>
+            <th></th>
         </tr>
 
         <?php
@@ -22,28 +23,34 @@
                 $queryAttandTotalNumber = "SELECT * FROM Attand WHERE Class_Code = '$clsCode';";
                 $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
                 $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
-                if($AttandTotalRows != 0){
-                $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$passUserName' AND Class_Code = '$clsCode' AND Attendance = 1;";
-                $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
-                $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
-                $AttandPercent = round(($AttandPresentRows / $AttandTotalRows) * 100);
-                echo '<tr>
+                if ($AttandTotalRows != 0) {
+                    $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$passUserName' AND Class_Code = '$clsCode' AND Attendance = 1;";
+                    $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
+                    $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
+                    $AttandPercent = round(($AttandPresentRows / $AttandTotalRows) * 100);
+                    echo '<tr>
                 <td>
                     <h6></h6>
                 </td>
                 <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '</td>';
-                echo '
+                    echo '
                 <td>' . $AttandPercent . '%</td>';
-                $queryAssignNumberTotal = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode';";
-                $executeAssignNumberTotal = mysqli_query($con, $queryAssignNumberTotal);
-                $AssignNumberTotal = mysqli_num_rows($executeAssignNumberTotal);
+                    $queryAssignNumberTotal = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode';";
+                    $executeAssignNumberTotal = mysqli_query($con, $queryAssignNumberTotal);
+                    $AssignNumberTotal = mysqli_num_rows($executeAssignNumberTotal);
 
-                $queryAssignStudentNumber = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode' AND UserName = '$passUserName';";
-                $executeAssignStudentNumber = mysqli_query($con, $queryAssignStudentNumber);
-                $AssignStudentNumber = mysqli_num_rows($executeAssignStudentNumber);
-                echo '<td>' . $AssignStudentNumber . '/' . $AssignNumberTotal . '</td>
+                    $queryAssignStudentNumber = "SELECT * FROM `Assign_Table` WHERE clscode = '$clsCode' AND UserName = '$passUserName';";
+                    $executeAssignStudentNumber = mysqli_query($con, $queryAssignStudentNumber);
+                    $AssignStudentNumber = mysqli_num_rows($executeAssignStudentNumber);
+                    echo '<td>' . $AssignStudentNumber . '/' . $AssignNumberTotal . '</td>
+                    <td><p class="herfLink" onclick="rmStudent(this.children[0],this.children[1],this.children[2])">remove
+                    <input type="hidden" value="'. $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] .'">
+                    <input type="hidden" value="'.$passUserName.'">
+                    <input type="hidden" value="'.$TrClsValues['Class_Code'].'">
+                    </p></td>
+                    
             </tr>';
-                }else{
+                } else {
                     echo '<tr>
                     <td>
                     <h6></h6>
