@@ -15,7 +15,8 @@ function rmStudent(child0,child1,child2) {
         data: {usrname:StudentUserName,cls:clscode},
         type: "POST",
         success: function (data) {
-          console.log(data)
+          window.location.reload();
+          studentsClick();
         },
       });
     }
