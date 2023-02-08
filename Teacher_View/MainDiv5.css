@@ -1,5 +1,6 @@
 .MainDiv5 {
   display: none;
+  font-family: 'Figtree', sans-serif;
 }
 .assignment-container {
   display: flex;
@@ -12,12 +13,14 @@
   height: 77px;
   padding: 2%;
   resize: none;
+  font-family: 'Figtree', sans-serif;
 }
 .assignment-module-select {
   border: 1px solid black;
   width: 120px;
   height: 39px;
   background-color: #eee;
+  font-family: 'Figtree', sans-serif;
 }
 .assignment-arrage-div {
   margin: 0px;

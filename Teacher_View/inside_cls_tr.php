@@ -36,6 +36,9 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
     <link rel="stylesheet" href="toggleBtn.css">
     <link rel="stylesheet" href="MainDiv5.css">
     <link rel="stylesheet" href="check-assignment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,8 +46,8 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
         <div class="subDiv">
 
             <a href="../Teacher_View/index_teacher.php"><span class="custom-icon-4-smart" title="Back to home">
-            <img id="title-svg-image" src="../Teacher_View/Assets/titleOnly.svg" alt="">
-            </span></a>
+                    <img id="title-svg-image" src="../Teacher_View/Assets/titleOnly.svg" alt="">
+                </span></a>
 
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
