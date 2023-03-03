@@ -1,10 +1,19 @@
-<?php session_start() ?>
 <?php
+session_start();
 if ($_SESSION['user'] == NULL) {
     header("Location: ../index.php");
 }
-?>
 
+$con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
+    $userName = $_SESSION['user'];
+    $queryGetAccValues = "SELECT * FROM Account WHERE Usr_Name = '$userName';";
+    $GetAccValues = mysqli_query($con, $queryGetAccValues);
+    $AccValues = mysqli_fetch_assoc($GetAccValues);
+$AccToCheckStudent = $AccValues['Account'];
+    if ($AccToCheckStudent == "student") {
+        header("Location: ../Student_View/student.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,33 +33,22 @@ if ($_SESSION['user'] == NULL) {
 </head>
 
 <body>
-    <?php
-    $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-    $userName = $_SESSION['user'];
-    $queryGetAccValues = "SELECT * FROM Account WHERE Usr_Name = '$userName';";
-    $GetAccValues = mysqli_query($con, $queryGetAccValues);
-    $AccValues = mysqli_fetch_assoc($GetAccValues);
-
-
-    // check if the account is Student or 
-    // not and redirct to teacher account
-    $AccToCheckStudent = $AccValues['Account'];
-    if ($AccToCheckStudent == "student") {
-        header("Location: ../Student_View/student.php");
-    }
-    ?>
     <div class="DivContainers">
         <div class="subDiv">
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()">
                 home_app_logo
             </span>
+            <span>Home</span>
             <span class="material-symbols-outlined icons" id="account" onclick="AccClick()">
                 account_circle
             </span>
+            <span>Account</span>
 
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                     logout
-                </span></a>
+                </span>
+                <span>Logout</span>
+            </a>
         </div>
 
 

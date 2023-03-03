@@ -40,7 +40,9 @@ input{
   display: block;
   width: 93%;
   height: 94vh;
+  background-image: url(./Assets/bubble.svg);
   background-color: white;
+  background-repeat: no-repeat;
   border-radius: 20px;
   overflow: auto;
 }

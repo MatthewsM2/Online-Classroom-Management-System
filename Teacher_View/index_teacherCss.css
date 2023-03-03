@@ -9,7 +9,7 @@ body {
   /* overflow: hidden; */
   margin: 0;
   background-color: #00b4d8;
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
 }
 
 .DivContainers {
@@ -35,7 +35,8 @@ body {
   display: block;
   width: 93%;
   height: 94vh;
-  background-color: white;
+  /* background-color: white; */
+  background-image:url('Assets/bg.svg') ;
   border-radius: 20px;
   overflow: auto;
 }
@@ -88,7 +89,7 @@ body {
   display: inline-block;
   margin-left: 17px;
   margin-bottom: 0px;
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
 }
 #fnameHi {
   display: inline;
@@ -102,7 +103,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   text-transform: capitalize;
   height: 170px;
   width: auto;
@@ -117,13 +118,14 @@ body {
   flex: 0 0 240px;
   height: 150px;
   border-radius: 7px;
-  background-color: #03c7ee;
+  background-color: #ffffff7e;
+  backdrop-filter: blur(7px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .SubjectClass:hover {
-  background-color: #06d3fc;
+  background-color: #06d3fc50;
   cursor: pointer;
 }
 /* div containg contents arragement */
@@ -181,7 +183,7 @@ body {
   gap: 27px;
   top: 25%;
   left: 40%;
-  background-image: linear-gradient(to bottom right, #00b4d8, #b8fff9);
+  background-image: linear-gradient(to bottom right, #00b4d89e, #b8fff987);
   width: 277px;
   height: 300px;
   border-radius: 17px;
@@ -291,7 +293,7 @@ body {
   display: none;
 }
 .centerBoxWhite {
-  background-color: white;
+  /* background-color: white; */
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -311,7 +313,7 @@ a.fakeLink {
   color: red;
   text-decoration: underline;
 }
-a.fakeLink:hover{
+a.fakeLink:hover {
   color: #f7444eff;
   cursor: pointer;
 }
