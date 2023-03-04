@@ -9,7 +9,7 @@ body {
   /* overflow: hidden; */
   margin: 0;
   background-color: #00b4d8;
-  font-family: "Open Sans", "sans-serif";
+  font-family: "Figtree", sans-serif;
 }
 .DivContainers {
   background-color: #00b4d8;
@@ -27,6 +27,14 @@ body {
   text-decoration: none;
   color: black;
 }
+
+#title-svg-image {
+  width: 50px;
+  font-weight: 700;
+  color: white;
+  animation:glow 2s ease-in-out infinite;
+}
+
 .MainDiv {
   position: relative;
   margin-top: 1%;
@@ -34,6 +42,9 @@ body {
   display: block;
   width: 93%;
   height: 94vh;
+  background-image:url('../Teacher_View/Assets/pattern-bg.svg') ;
+  background-size: cover;
+  background-blend-mode: difference;
   background-color: white;
   border-radius: 20px;
   overflow: auto;

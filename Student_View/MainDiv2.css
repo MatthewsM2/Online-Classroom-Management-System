@@ -13,7 +13,7 @@
 .Student-Details {
   display: flex;
   flex-direction: column;
-  background-color: #d2eaf1;
+  background-color: #d2eaf1a2;
   width: 270px;
   height: 300px;
   justify-content: center;

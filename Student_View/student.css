@@ -9,7 +9,7 @@ body {
   /* overflow: hidden; */
   margin: 0;
   background-color: #00b4d8;
-  font-family: "Open Sans", "sans-serif";
+  font-family: "Figtree", sans-serif;
 }
 
 .DivContainers {
@@ -24,6 +24,7 @@ body {
   background-color: #00b4d8;
   text-align: center;
 }
+
 .subDiv a {
   text-decoration: none;
   color: black;
@@ -88,7 +89,6 @@ body {
   display: inline-block;
   margin-left: 17px;
   margin-bottom: 0px;
-  font-family: "Open Sans", sans-serif;
 }
 #fnameHi {
   text-transform: capitalize;

@@ -31,6 +31,7 @@ if ($AccToCheckTr == "teacher") {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="student.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,12 +41,16 @@ if ($AccToCheckTr == "teacher") {
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()">
                 home_app_logo
             </span>
+            <span>Home</span>
             <span class="material-symbols-outlined icons" id="account" onclick="AccClick()">
                 account_circle
             </span>
+            <span>Account</span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                     logout
-                </span></a>
+                </span>
+            <span>Logout</span>
+            </a>
 
         </div>
         <div class="MainDiv MainDiv1">

@@ -37,18 +37,27 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
 <body>
     <div class="DivContainers">
         <div class="subDiv">
+            
+        <a href="../Teacher_View/index_teacher.php"><span class="custom-icon-4-smart" title="Back to home">
+                    <img id="title-svg-image" src="../Teacher_View/Assets/titleOnly.svg" alt="">
+                </span></a>
+
             <span class="material-symbols-outlined icons1" id="home" onclick="homeCall()" title="Home">
                 home_app_logo
             </span>
+            <span>Home</span>
             <span class="material-symbols-outlined icons" id="person-icon" onclick="personCall()">
                 person
             </span>
+            <span>Details</span>
             <span class="material-symbols-outlined icons" id="upload_file-icon">
                 upload_file
             </span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                     logout
-                </span></a>
+                </span>
+            <span>Logot</span>
+            </a>
         </div>
 
         <?php include 'studentSub/MainDiv1.php' ?>
