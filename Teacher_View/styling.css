@@ -42,7 +42,7 @@ input{
   height: 94vh;
   background-image: url(./Assets/bubble.svg);
   background-color: white;
-  background-repeat: no-repeat;
+  background-repeat: revert;
   border-radius: 20px;
   overflow: auto;
 }
@@ -70,7 +70,7 @@ input{
   background-color: #f1f1f1;
 }
 .icons1 {
-  margin-top: 77px;
+  margin-top: 47px;
 }
 .icons {
   margin-top: 20px;

@@ -1,0 +1,53 @@
+#StudentTable,
+#CheckAssignStudentTable {
+  border-collapse: collapse;
+  width: 97%;
+  margin: auto;
+  margin-top: 27px;
+}
+#CheckAssignStudentTable {
+  width: 100%;
+}
+#StudentTable td,
+#StudentTable th,
+#CheckAssignStudentTable td,
+#CheckAssignStudentTable th {
+  /* border: 1px solid grey; */
+  padding: 7px;
+}
+/* #StudentTable tr:nth-child(even) {
+  background-color: #eee;
+} */
+#StudentTable th,
+#CheckAssignStudentTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00a0c09f;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+#StudentTable td,
+#CheckAssignStudentTable td {
+  background-color: #ffffff90;
+  backdrop-filter: blur(5px);
+  color: rgb(0, 0, 0);
+}
+.ViewTable {
+  counter-reset: countNum;
+}
+.ViewTable td h6 {
+  margin: 0px;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+}
+.ViewTable td h6::before {
+  counter-increment: countNum;
+  content: counter(countNum);
+}
+.herfLink {
+  cursor: pointer;
+  color: red;
+}

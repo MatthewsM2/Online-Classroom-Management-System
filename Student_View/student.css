@@ -34,6 +34,9 @@ body {
   margin-top: 1%;
   margin-bottom: 1.2%;
   display: block;
+  background-image: url(../Teacher_View/Assets/pattern-bg.svg);
+  background-size: cover;
+    background-blend-mode: difference;
   width: 93%;
   height: 94vh;
   background-color: white;
@@ -102,7 +105,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   height: 170px;
   width: auto;
   overflow: auto;

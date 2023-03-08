@@ -72,6 +72,10 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
             $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
             $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
             $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
+            if($AttandTotalRows==null)
+            {
+                $AttandTotalRows=1;
+            }
             $AttandPercent = round(($AttandPresentRows / $AttandTotalRows) * 100);
             $ProgressBar = 180 * ($AttandPercent / 100);
             ?>

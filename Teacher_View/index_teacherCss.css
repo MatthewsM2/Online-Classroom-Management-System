@@ -294,6 +294,7 @@ body {
 }
 .centerBoxWhite {
   /* background-color: white; */
+  backdrop-filter: blur(5px);
   align-items: center;
   display: flex;
   flex-direction: column;

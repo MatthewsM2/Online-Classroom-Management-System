@@ -4,7 +4,7 @@
         <div class="attandDiv-btn-container">
             <input class="attand-btns" name="AttDate" type="date" required>
             <input class="attand-btns" name="AttTime" type="time" required>
-            <input class="attand-btns" type="button" value="Details" onclick="disAttandDetails()">
+            <input class="attand-btns" disabled  type="button" value="Details" onclick="disAttandDetails()">
             <input class="attand-btns" type="Submit" value="Save">
         </div>
         <table id="StudentTable" class="AttandMark-table">

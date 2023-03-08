@@ -52,24 +52,29 @@ $TrClsValues = mysqli_fetch_assoc($GetTrClsValues);
             <span class="material-symbols-outlined icons1" id="home" onclick="homeClick()" title="Home">
                 home_app_logo
             </span>
+            <span>Home</span>
             <span class="material-symbols-outlined icons" id="Maindiv2" title="Students" onclick="studentsClick()">
                 groups
             </span>
+            <span>Students</span>
             <span class="material-symbols-outlined icons" id="Maindiv3" title="Create Module" onclick="createModule()">
                 post_add
             </span>
+            <span>Modules</span>
             <span class="material-symbols-outlined icons" id="Maindiv4" title="Attaendance" onclick="Attaendance()">
                 new_releases
             </span>
+            <span>Present</span>
             <span class="material-symbols-outlined icons" id="Maindiv5" title="Assignment" onclick="Assignment()">
                 assignment
             </span>
+            <span>Assign</span>
             <span class="material-symbols-outlined icons" id="check-assignment" title="Check Assignment" onclick="CheckAssignment()">
                 inventory
             </span>
             <a href="../logout.php"><span class="material-symbols-outlined icons" id="logOut">
                     logout
-                </span></a>
+                </span><span>Logout</span></a>
         </div>
 
         <?php include 'inside_class/inside_cls_tr_Maindiv1.php' ?>

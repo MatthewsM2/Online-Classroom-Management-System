@@ -29,6 +29,7 @@ $AccToCheckStudent = $AccValues['Account'];
     <link rel="stylesheet" href="index_teacherCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="customizaton.css">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -62,6 +63,7 @@ $AccToCheckStudent = $AccValues['Account'];
     </div>
 </body>
 <script src="../customAlert.js"></script>
+<script src="cus-alert-js.js"></script>
 <script src="../jquery.js"></script>
 <script src="index_teacher.js"></script>
 </html>
