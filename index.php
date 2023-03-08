@@ -1,36 +1,23 @@
 <!-- J.M.J -->
-<?php
-// session_start();
-// if ($_SESSION['user'] != NULL) {
-//     $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-//     $user = $_SESSION['user'];
-//     $queryCheck = "SELECT * FROM `Account` WHERE Usr_Name = '$user' ;";
-//     $execute = mysqli_query($con, $queryCheck);
-//     $dataFetch = mysqli_fetch_assoc($execute);
-//     if ($dataFetch['Account'] == "teacher") {
-//         header("Location:Teacher_View/index_teacher.php");
-//     }
-//     if ($dataFetch['Account'] == "student") {
-//         header("Location:Student_View/student.php");
-//     }
-// }
-?>
+
 
 <?php
 session_start();
 $con = new mysqli("localhost", "root", "", "smart_project") or die("Connection Failed");
-$usr = $_POST["loginUsrName"];
-$pass = $_POST["loginPassword"];
+if (isset($_POST["loginUsrName"])) {
+    $usr = $_POST["loginUsrName"];
+    $pass = $_POST["loginPassword"];
+}
 // add some ajax code to check user name and password in live
-if ($usr != NULL) {
+if(isset($usr)) {
     $queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";
     $acc = mysqli_query($con, $queryUser);
     $resultAcc = mysqli_fetch_assoc($acc);
     if ($resultAcc['Account'] == "teacher") {
-         $_SESSION['user']=$usr;
+        $_SESSION['user'] = $usr;
         header("Location:http://localhost/MiniProject/Teacher_View/index_teacher.php");
     } else if ($resultAcc['Account'] == "student") {
-        $_SESSION['user']=$usr;
+        $_SESSION['user'] = $usr;
         header("Location:http://localhost/MiniProject/Student_View/student.php");
     } else {
         echo '
@@ -58,7 +45,7 @@ if ($usr != NULL) {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
-    
+
 </head>
 
 <body>
