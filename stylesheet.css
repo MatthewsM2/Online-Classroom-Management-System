@@ -209,7 +209,7 @@ body {
   background-image: url(Teacher_View/Assets/Web-Header-Background.svg);
 display: flex;
 justify-content: space-between;
-height: 400vh;
+height: 97vh;
 }
 .left-div-parent{
   margin-top: 67px;

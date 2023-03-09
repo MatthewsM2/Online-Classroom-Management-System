@@ -9,7 +9,7 @@ if (isset($_POST["loginUsrName"])) {
     $pass = $_POST["loginPassword"];
 }
 // add some ajax code to check user name and password in live
-if(isset($usr)) {
+if (isset($usr)) {
     $queryUser = "SELECT Account FROM Account WHERE Usr_Name = '$usr' and pasword = '$pass';";
     $acc = mysqli_query($con, $queryUser);
     $resultAcc = mysqli_fetch_assoc($acc);
@@ -45,6 +45,14 @@ if(isset($usr)) {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- added by chatGpt design  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9Bj/pzWOXJg6erf1L2kXgXiJ+6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- just above links -->
 
 </head>
 
@@ -100,6 +108,135 @@ if(isset($usr)) {
             <label for="dirctToLoginPage" class="txtCreateAcc" onclick="Login()">Login</label>
         </div>
     </div>
+
+    <!-- below code are from chatgpt start   -->
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Student Management</h3>
+                        <p>Manage your students' attendance, assignments, and grades all in one place. Easily track
+                            their progress and provide feedback to help them succeed.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Class Management</h3>
+                        <p>Create and manage classes for different subjects and grade levels. Keep track of attendance
+                            and assignments, and communicate with students and parents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Assignment Management</h3>
+                        <p>Create and manage assignments for your classes. Easily grade assignments and provide feedback
+                            to help students improve.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Performance Analytics</h3>
+                        <p>View analytics and reports on your students' performance. Identify areas where they need
+                            extra help and adjust your teaching accordingly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Communication</h3>
+                        <p>Stay in touch with your students and their parents through our built-in communication tools.
+                            Send announcements, share resources, and answer questions all in one place.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Attendance Management</h3>
+                        <p>Track attendance for all of your classes and get insights into your students' attendance
+                            habits. Use this information to intervene early and help students stay on track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Feature section styles */
+
+        #features {
+            background-color: #ffff;
+            padding: 80px 0;
+        }
+
+        #features h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background-color: #ffff;
+            border-radius: 5px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 40px;
+            color: #0077ff;
+            margin-bottom: 30px
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+
+    <!-- Call to action section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <p>
+                Sign up now and start managing your classes, assignments, and students
+                more efficiently.
+            </p>
+            <a href="#" class="cta-btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 smart ( Education Management System )</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- chatGpt stop code  -->
 </body>
 <script src="customAlert.js"></script>
 <script src="script.js"></script>
