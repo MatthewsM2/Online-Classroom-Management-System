@@ -66,13 +66,13 @@ $AccountDetails = mysqli_fetch_assoc($GetAccountDetails);
                 <h3><?php echo $TrTable['Subject'] ?></h3>
             </div>
             <?php
-            $queryAttandTotalNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode';";
+            $queryAttandTotalNumber = "SELECT * FROM Attand WHERE  Class_Code = '$clsCode';";
             $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$usrName' AND Class_Code = '$clsCode' AND Attendance = 1;";
             $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
             $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
             $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
             $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
-            if($AttandTotalRows==null)
+            if($AttandTotalRows==0)
             {
                 $AttandTotalRows=1;
             }

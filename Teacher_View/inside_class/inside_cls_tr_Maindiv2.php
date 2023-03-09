@@ -23,7 +23,7 @@
                 $queryAttandTotalNumber = "SELECT * FROM Attand WHERE Class_Code = '$clsCode';";
                 $exeAttandTotalNumber = mysqli_query($con, $queryAttandTotalNumber);
                 $AttandTotalRows = mysqli_num_rows($exeAttandTotalNumber);
-                if ($AttandTotalRows != 0) {
+                if ($AttandTotalRows != 0 ) {
                     $queryAttandPresentNumber = "SELECT * FROM Attand WHERE St_UsrName = '$passUserName' AND Class_Code = '$clsCode' AND Attendance = 1;";
                     $exeAttandPresentNumber = mysqli_query($con, $queryAttandPresentNumber);
                     $AttandPresentRows = mysqli_num_rows($exeAttandPresentNumber);
@@ -51,13 +51,22 @@
                     
             </tr>';
                 } else {
+                    if(!isset ($AssignNumberTotal)){
+                        $AssignNumberTotal=0;
+                    }
                     echo '<tr>
                     <td>
                     <h6></h6>
                     </td>
                     <td>' . $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] . '</td>
                     <td>0%</td>
-                    <td>0/' . $AssignNumberTotal . '</td></tr>';
+                    <td>0/' . $AssignNumberTotal . '</td>
+                    <td><p class="herfLink" onclick="rmStudent(this.children[0],this.children[1],this.children[2])">remove
+                    <input type="hidden" value="'. $TakeStudentName['First_Name'] . " " . $TakeStudentName['Last_Name'] .'">
+                    <input type="hidden" value="'.$passUserName.'">
+                    <input type="hidden" value="'.$TrClsValues['Class_Code'].'">
+                    </p></td>
+                    </tr>';
                 }
             }
         }

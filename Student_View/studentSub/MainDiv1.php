@@ -28,18 +28,18 @@ $PathtoInside = "http://localhost/MiniProject/Teacher_View/inside_class/";
             while ($ModuleMaterialValtoTrav = mysqli_fetch_assoc($GetUniqueModuleMaterial)) {
                 if ($ModuleMaterialValtoTrav['Is_Assignment'] == 0) {
                     echo '<div>
-                    <a href="'.$PathtoInside.$ModuleMaterialValtoTrav['document'].'"><img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
+                    <a href="' . $PathtoInside . $ModuleMaterialValtoTrav['document'] . '"><img src="' . $PathtoInside . $ModuleMaterialValtoTrav['thumbnail'] . '" alt="">
                     </a>
                 </div>';
                 } else if ($ModuleMaterialValtoTrav['Is_Assignment'] == 1) {
                     echo '<div onclick="showUploadDiv(this.children[0])">
                     <span class="assignment-div">
                         <p class="assignment-heading">' . $ModuleMaterialValtoTrav['Heading'] . '</p>
-                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['Description'].'">
-                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['document'].'">
-                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['date'].'">
-                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['time'].'">
-                        <input type="hidden"  value="'.$ModuleMaterialValtoTrav['Sl_No'].'">
+                        <input type="hidden"  value="' . $ModuleMaterialValtoTrav['Description'] . '">
+                        <input type="hidden"  value="' . $ModuleMaterialValtoTrav['document'] . '">
+                        <input type="hidden"  value="' . $ModuleMaterialValtoTrav['date'] . '">
+                        <input type="hidden"  value="' . $ModuleMaterialValtoTrav['time'] . '">
+                        <input type="hidden"  value="' . $ModuleMaterialValtoTrav['Sl_No'] . '">
                     </span>
                  </div>';
                 }
